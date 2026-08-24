@@ -1,0 +1,16 @@
+CODEX-WAGNER-REPORTS — RETURN INSTRUCTIONS
+
+Saved checkpoint: CODEX 1631
+Saved website: CodexTalk1631a0824-WagnerReports.html
+Local Git checkpoint: a38cbfb
+TinyHost status: Published successfully at https://test.wagnerreports.com/
+GitHub status: Online synchronization is still incomplete because GitHub authentication failed.
+
+RETURN TO THIS CODEX TASK:
+Codex-Wagner-Reports — CODEX 1631 Checkpoint
+
+If this task is unavailable, start a new Codex task in the Codex-Wagner-Reports project and type:
+
+Continue Codex-Wagner-Reports from the CODEX 1631 checkpoint. The local commit is a38cbfb. Fix GitHub authentication first, then continue the saved picture corrections.
+
+Do not enter an old GitHub device code again. Device codes expire and must be generated fresh during the next session.
