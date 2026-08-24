@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Wagner Reports — Codex Wave Audio Build Specification</title>
+<style>
+:root{color-scheme:dark;--bg:#07111f;--panel:#101f31;--gold:#e7bd62;--text:#eef5ff;--muted:#a9bad0;--line:#29435f;--good:#72d6a2;--warn:#ffd27a}
+*{box-sizing:border-box}body{margin:0;background:linear-gradient(145deg,#030912,#0d2134);color:var(--text);font:16px/1.55 Arial,sans-serif}
+main{max-width:1050px;margin:auto;padding:28px}h1,h2{color:var(--gold)}h1{margin-bottom:4px}h2{border-bottom:1px solid var(--line);padding-bottom:6px;margin-top:30px}
+.stamp,.note,.locked{border:1px solid var(--line);background:rgba(16,31,49,.9);border-radius:10px;padding:14px 16px;margin:14px 0}.locked{border-color:#47785f}.note{border-color:#745f35}
+code{color:#bde7ff}table{width:100%;border-collapse:collapse;background:rgba(8,20,34,.7)}th,td{border:1px solid var(--line);padding:9px;text-align:left;vertical-align:top}th{color:var(--gold)}
+ul,ol{padding-left:24px}.muted{color:var(--muted)}.good{color:var(--good)}.warn{color:var(--warn)}
+</style>
+</head>
+<body><main>
+<h1>Wagner Reports — Codex Wave</h1>
+<div class="stamp"><strong>Package:</strong> <code>1041a0823</code><br><strong>Role:</strong> Approved audio-build specification; not a runnable generator.<br><strong>Status:</strong> Synchronized with the revised cinematic Earth-interface prototype.</div>
+
+<div class="locked"><strong>Locked principle:</strong> Generate one continuous archival WAV master per complete subject or Economy sub-tab, then create a website MP3 from that approved master. Website visitors retrieve the stored MP3 only and never trigger paid generation.</div>
+
+<h2>1. Voice profile</h2>
+<table><tr><th>Setting</th><th>Approved rule</th></tr>
+<tr><td>Primary voice</td><td>Charon, spelled C-H-A-R-O-N</td></tr>
+<tr><td>Fallback</td><td>Google Cloud Studio-Q, build-time only</td></tr>
+<tr><td>Excluded</td><td>Algieba</td></tr>
+<tr><td>Delivery</td><td>Natural male cable-news anchor; professional, authoritative, neutral, even, and non-robotic</td></tr>
+<tr><td>Approved reference</td><td><code>CharonPilot4-925a0823.wav</code> — approved by Robert on 08/23/26</td></tr>
+<tr><td>Reference duration</td><td>23.33 seconds for the fixed 51-word comparison script; use this as a pace calibration, not a hard duration for every story</td></tr>
+<tr><td>Approved direction</td><td>Warm, composed, reassuring network-news delivery; mellow conversational tone; restrained authority; moderately brisk natural pace; tight but natural pauses; smooth transitions; no rushing, clipping, theatrical emphasis, booming projection, or harshness</td></tr>
+<tr><td>Consistency</td><td>Lock model, voice, instructions, pace, pronunciation, pause style, loudness, and output format for every subject</td></tr>
+<tr><td>Browser repair</td><td>Pitch/speed manipulation deferred until Robert hears the new continuous-audio result</td></tr>
+<tr><td>Archival output</td><td>One high-quality continuous WAV master per complete subject or Economy sub-tab</td></tr>
+<tr><td>Website output</td><td>One MP3 derived from the approved WAV master; initial target 128 kbps for efficient spoken-news delivery, subject to Robert's listening test</td></tr></table>
+
+<h2>2. Spoken structure</h2>
+<p>Normal disputed subject:</p>
+<ol><li>Subject identification</li><li>Supporters</li><li>Disagreers</li><li>Neutral conclusion</li></ol>
+<p>Subjects without a genuine disagreement use Subject → Content → Conclusion. Consensus is excluded for now.</p>
+<div class="note"><strong>Continuity rule:</strong> Every component for one subject is composed into one script and rendered in one generation request whenever technically possible. This is intended to prevent shifts in voice, pitch, pace, and tone between clips.</div>
+
+<h2>3. Required subject manifest</h2>
+<table><tr><th>Order</th><th>Subject</th><th>Structure</th><th>Archive master / Website delivery</th></tr>
+<tr><td>1</td><td>Trump News</td><td>Subject / Supporters / Disagreers / Conclusion</td><td><code>trump-news-charon.wav</code><br><code>trump-news-charon.mp3</code></td></tr>
+<tr><td>2</td><td>Strait of Hormuz</td><td>Subject / Supporters / Disagreers / Conclusion</td><td><code>strait-hormuz-charon.wav</code><br><code>strait-hormuz-charon.mp3</code></td></tr>
+<tr><td>3</td><td>Iran MOU</td><td>Subject / Supporters / Disagreers / Conclusion</td><td><code>iran-mou-charon.wav</code><br><code>iran-mou-charon.mp3</code></td></tr>
+<tr><td>4</td><td>Epstein Files</td><td>Subject / Supporters / Disagreers / Conclusion</td><td><code>epstein-files-charon.wav</code><br><code>epstein-files-charon.mp3</code></td></tr>
+<tr><td>5</td><td>Reflecting Pool</td><td>Subject / Supporters / Disagreers / Conclusion</td><td><code>reflecting-pool-charon.wav</code><br><code>reflecting-pool-charon.mp3</code></td></tr>
+<tr><td>6a</td><td>Economy — Food</td><td>Subject / Supporters / Disagreers / Conclusion</td><td><code>economy-food-charon.wav</code><br><code>economy-food-charon.mp3</code></td></tr>
+<tr><td>6b</td><td>Economy — Gas</td><td>Subject / Supporters / Disagreers / Conclusion</td><td><code>economy-gas-charon.wav</code><br><code>economy-gas-charon.mp3</code></td></tr>
+<tr><td>6c</td><td>Economy — Tariffs</td><td>Subject / Content / Conclusion unless genuine disagreement exists</td><td><code>economy-tariffs-charon.wav</code><br><code>economy-tariffs-charon.mp3</code></td></tr>
+<tr><td>6d</td><td>Economy — Others</td><td>Subject / Content / Conclusion unless genuine disagreement exists</td><td><code>economy-others-charon.wav</code><br><code>economy-others-charon.mp3</code></td></tr>
+<tr><td>7</td><td>Immigration</td><td>Subject / Supporters / Disagreers / Conclusion</td><td><code>immigration-charon.wav</code><br><code>immigration-charon.mp3</code></td></tr>
+<tr><td>8</td><td>Kennedy Center</td><td>Subject / Content / Conclusion unless genuine disagreement exists</td><td><code>kennedy-center-charon.wav</code><br><code>kennedy-center-charon.mp3</code></td></tr>
+<tr><td>9</td><td>SAVE Act/FISA</td><td>Subject / Content / Conclusion unless genuine disagreement exists</td><td><code>save-act-fisa-charon.wav</code><br><code>save-act-fisa-charon.mp3</code></td></tr>
+<tr><td>10</td><td>Fact or Fiction?</td><td>Subject / verified claims / conclusion</td><td><code>fact-or-fiction-charon.wav</code><br><code>fact-or-fiction-charon.mp3</code></td></tr>
+<tr><td>11</td><td>Other News</td><td>Subject / verified stories / conclusion</td><td><code>other-news-charon.wav</code><br><code>other-news-charon.mp3</code></td></tr></table>
+
+<p class="muted">Polls, NFL, MLB, and Golf remain deferred placeholders and are not included in the first audio build. Podcasters are excluded.</p>
+
+<h2>4. Per-subject build record</h2>
+<p>Each subject must produce a ledger record with:</p>
+<ul><li>Subject and visible order</li><li>Research completed and source review completed</li><li>Script version/hash</li><li>Requested voice and exact locked profile version</li><li>Generation attempt count</li><li>Charon success or failure</li><li>Studio-Q fallback, if used</li><li>Archival WAV validation</li><li>MP3 conversion setting and validation</li><li>R2 object names and upload results</li><li>Remote MP3 playback verification</li><li>Final status: ready, failed, or held for Robert's review</li></ul>
+
+<h2>5. Retry and quota rules</h2>
+<ol><li>Count every generation attempt, including retries.</li><li>Retry only the failed subject.</li><li>Never regenerate successful subjects merely because another failed.</li><li>Before a full build, verify the provider's current quota, reset time, and model pricing.</li><li>Maintain enough unused capacity for a reasonable retry reserve.</li><li>If Charon remains unsuccessful after the approved retry limit, try Studio-Q for that subject only and disclose it.</li></ol>
+
+<h2>6. Validation gates</h2>
+<p>A subject is not ready until all checks pass:</p>
+<ul><li>Correct subject and current researched content</li><li>Correct Supporters/Disagreers terminology</li><li>No Consensus section</li><li>No duplicated or missing phrases</li><li>Natural Charon delivery with stable tone, pace, pitch, and volume</li><li>Valid archival WAV with nonzero duration</li><li>Valid MP3 derived from the approved WAV</li><li>Uploaded R2 objects exist</li><li>Remote MP3 plays successfully</li><li>Visitor URL performs retrieval only—no generation call</li></ul>
+
+<h2>7. Missing-audio behavior</h2>
+<p>If the website cannot retrieve the stored MP3, it must:</p>
+<ol><li>Stop the current request and clear queued/in-flight playback.</li><li>Display <strong>“Audio temporarily unavailable.”</strong></li><li>Return control to the visitor without freezing.</li><li>Never invoke Charon, Studio-Q, a browser voice, or a paid endpoint from the visitor's device.</li></ol>
+
+<h2>8. Security boundary</h2>
+<div class="locked"><strong>Verified 08/23/26 at 8:42 AM ET:</strong> The Cloudflare generation Worker now requires a private <code>X-Wagner-Build-Key</code> header before it parses a request or contacts Gemini. The Gemini API credential and Worker build key are stored as Cloudflare secrets, permissive wildcard CORS was removed, and a harmless unauthenticated POST returned <code>401 Unauthorized</code>. No TTS generation or quota was consumed by the verification. R2 playback remains a separate stored-audio delivery path.</div>
+
+<h2>9. Not authorized by this file</h2>
+<ul><li>No internet sweep</li><li>No TTS generation</li><li>No R2 upload, rename, or deletion</li><li>No Worker or CORS change</li><li>No Tiny Host staging or publishing</li><li>No production activation</li></ul>
+
+<h2>10. Next review decision</h2>
+<p>The security and voice-selection gates are complete. The next recommended step is to rebuild Codex Talk around the approved Earth/globe interface, replacing the older large gold tabs. Wire one test button to stored audio first, preserve double-tap start/stop and Home-stop behavior, verify the interaction on the test site, and only then extend the pattern to all subjects.</p>
+</main></body></html>
