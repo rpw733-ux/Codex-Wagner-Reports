@@ -1,0 +1,21 @@
+# Codex desktop scratch data
+.codex-remote-attachments/
+
+# Preserve timestamped experiments locally; add approved checkpoints explicitly.
+CodexTalk*-WagnerReports.html
+BetaTalk*-WagnerReports.html
+Codex*-StartNewSession.txt
+
+# Working and comparison images that are not approved repository assets.
+Codex*-Earth.jpg
+Codex*-AirForceOne.png
+Codex*-TrumpFullHead.png
+Codex*-Explosion*.png
+Codex*-NightFire*.png
+candidate-*.jpg
+shipping-*.jpg
+shipping-*.png
+
+# Local TinyHost upload packages.
+TiinyHost-*.zip
+TiinyHost-*/
