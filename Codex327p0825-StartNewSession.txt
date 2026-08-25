@@ -1,0 +1,151 @@
+CODEX-WAGNER-REPORTS START NEW SESSION HANDOFF
+Created: August 25, 2026 at 3:27 PM America/New_York
+Project: Codex-Wagner-Reports
+Public brand: Wagner Reports
+
+IMPORTANT SUPERSESSION NOTICE
+
+- This is the newest and authoritative Start New Session file.
+- Codex303p0825-StartNewSession.txt is preserved unchanged as an earlier handoff, but its Beta-address and GitHub sections were provisional and are superseded by this file.
+- Read this entire file before taking action.
+
+1. ACTIVE APPROVED CHECKPOINT
+
+- Active approved checkpoint: CodexTalk237p0825-WagnerReports.html
+- Exact project location:
+  C:\Users\Robert HP Wagner\Documents\Codex-Wagner-Reports\CodexTalk237p0825-WagnerReports.html
+- Exact Downloads location:
+  C:\Users\Robert HP Wagner\Downloads\CodexTalk237p0825-WagnerReports.html
+- SHA-256 of both identical copies:
+  B6EB4A698176B51BE3969F1CAEDC594C9D9882252D8FDA2C68336DB7BC1BFE82
+- Robert approved CodexTalk237p0825-WagnerReports.html as the current breakpoint for formal computer testing and experimental Samsung phone testing.
+- Never overwrite CodexTalk237p0825-WagnerReports.html. Any refinement must use a new timestamped CodexTalk filename with synchronized filename, visible CODEX banner, and opening-screen test button.
+
+2. EXACT WEBSITE ADDRESSES AND DEPLOYMENT STATE
+
+- Formal testing address:
+  https://test.wagnerreports.com/
+- The formal testing address was verified returning HTTP 200 and serving CodexTalk237p0825-WagnerReports.html.
+
+- Working experimental Samsung phone-testing address supplied by Robert:
+  https://beta-wagnerreports.tiiny.site/
+- The working experimental Samsung phone-testing address was verified returning HTTP 200 from Tiiny Host and serving CodexTalk237p0825-WagnerReports.html.
+
+- Separate custom Beta address:
+  https://beta.wagnerreports.com/
+- The separate custom Beta address currently returns an Amazon S3 HTTP 404 response.
+- The HTTP 404 did not affect Robert's phone test because Robert used https://beta-wagnerreports.tiiny.site/, not https://beta.wagnerreports.com/.
+- Do not describe the working experimental website using the nonworking custom address.
+- If Robert later wants https://beta.wagnerreports.com/ to work, its custom-domain connection must be configured separately in Tiiny Host or the domain provider.
+
+- Public production address:
+  https://wagnerreports.com/
+- Public production was not changed and must not be changed without Robert's explicit approval.
+
+3. APPROVED DESIGN STATE IN CodexTalk237p0825-WagnerReports.html
+
+- The Earth and all six editorial pictures use a synchronized 8.5-second transition from zero opacity toward full opacity.
+- The lower-right fire picture has identical dimensions and placement before and after the completion state to prevent an endpoint snap.
+- The Earth and topic field are lowered below the timestamp banner in the approved local layout.
+- The topic labels are raised within the Earth and use medium-weight Segoe UI text.
+- The airplane has stronger top-and-bottom feathering plus a softened left edge.
+- The approved cargo-ships image is in the lower-left position and is stored as:
+  candidate-cargo-ships-at-anchor-pexels-35421778.jpg
+- The Image Credits control is centered at the bottom, smaller, and dimmer until hover or keyboard focus.
+- Robert reported that the Samsung phone result was very close, with minor fixable problems intentionally deferred.
+- Before editing, ask Robert to identify each remaining Samsung phone problem precisely.
+
+4. FALLBACK AND PAUSED FILES
+
+- Strong immediate fallback:
+  CodexTalk217p0825-WagnerReports.html
+- Last pre-final local candidate:
+  CodexTalk233p0825-WagnerReports.html
+- Earlier approved checkpoint from before this session:
+  CodexTalk845a0825-WagnerReports.html
+- Paused older experimental file:
+  BetaTalk536p0824-WagnerReports.html
+- Preserve every timestamped file until the approved archive process moves older files into archive folders.
+
+5. GIT AND GITHUB STATE
+
+- Exact GitHub remote:
+  git@github.com:rpw733-ux/Codex-Wagner-Reports.git
+- Branch:
+  main
+- The former divergence was investigated.
+- The local and GitHub 10:37 commits shared the same parent and differed only by Windows line-ending formatting.
+- A history-only merge commit reconciled the two histories while preserving the complete current local tree.
+- Recovery branch preserved before reconciliation:
+  codex/pre-github-reconciliation-20260825-1509
+- Approved checkpoint commit:
+  bd752b4791fec6146612cb5931a3c44ef2d6b4ee
+- Approved checkpoint commit message:
+  Save CodexTalk237p0825 approved Test and phone checkpoint
+- The approved checkpoint commit tracks:
+  .gitignore
+  AGENTS.md
+  BetaTalk536p0824-WagnerReports.html
+  CodexTalk217p0825-WagnerReports.html
+  CodexTalk237p0825-WagnerReports.html
+  candidate-cargo-ships-at-anchor-pexels-35421778.jpg
+- The approved checkpoint commit was pushed successfully to GitHub origin/main.
+- At handoff preparation, local main and origin/main both pointed to bd752b4791fec6146612cb5931a3c44ef2d6b4ee and Git status was clean.
+- This newest handoff file is to be committed and pushed immediately after its local and Google Drive verification; verify local main and origin/main remain identical before beginning new work.
+- The .gitignore file keeps unapproved timestamped experiments and local upload packages on disk without cluttering Git status. Explicitly approved checkpoints can still be force-added to Git.
+
+6. START NEW SESSION FILE LOCATIONS
+
+- Earlier provisional handoff, preserved unchanged:
+  Codex303p0825-StartNewSession.txt
+- New authoritative handoff:
+  Codex327p0825-StartNewSession.txt
+- Required local project destination:
+  C:\Users\Robert HP Wagner\Documents\Codex-Wagner-Reports\Codex327p0825-StartNewSession.txt
+- Required Downloads destination:
+  C:\Users\Robert HP Wagner\Downloads\Codex327p0825-StartNewSession.txt
+- Required Google Drive destination:
+  _CODEX/Codex Web
+
+7. FILE-FAMILY INVENTORY AND LATER ARCHIVE PLAN
+
+- Before Codex327p0825-StartNewSession.txt was created, the project contained 92 CodexTalk files, 2 CodexWave files, 2 CodexHand files, and 6 Start New Session files including Codex303p0825-StartNewSession.txt.
+- Before Codex327p0825-StartNewSession.txt is copied, Downloads contained 6 CodexTalk files, 2 CodexWave files, 2 CodexHand files, and 5 Start New Session files including Codex303p0825-StartNewSession.txt.
+- Newest CodexTalk approved file: CodexTalk237p0825-WagnerReports.html
+- Strong CodexTalk fallback: CodexTalk217p0825-WagnerReports.html
+- Newest CodexWave file: CodexWave1041a0823-AudioMaster.html
+- Older CodexWave file: CodexWave349p0822-AudioMaster.html
+- Newest CodexHand file: CodexHand1041a0823-SessionHandoff.md
+- Older CodexHand file: CodexHand349p0822-SessionHandoff.md
+- New authoritative Start New Session file: Codex327p0825-StartNewSession.txt
+- Robert wants archive folders created later in both:
+  C:\Users\Robert HP Wagner\Documents\Codex-Wagner-Reports
+  C:\Users\Robert HP Wagner\Downloads
+- Do not archive during handoff startup.
+- First prepare an exact keep-versus-archive list grouped by CodexTalk, CodexWave, CodexHand, Start New Session, BetaTalk, images/assets, checkpoints, and Tiiny Host packages.
+- Retain one or two newest versions per prefix outside the archives, while also retaining every explicitly approved checkpoint and fallback.
+- Move approved older files into archive folders only after Robert reviews the exact move list.
+- Do not delete the archived files.
+
+8. UNRESOLVED WORK FOR THE NEXT SESSION
+
+- Ask Robert for the exact minor Samsung phone layout problems before making a new HTML version.
+- Decide whether the next mobile experiment remains at https://beta-wagnerreports.tiiny.site/.
+- Decide separately whether Robert wants to configure https://beta.wagnerreports.com/ as a custom domain.
+- Review the image-credit list before public production because the lower-left shipping image changed to the Pexels cargo-ships image.
+- Carry out the archive plan only after Robert approves the proposed file movements.
+- Do not change https://wagnerreports.com/ without explicit approval.
+
+9. FIRST SAFE NEXT ACTION
+
+1. Start a new Codex task.
+2. Upload Codex327p0825-StartNewSession.txt, not Codex303p0825-StartNewSession.txt.
+3. Read Codex327p0825-StartNewSession.txt completely.
+4. Confirm CodexTalk237p0825-WagnerReports.html as the active approved checkpoint and CodexTalk217p0825-WagnerReports.html as the strong fallback.
+5. Confirm these exact working testing addresses:
+   https://test.wagnerreports.com/
+   https://beta-wagnerreports.tiiny.site/
+6. Ask Robert for the exact remaining Samsung phone issues before editing.
+7. Then prepare the keep-versus-archive proposal without moving or deleting files until Robert approves it.
+
+END OF HANDOFF
