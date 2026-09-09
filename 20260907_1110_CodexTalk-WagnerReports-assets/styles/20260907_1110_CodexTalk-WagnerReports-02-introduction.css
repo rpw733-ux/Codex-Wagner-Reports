@@ -1,0 +1,776 @@
+
+/* CSS SOURCE 3: CodexTalk1045a0829-003-legacy-style.css */
+
+/* 1605 local test: balanced Earth, six approved picture positions, and label-only navigation. */
+body.earth-ready .earth{filter:brightness(1.04) contrast(1.14) saturate(1.12)!important}
+body.earth-ready .earth::before{opacity:.82!important;background:radial-gradient(circle at 55% 43%,transparent 0 48%,rgba(0,8,18,.2) 70%,rgba(0,5,12,.58) 100%)!important}
+body.earth-ready .earth::after{background:radial-gradient(ellipse at 72% 18%,rgba(0,8,18,.38) 0 18%,rgba(0,8,18,.18) 32%,transparent 52%),rgba(2,14,27,.04)!important;box-shadow:inset 0 0 42px rgba(0,4,13,.34)!important}
+.button-field .news-button,.button-field .news-button:hover,.button-field .news-button:focus-visible{background:transparent!important;border:0!important;box-shadow:none!important;clip-path:none!important;outline:none!important;color:#f6f8fb!important;text-shadow:0 2px 4px #000,0 0 8px rgba(17,112,166,.86)!important;filter:none!important}
+.button-field .news-button::after{display:none!important}
+.button-field .button-icon{color:#78dcff!important;filter:drop-shadow(0 1px 3px #000)!important}
+.editorial-shot figcaption{display:none!important}
+/* 1611 visibility correction: always show all three approved images on each side. */
+.editorial-collage{overflow:visible!important}
+.editorial-collage>.editorial-shot:nth-child(1),
+.editorial-collage>.editorial-shot:nth-child(2),
+.editorial-collage>.editorial-shot:nth-child(3){
+  display:block!important;
+  visibility:visible!important;
+  opacity:1!important;
+  z-index:18!important;
+  width:76%!important;
+  height:25%!important;
+}
+.editorial-collage>.editorial-shot:nth-child(1){top:0!important}
+.editorial-collage>.editorial-shot:nth-child(2){top:31%!important}
+.editorial-collage>.editorial-shot:nth-child(3){top:62%!important}
+.collage-left>.editorial-shot:nth-child(-n+3){left:0!important;right:auto!important}
+.collage-right>.editorial-shot:nth-child(-n+3){left:auto!important;right:0!important}
+.editorial-collage>.editorial-shot:nth-child(3) img{
+  display:block!important;
+  visibility:visible!important;
+  opacity:1!important;
+  object-fit:cover!important;
+}
+@media(max-width:650px){
+  .editorial-collage>.editorial-shot:nth-child(3){display:block!important;top:64%!important;height:24%!important}
+}
+/* 1615 blend test: 85% picture opacity with softer, subject-safe boundaries. */
+body.earth-ready .editorial-collage>.editorial-shot:nth-child(-n+3){opacity:.85!important}
+.editorial-collage>.editorial-shot:nth-child(-n+3) img{
+  -webkit-mask-image:radial-gradient(ellipse at 50% 48%,#000 28%,rgba(0,0,0,.94) 48%,rgba(0,0,0,.58) 68%,rgba(0,0,0,.16) 84%,transparent 96%)!important;
+  mask-image:radial-gradient(ellipse at 50% 48%,#000 28%,rgba(0,0,0,.94) 48%,rgba(0,0,0,.58) 68%,rgba(0,0,0,.16) 84%,transparent 96%)!important;
+}
+.collage-left>.editorial-shot:nth-child(1) img,
+.collage-left>.editorial-shot:nth-child(2) img,
+.collage-right>.editorial-shot:nth-child(1) img{
+  -webkit-mask-image:radial-gradient(ellipse at 50% 43%,#000 38%,rgba(0,0,0,.96) 56%,rgba(0,0,0,.62) 74%,rgba(0,0,0,.18) 88%,transparent 98%)!important;
+  mask-image:radial-gradient(ellipse at 50% 43%,#000 38%,rgba(0,0,0,.96) 56%,rgba(0,0,0,.62) 74%,rgba(0,0,0,.18) 88%,transparent 98%)!important;
+}
+/* 1622 final-presentation test: refine pictures, Earth, gold labels, and opening pause. */
+.button-field .news-button,.button-field .news-button:hover,.button-field .news-button:focus-visible{
+  color:#f2cb62!important;
+  text-shadow:0 2px 4px #000,0 0 8px rgba(194,137,31,.72)!important;
+}
+.collage-left>.editorial-shot:nth-child(1) img{
+  -webkit-mask-image:radial-gradient(ellipse 82% 108% at 50% 27%,#000 0 55%,rgba(0,0,0,.96) 67%,rgba(0,0,0,.52) 83%,transparent 100%)!important;
+  mask-image:radial-gradient(ellipse 82% 108% at 50% 27%,#000 0 55%,rgba(0,0,0,.96) 67%,rgba(0,0,0,.52) 83%,transparent 100%)!important;
+  object-position:center top!important;
+}
+.collage-left>.editorial-shot:nth-child(3) img{
+  -webkit-mask-image:radial-gradient(ellipse 86% 82% at 50% 55%,#000 16%,rgba(0,0,0,.9) 42%,rgba(0,0,0,.46) 63%,rgba(0,0,0,.12) 76%,transparent 90%)!important;
+  mask-image:radial-gradient(ellipse 86% 82% at 50% 55%,#000 16%,rgba(0,0,0,.9) 42%,rgba(0,0,0,.46) 63%,rgba(0,0,0,.12) 76%,transparent 90%)!important;
+}
+.collage-right>.editorial-shot:nth-child(2) img{
+  -webkit-mask-image:radial-gradient(ellipse 96% 86% at 50% 53%,#000 14%,rgba(0,0,0,.88) 39%,rgba(0,0,0,.42) 59%,rgba(0,0,0,.1) 74%,transparent 90%)!important;
+  mask-image:radial-gradient(ellipse 96% 86% at 50% 53%,#000 14%,rgba(0,0,0,.88) 39%,rgba(0,0,0,.42) 59%,rgba(0,0,0,.1) 74%,transparent 90%)!important;
+}
+body.earth-ready .collage-right>.editorial-shot:nth-child(3){
+  width:88%!important;height:29%!important;top:59%!important;right:0!important;
+}
+body.earth-ready .earth{filter:brightness(.99) contrast(1.10) saturate(1.08)!important}
+body.earth-ready .earth::after{
+  background:radial-gradient(ellipse at 42% 30%,rgba(0,8,18,.30) 0 19%,rgba(0,8,18,.16) 34%,transparent 51%),radial-gradient(ellipse at 72% 18%,rgba(0,8,18,.34) 0 18%,rgba(0,8,18,.15) 32%,transparent 52%),rgba(2,14,27,.05)!important;
+}
+.cinema-intro.running .crawl-copy p:nth-child(1){animation-delay:2.55s!important}
+.cinema-intro.running .crawl-copy p:nth-child(2){animation-delay:5.38s!important}
+.cinema-intro.running .crawl-copy p:nth-child(3){animation-delay:7.92s!important}
+.cinema-intro.running .crawl-copy p:nth-child(4){animation-delay:10.73s!important}
+.cinema-intro.running .crawl-copy p:nth-child(5){animation-delay:13.27s!important}
+.cinema-intro.running .crawl-copy p:nth-child(6){animation-delay:16.09s!important}
+.cinema-intro.running .crawl-copy p:nth-child(7){animation-delay:18.92s!important}
+.cinema-intro.running .crawl-copy p:nth-child(8){animation-delay:21.73s!important}
+.cinema-intro.running .crawl-copy p:nth-child(9){animation-delay:24.55s!important}
+.cinema-intro.running .crawl-copy p:nth-child(10){animation-delay:27.38s!important}
+.cinema-intro.running .red-star-cluster{animation-delay:2.1s!important}
+.cinema-intro.running .space-explosion img{animation-delay:38.85s!important}
+/* 1631 checkpoint candidate: 70% imagery and deliberate directional edge blending. */
+body.earth-ready .editorial-collage>.editorial-shot:nth-child(-n+3){opacity:.70!important}
+.collage-left>.editorial-shot:nth-child(1) img{
+  object-fit:contain!important;
+  object-position:center top!important;
+  background:transparent!important;
+  -webkit-mask-image:linear-gradient(to bottom,#000 0 58%,rgba(0,0,0,.82) 70%,rgba(0,0,0,.36) 86%,transparent 100%),linear-gradient(to right,transparent 0%,rgba(0,0,0,.45) 12%,#000 25% 75%,rgba(0,0,0,.45) 88%,transparent 100%)!important;
+  -webkit-mask-composite:source-in!important;
+  mask-image:linear-gradient(to bottom,#000 0 58%,rgba(0,0,0,.82) 70%,rgba(0,0,0,.36) 86%,transparent 100%),linear-gradient(to right,transparent 0%,rgba(0,0,0,.45) 12%,#000 25% 75%,rgba(0,0,0,.45) 88%,transparent 100%)!important;
+  mask-composite:intersect!important;
+}
+.collage-left>.editorial-shot:nth-child(3) img,
+.collage-right>.editorial-shot:nth-child(2) img{
+  background:transparent!important;
+  -webkit-mask-image:linear-gradient(to bottom,transparent 0%,rgba(0,0,0,.18) 10%,rgba(0,0,0,.65) 22%,#000 38% 70%,rgba(0,0,0,.45) 86%,transparent 100%),linear-gradient(to right,transparent 0%,rgba(0,0,0,.16) 9%,rgba(0,0,0,.68) 23%,#000 38% 68%,rgba(0,0,0,.44) 84%,transparent 100%)!important;
+  -webkit-mask-composite:source-in!important;
+  mask-image:linear-gradient(to bottom,transparent 0%,rgba(0,0,0,.18) 10%,rgba(0,0,0,.65) 22%,#000 38% 70%,rgba(0,0,0,.45) 86%,transparent 100%),linear-gradient(to right,transparent 0%,rgba(0,0,0,.16) 9%,rgba(0,0,0,.68) 23%,#000 38% 68%,rgba(0,0,0,.44) 84%,transparent 100%)!important;
+  mask-composite:intersect!important;
+}
+body.earth-ready .collage-right>.editorial-shot:nth-child(3){width:92%!important;height:31%!important;top:57%!important}
+.collage-right>.editorial-shot:nth-child(3) img{
+  transform:scale(1.18)!important;
+  transform-origin:50% 56%!important;
+  -webkit-mask-image:linear-gradient(to bottom,transparent 0%,rgba(0,0,0,.28) 11%,#000 28% 68%,rgba(0,0,0,.42) 85%,transparent 100%),linear-gradient(to right,transparent 0%,rgba(0,0,0,.35) 12%,#000 27% 73%,rgba(0,0,0,.35) 88%,transparent 100%)!important;
+  -webkit-mask-composite:source-in!important;
+  mask-image:linear-gradient(to bottom,transparent 0%,rgba(0,0,0,.28) 11%,#000 28% 68%,rgba(0,0,0,.42) 85%,transparent 100%),linear-gradient(to right,transparent 0%,rgba(0,0,0,.35) 12%,#000 27% 73%,rgba(0,0,0,.35) 88%,transparent 100%)!important;
+  mask-composite:intersect!important;
+}
+
+
+/* CSS SOURCE 4: CodexTalk1045a0829-004-legacy-style.css */
+
+/* CODEX 725A: persistent test identity shown on the opening screen. */
+.intro-controls .test-stamp{
+  pointer-events:none;
+  cursor:default;
+  border-color:rgba(111,205,255,.82);
+  color:#d8f3ff;
+  background:rgba(3,22,34,.9);
+  box-shadow:0 0 13px rgba(61,183,235,.28),inset 0 1px rgba(255,255,255,.12);
+  white-space:nowrap;
+}
+@media(max-width:600px){
+  .intro-controls{left:10px;right:10px;justify-content:flex-end;flex-wrap:wrap}
+  .intro-controls button{padding:7px 10px;font-size:10px}
+  .intro-controls .test-stamp{order:3;flex-basis:auto}
+}
+
+
+/* CSS SOURCE 5: CodexTalk1045a0829-005-legacy-style.css */
+
+/* CODEX 741A: timed review corrections and balanced desktop presentation. */
+.cinema-intro.running .crawl-copy p{animation-duration:8.3s!important}
+.cinema-intro.running .crawl-copy p:nth-child(1){animation-delay:2.55s!important}
+.cinema-intro.running .crawl-copy p:nth-child(2){animation-delay:4.91s!important}
+.cinema-intro.running .crawl-copy p:nth-child(3){animation-delay:7.03s!important}
+.cinema-intro.running .crawl-copy p:nth-child(4){animation-delay:9.37s!important}
+.cinema-intro.running .crawl-copy p:nth-child(5){animation-delay:11.49s!important}
+.cinema-intro.running .crawl-copy p:nth-child(6){animation-delay:13.84s!important}
+.cinema-intro.running .crawl-copy p:nth-child(7){animation-delay:16.20s!important}
+.cinema-intro.running .crawl-copy p:nth-child(8){animation-delay:18.55s!important}
+.cinema-intro.running .crawl-copy p:nth-child(9){animation-delay:20.90s!important}
+.cinema-intro.running .crawl-copy p:nth-child(10){animation-delay:23.26s!important}
+.cinema-intro.running .red-star-cluster{animation:destinationStar741 37.2s linear 0s forwards!important}
+@keyframes destinationStar741{
+  0%,78.4%{opacity:1;transform:translate(-50%,-50%) scale(1) rotate(17deg);background:#fff;box-shadow:0 0 2px #fff,0 0 6px #d9edff}
+  82%{opacity:1;transform:translate(-50%,-50%) scale(1.55) rotate(17deg);background:#ffd0ca;box-shadow:0 0 5px #fff,0 0 15px #ff9b90}
+  87%{opacity:1;transform:translate(-50%,-50%) scale(3) rotate(17deg);background:#ff6558;box-shadow:0 0 8px #ffe1dc,0 0 25px #ff5a4b}
+  92%{opacity:1;transform:translate(-50%,-50%) scale(5.5) rotate(17deg);background:#ff3328;box-shadow:0 0 13px #fff0ed,0 0 40px #ff4232,0 0 72px rgba(255,55,35,.58)}
+  97%{opacity:1;transform:translate(-50%,-50%) scale(8.5) rotate(17deg);background:#ff241c;box-shadow:0 0 19px #ffb9b1,0 0 58px #ff3929,0 0 108px rgba(255,45,28,.72)}
+  100%{opacity:1;transform:translate(-50%,-50%) scale(10.5) rotate(17deg);background:#ff241c;box-shadow:0 0 24px #ff968b,0 0 74px #ff3022,0 0 142px rgba(255,45,25,.86)}
+}
+.cinema-intro.running .space-explosion img{animation:explosionSmooth741 6s cubic-bezier(.18,.62,.22,1) 37.2s forwards!important;transform-origin:50% 50%;will-change:transform,opacity;backface-visibility:hidden}
+@keyframes explosionSmooth741{
+  0%{opacity:.15;transform:translateZ(0) scale(.04);filter:brightness(2.4) contrast(1.35) saturate(.82)}
+  10%{opacity:.62;transform:translateZ(0) scale(.22);filter:brightness(2.0) contrast(1.32) saturate(.94)}
+  22%{opacity:1;transform:translateZ(0) scale(.55);filter:brightness(1.55) contrast(1.28) saturate(1.04)}
+  38%{opacity:1;transform:translateZ(0) scale(.95);filter:brightness(1.25) contrast(1.24) saturate(1.06)}
+  58%{opacity:1;transform:translateZ(0) scale(1.38);filter:brightness(1.04) contrast(1.2) saturate(1)}
+  76%{opacity:.94;transform:translateZ(0) scale(1.72);filter:brightness(.9) contrast(1.17) saturate(.9)}
+  90%{opacity:.58;transform:translateZ(0) scale(2.02);filter:brightness(.68) contrast(1.14) saturate(.72)}
+  100%{opacity:0;transform:translateZ(0) scale(2.25);filter:brightness(.38) contrast(1.1) saturate(.48) blur(1.8px)}
+}
+.button-field .button-row:nth-child(1) .news-button{top:15%!important}
+.button-field .button-row:nth-child(2) .news-button{top:29%!important}
+.button-field .button-row:nth-child(3) .news-button{top:43%!important}
+.button-field .button-row:nth-child(4) .news-button{top:57%!important}
+.button-field .sports-row .news-button{top:71%!important}
+.button-field .news-button,.button-field .news-button:hover,.button-field .news-button:focus-visible{
+  color:#ffe08a!important;
+  font-size:clamp(10px,1vw,14px)!important;
+  font-weight:700!important;
+  line-height:1.05!important;
+  text-shadow:0 2px 4px #000,0 0 5px #000,0 0 11px rgba(222,157,36,.92)!important;
+}
+.button-field .sports-row .news-button{font-size:clamp(9px,.88vw,12px)!important}
+body.earth-ready .editorial-collage>.editorial-shot:nth-child(-n+3){opacity:1!important;filter:grayscale(0) saturate(1.08) contrast(1.12) brightness(1.08)!important}
+.collage-left>.editorial-shot:nth-child(1){top:4%!important}
+.collage-left>.editorial-shot:nth-child(2){top:36%!important}
+.collage-left>.editorial-shot:nth-child(3){top:68%!important}
+.collage-right>.editorial-shot:nth-child(1){top:0!important}
+.collage-right>.editorial-shot:nth-child(2){top:34%!important}
+body.earth-ready .collage-right>.editorial-shot:nth-child(3){top:68%!important}
+.collage-left>.editorial-shot:nth-child(1) img{object-fit:contain!important;object-position:center top!important}
+.collage-left>.editorial-shot:nth-child(3) img{filter:brightness(1.28) contrast(1.1) saturate(1.12)!important}
+.collage-right>.editorial-shot:nth-child(2) img{object-fit:contain!important;object-position:center!important;background:#071626!important}
+@media(max-width:650px){
+  .button-field .news-button{font-size:7.8px!important}
+  .button-field .sports-row .news-button{font-size:7px!important}
+}
+
+
+/* CSS SOURCE 6: CodexTalk1045a0829-006-legacy-style.css */
+
+/* CODEX 752A: slower wording and a direct, continuous explosion-to-Earth handoff. */
+.cinema-intro.running .crawl-copy p{animation-duration:10.63s!important}
+.cinema-intro.running .crawl-copy p:nth-child(1){animation-delay:2.55s!important}
+.cinema-intro.running .crawl-copy p:nth-child(2){animation-delay:5.57s!important}
+.cinema-intro.running .crawl-copy p:nth-child(3){animation-delay:8.29s!important}
+.cinema-intro.running .crawl-copy p:nth-child(4){animation-delay:11.29s!important}
+.cinema-intro.running .crawl-copy p:nth-child(5){animation-delay:14s!important}
+.cinema-intro.running .crawl-copy p:nth-child(6){animation-delay:17.01s!important}
+.cinema-intro.running .crawl-copy p:nth-child(7){animation-delay:20.03s!important}
+.cinema-intro.running .crawl-copy p:nth-child(8){animation-delay:23.03s!important}
+.cinema-intro.running .crawl-copy p:nth-child(9){animation-delay:26.05s!important}
+.cinema-intro.running .crawl-copy p:nth-child(10){animation-delay:29.07s!important}
+.cinema-intro.running .red-star-cluster{animation:destinationStar752 44.7s linear 0s forwards!important}
+@keyframes destinationStar752{
+  0%,82.1%{opacity:1;transform:translate(-50%,-50%) scale(1) rotate(17deg);background:#fff;box-shadow:0 0 2px #fff,0 0 6px #d9edff}
+  85.7%{opacity:1;transform:translate(-50%,-50%) scale(1.55) rotate(17deg);background:#ffd0ca;box-shadow:0 0 5px #fff,0 0 15px #ff9b90}
+  90.2%{opacity:1;transform:translate(-50%,-50%) scale(3) rotate(17deg);background:#ff6558;box-shadow:0 0 8px #ffe1dc,0 0 25px #ff5a4b}
+  95.5%{opacity:1;transform:translate(-50%,-50%) scale(5.5) rotate(17deg);background:#ff3328;box-shadow:0 0 13px #fff0ed,0 0 40px #ff4232,0 0 72px rgba(255,55,35,.58)}
+  99.7%{opacity:1;transform:translate(-50%,-50%) scale(10.5) rotate(17deg);background:#ff241c;box-shadow:0 0 24px #ff968b,0 0 74px #ff3022,0 0 142px rgba(255,45,25,.86)}
+  100%{opacity:0;transform:translate(-50%,-50%) scale(10.8) rotate(17deg);background:#ff241c;box-shadow:0 0 24px #ff968b,0 0 74px #ff3022,0 0 142px rgba(255,45,25,.86)}
+}
+.cinema-intro.running .space-explosion img{
+  animation:explosionSmooth752 6s cubic-bezier(.16,.62,.22,1) 44.7s forwards!important;
+  transform-origin:50% 50%;
+  will-change:transform,opacity;
+  backface-visibility:hidden;
+  filter:brightness(1.08) contrast(1.18) saturate(1)!important;
+}
+@keyframes explosionSmooth752{
+  0%{opacity:.08;transform:translate3d(0,0,0) scale(.04)}
+  14%{opacity:.78;transform:translate3d(0,0,0) scale(.34)}
+  28%{opacity:1;transform:translate3d(0,0,0) scale(.7)}
+  50%{opacity:1;transform:translate3d(0,0,0) scale(1.22)}
+  74%{opacity:.96;transform:translate3d(0,0,0) scale(1.74)}
+  90%{opacity:.58;transform:translate3d(0,0,0) scale(2.06)}
+  100%{opacity:0;transform:translate3d(0,0,0) scale(2.28)}
+}
+.cinema-intro.finishing{animation:introClear752 1.8s ease-out forwards!important}
+.cinema-intro.finishing .red-star-cluster{animation:none!important;opacity:0!important}
+@keyframes introClear752{0%{opacity:1;background:#000}100%{opacity:0;visibility:hidden;background:#000}}
+.cinema-intro.finishing+.site-shell .world-zone{
+  animation:worldArrival752 8.5s cubic-bezier(.18,.62,.22,1) both!important;
+  transform-origin:50% 50%!important;
+}
+@keyframes worldArrival752{
+  0%{opacity:0;transform:translate(0,-8vh) scale(.004);filter:brightness(1.9) blur(3px)}
+  8%{opacity:.72;transform:translate(0,-7.4vh) scale(.08);filter:brightness(1.72) blur(2.4px)}
+  25%{opacity:1;transform:translate(0,-6vh) scale(.25);filter:brightness(1.48) blur(1.8px)}
+  50%{opacity:1;transform:translate(0,-4vh) scale(.5);filter:brightness(1.25) blur(.9px)}
+  75%{opacity:1;transform:translate(0,-2vh) scale(.75);filter:brightness(1.1) blur(.3px)}
+  100%{opacity:1;transform:translate(0,0) scale(1);filter:none}
+}
+body.earth-ready .collage-right>.editorial-shot:nth-child(3){width:98%!important;height:34%!important;top:66%!important;right:0!important}
+.collage-right>.editorial-shot:nth-child(3) img{
+  transform:scale(1.24)!important;
+  transform-origin:50% 54%!important;
+  -webkit-mask-image:linear-gradient(to bottom,transparent 0%,rgba(0,0,0,.22) 10%,#000 27% 68%,rgba(0,0,0,.62) 78%,rgba(0,0,0,.22) 89%,transparent 100%),linear-gradient(to right,transparent 0%,rgba(0,0,0,.3) 11%,#000 25% 75%,rgba(0,0,0,.3) 89%,transparent 100%)!important;
+  -webkit-mask-composite:source-in!important;
+  mask-image:linear-gradient(to bottom,transparent 0%,rgba(0,0,0,.22) 10%,#000 27% 68%,rgba(0,0,0,.62) 78%,rgba(0,0,0,.22) 89%,transparent 100%),linear-gradient(to right,transparent 0%,rgba(0,0,0,.3) 11%,#000 25% 75%,rgba(0,0,0,.3) 89%,transparent 100%)!important;
+  mask-composite:intersect!important;
+}
+
+
+/* CSS SOURCE 7: CodexTalk1045a0829-007-legacy-style.css */
+
+/* CODEX 752A: sports topics use the same visible hover enlargement as the other Earth topics. */
+.button-field .sports-row .news-button{
+  transform-origin:50% 50%!important;
+  transition:transform .18s ease,color .18s ease,text-shadow .18s ease!important;
+}
+.button-field .sports-row .news-button:hover,
+.button-field .sports-row .news-button:focus-visible{
+  transform:scale(1.14)!important;
+  z-index:40!important;
+  color:#fff1b5!important;
+  text-shadow:0 2px 4px #000,0 0 6px #000,0 0 14px rgba(240,179,53,.98)!important;
+}
+
+
+/* CSS SOURCE 8: CodexTalk1045a0829-008-legacy-style.css */
+
+/* CODEX 806A: continuous text/explosion motion and direct explosion-to-Earth overlap. */
+.cinema-intro.running .crawl-copy p{
+  animation-name:sentenceFlight806!important;
+  animation-timing-function:linear!important;
+}
+@keyframes sentenceFlight806{
+  0%{top:114%;opacity:1;transform:translateY(-50%) scale(1.16) rotateX(4deg)}
+  85%{top:59.6%;opacity:1;transform:translateY(-50%) scale(.2165) rotateX(21deg)}
+  100%{top:50%;opacity:0;transform:translateY(-50%) scale(.05) rotateX(24deg)}
+}
+.cinema-intro.running .space-explosion img{
+  animation:explosionSmooth806 6s linear 44.7s forwards!important;
+  transform-origin:50% 50%!important;
+  will-change:transform,opacity!important;
+  backface-visibility:hidden!important;
+  filter:none!important;
+}
+@keyframes explosionSmooth806{
+  0%{opacity:.08;transform:translate3d(0,0,0) scale(.04)}
+  12%{opacity:.78;transform:translate3d(0,0,0) scale(.3088)}
+  25%{opacity:1;transform:translate3d(0,0,0) scale(.60)}
+  75%{opacity:1;transform:translate3d(0,0,0) scale(1.72)}
+  90%{opacity:.55;transform:translate3d(0,0,0) scale(2.056)}
+  100%{opacity:0;transform:translate3d(0,0,0) scale(2.28)}
+}
+.cinema-intro.finishing{
+  animation:introClear806 1.6s ease-out forwards!important;
+  background:transparent!important;
+}
+.cinema-intro.finishing .red-star-cluster{animation:none!important;opacity:0!important}
+@keyframes introClear806{
+  0%{opacity:1;background:transparent}
+  100%{opacity:0;visibility:hidden;background:transparent}
+}
+.cinema-intro.finishing+.site-shell .world-zone{
+  animation:worldArrival806 8.5s cubic-bezier(.18,.62,.22,1) both!important;
+  transform-origin:50% 50%!important;
+}
+@keyframes worldArrival806{
+  0%{opacity:.24;transform:translate(0,-8vh) scale(.015);filter:brightness(2) blur(2.6px)}
+  8%{opacity:.8;transform:translate(0,-7.4vh) scale(.09);filter:brightness(1.72) blur(2.2px)}
+  25%{opacity:1;transform:translate(0,-6vh) scale(.25);filter:brightness(1.48) blur(1.6px)}
+  50%{opacity:1;transform:translate(0,-4vh) scale(.5);filter:brightness(1.25) blur(.8px)}
+  75%{opacity:1;transform:translate(0,-2vh) scale(.75);filter:brightness(1.1) blur(.25px)}
+  100%{opacity:1;transform:translate(0,0) scale(1);filter:none}
+}
+.collage-right>.editorial-shot:nth-child(2) img{
+  object-position:58% center!important;
+  transform:translateX(4%) scale(1.03)!important;
+  transform-origin:50% 50%!important;
+  filter:brightness(1.16) contrast(1.08) saturate(1.06)!important;
+  -webkit-mask-image:linear-gradient(to right,transparent 0%,rgba(0,0,0,.72) 4%,#000 12% 88%,rgba(0,0,0,.4) 96%,transparent 100%)!important;
+  mask-image:linear-gradient(to right,transparent 0%,rgba(0,0,0,.72) 4%,#000 12% 88%,rgba(0,0,0,.4) 96%,transparent 100%)!important;
+}
+body.earth-ready .collage-right>.editorial-shot:nth-child(3){
+  width:100%!important;height:35%!important;top:65.5%!important;right:-1%!important;
+}
+.collage-right>.editorial-shot:nth-child(3) img{
+  transform:scale(1.12)!important;
+  transform-origin:50% 48%!important;
+  filter:brightness(1.1) contrast(1.08) saturate(1.12)!important;
+  -webkit-mask-image:radial-gradient(ellipse at 50% 45%,#000 24%,rgba(0,0,0,.92) 48%,rgba(0,0,0,.48) 68%,transparent 86%)!important;
+  mask-image:radial-gradient(ellipse at 50% 45%,#000 24%,rgba(0,0,0,.92) 48%,rgba(0,0,0,.48) 68%,transparent 86%)!important;
+}
+
+
+/* CSS SOURCE 9: CodexTalk1045a0829-009-legacy-style.css */
+
+/* CODEX 818A: visible star/explosion overlap, transform-only Earth growth, and four-edge aircraft blend. */
+.cinema-intro.running .crawl-copy p{
+  animation-name:sentenceFlight818!important;
+  animation-timing-function:linear!important;
+}
+@keyframes sentenceFlight818{
+  0%{top:114%;opacity:1;transform:translateY(-50%) scale(1.16) rotateX(4deg)}
+  65%{top:67%;opacity:1;transform:translateY(-50%) scale(.34) rotateX(17deg)}
+  82%{top:55%;opacity:1;transform:translateY(-50%) scale(.12) rotateX(21deg)}
+  92%{top:51.5%;opacity:1;transform:translateY(-50%) scale(.07) rotateX(23deg)}
+  100%{top:50%;opacity:0;transform:translateY(-50%) scale(.05) rotateX(24deg)}
+}
+.space-explosion{width:min(320px,38vw)!important;height:min(320px,38vw)!important}
+.space-explosion img{object-fit:contain!important}
+.cinema-intro.running .space-explosion img{
+  animation:explosionSmooth818 6s linear 43.8s forwards!important;
+  transform-origin:50% 50%!important;
+  will-change:transform,opacity!important;
+  backface-visibility:hidden!important;
+  filter:none!important;
+}
+@keyframes explosionSmooth818{
+  0%{opacity:.12;transform:translate3d(0,0,0) scale(.025)}
+  15%{opacity:.9;transform:translate3d(0,0,0) scale(.365)}
+  28%{opacity:1;transform:translate3d(0,0,0) scale(.66)}
+  60%{opacity:1;transform:translate3d(0,0,0) scale(1.385)}
+  82%{opacity:.88;transform:translate3d(0,0,0) scale(1.884)}
+  100%{opacity:0;transform:translate3d(0,0,0) scale(2.292)}
+}
+.cinema-intro.finishing{
+  animation:introClear818 1.8s linear forwards!important;
+  background:transparent!important;
+}
+.cinema-intro.finishing .red-star-cluster{animation:none!important;opacity:0!important}
+@keyframes introClear818{
+  0%{opacity:1;background:transparent}
+  100%{opacity:0;visibility:hidden;background:transparent}
+}
+.cinema-intro.finishing+.site-shell .world-zone{
+  animation:worldArrival818 8.5s linear both!important;
+  transform-origin:50% 50%!important;
+  will-change:transform,opacity!important;
+  backface-visibility:hidden!important;
+  filter:none!important;
+}
+@keyframes worldArrival818{
+  0%{opacity:.16;transform:translate3d(0,-8vh,0) scale(.02)}
+  12%{opacity:.72;transform:translate3d(0,-7.04vh,0) scale(.1376)}
+  25%{opacity:1;transform:translate3d(0,-6vh,0) scale(.265)}
+  50%{opacity:1;transform:translate3d(0,-4vh,0) scale(.51)}
+  75%{opacity:1;transform:translate3d(0,-2vh,0) scale(.755)}
+  100%{opacity:1;transform:translate3d(0,0,0) scale(1)}
+}
+.collage-right>.editorial-shot:nth-child(2) img{
+  object-position:58% center!important;
+  transform:translateX(4%) scale(1.03)!important;
+  filter:brightness(1.16) contrast(1.08) saturate(1.06)!important;
+  -webkit-mask-image:radial-gradient(ellipse 72% 66% at 56% 50%,#000 32%,rgba(0,0,0,.96) 48%,rgba(0,0,0,.68) 64%,rgba(0,0,0,.28) 78%,transparent 94%)!important;
+  mask-image:radial-gradient(ellipse 72% 66% at 56% 50%,#000 32%,rgba(0,0,0,.96) 48%,rgba(0,0,0,.68) 64%,rgba(0,0,0,.28) 78%,transparent 94%)!important;
+}
+.handoff-explosion818{
+  position:fixed;z-index:10000;left:50%;top:50%;width:min(320px,38vw);height:min(320px,38vw);
+  pointer-events:none;transform:translate3d(-50%,-50%,0) scale(1.385);opacity:1;
+  animation:handoffBurst818 3s linear forwards;will-change:transform,opacity;backface-visibility:hidden;
+}
+.handoff-explosion818 img{display:block;width:100%;height:100%;object-fit:contain;mix-blend-mode:screen}
+@keyframes handoffBurst818{
+  0%{opacity:1;transform:translate3d(-50%,-50%,0) scale(1.385)}
+  58%{opacity:.82;transform:translate3d(-50%,-50%,0) scale(1.82)}
+  100%{opacity:0;transform:translate3d(-50%,-50%,0) scale(2.135)}
+}
+
+
+/* CSS SOURCE 10: CodexTalk1045a0829-010-legacy-style.css */
+
+/* CODEX 823A: keep the fire blend completely clear of the Earth and Golf News. */
+body.earth-ready .collage-right>.editorial-shot:nth-child(3){
+  width:86%!important;
+  right:-12%!important;
+}
+.collage-right>.editorial-shot:nth-child(3) img{
+  transform:scale(1.08)!important;
+  transform-origin:60% 48%!important;
+  -webkit-mask-image:radial-gradient(ellipse 68% 62% at 60% 48%,#000 28%,rgba(0,0,0,.94) 46%,rgba(0,0,0,.62) 62%,rgba(0,0,0,.25) 75%,transparent 88%)!important;
+  mask-image:radial-gradient(ellipse 68% 62% at 60% 48%,#000 28%,rgba(0,0,0,.94) 46%,rgba(0,0,0,.62) 62%,rgba(0,0,0,.25) 75%,transparent 88%)!important;
+}
+
+
+/* CSS SOURCE 11: CodexTalk1045a0829-011-legacy-style.css */
+
+/* CODEX 827A: the approved explosion now has genuine transparency, never a black image background. */
+.space-explosion img,.handoff-explosion818 img{background:transparent!important}
+.cinema-intro.finishing+.site-shell .random-stars{opacity:1!important;visibility:visible!important}
+
+
+/* CSS SOURCE 12: CodexTalk1045a0829-012-legacy-style.css */
+
+/* CODEX 837A: Earth rises through the peak fireball; editorial pictures complete without a final pop. */
+.cinema-intro.finishing{animation:introClear837 1.2s linear forwards!important;background:transparent!important}
+@keyframes introClear837{0%{opacity:1;background:transparent}100%{opacity:0;visibility:hidden;background:transparent}}
+.report-stage>.handoff-explosion818{
+  position:absolute!important;z-index:4!important;left:50%;top:50%;
+  width:min(320px,38vw);height:min(320px,38vw);
+  transform:translate3d(-50%,-50%,0) scale(1.385);opacity:1;
+  animation:handoffBurst837 4s linear forwards!important;
+}
+.cinema-intro.finishing+.site-shell .world-zone{z-index:5!important}
+@keyframes handoffBurst837{
+  0%{opacity:1;transform:translate3d(-50%,-50%,0) scale(1.385)}
+  30%{opacity:.86;transform:translate3d(-50%,-50%,0) scale(1.72)}
+  65%{opacity:.44;transform:translate3d(-50%,-50%,0) scale(2.04)}
+  100%{opacity:0;transform:translate3d(-50%,-50%,0) scale(2.34)}
+}
+.cinema-intro.finishing+.site-shell .editorial-shot{
+  animation:arrivalEditorial837 6s cubic-bezier(.16,.65,.2,1) 1.4s forwards!important;
+}
+@keyframes arrivalEditorial837{
+  0%{opacity:0;transform:scale(.96);filter:grayscale(.55) blur(5px) brightness(.55)}
+  35%{opacity:.28;transform:scale(.975);filter:grayscale(.25) blur(2px) brightness(.78)}
+  70%{opacity:.7;transform:scale(.99);filter:grayscale(.08) blur(.5px) brightness(.98)}
+  100%{opacity:1;transform:scale(1);filter:grayscale(0) saturate(1.08) contrast(1.12) brightness(1.1)}
+}
+
+
+/* CSS SOURCE 13: CodexTalk1045a0829-013-legacy-style.css */
+
+/* CODEX 1130A: Earth gains opacity continuously as it advances from the explosion. */
+.cinema-intro.finishing+.site-shell .world-zone{
+  animation:worldArrival845 8.5s linear both!important;
+  transform-origin:50% 50%!important;
+  will-change:transform,opacity!important;
+  z-index:5!important;
+}
+@keyframes worldArrival845{
+  0%{opacity:.06;transform:translate3d(0,-8vh,0) scale(.02)}
+  15%{opacity:.16;transform:translate3d(0,-6.8vh,0) scale(.167)}
+  30%{opacity:.29;transform:translate3d(0,-5.6vh,0) scale(.314)}
+  50%{opacity:.48;transform:translate3d(0,-4vh,0) scale(.51)}
+  70%{opacity:.68;transform:translate3d(0,-2.4vh,0) scale(.706)}
+  85%{opacity:.84;transform:translate3d(0,-1.2vh,0) scale(.853)}
+  100%{opacity:1;transform:translate3d(0,0,0) scale(1)}
+}
+
+
+/* CSS SOURCE 14: CodexTalk1045a0829-014-legacy-style.css */
+
+/* CODEX 1130A: preserve the approved 845 presentation while restoring strong active labels and soft picture edges. */
+.world-zone{top:18.5%!important;bottom:0!important}
+.earth{--earth-diameter:min(72vh,76vw)!important}
+.button-field{width:min(72vh,76vw,778px)!important;height:min(72vh,76vw,778px)!important}
+
+.button-field .news-button{
+  font-size:clamp(12px,1.12vw,18px)!important;
+  font-weight:800!important;
+  letter-spacing:.01em!important;
+  transform-origin:50% 50%!important;
+  transition:transform .18s ease,color .18s ease,text-shadow .18s ease!important;
+}
+.button-field .sports-row .news-button{font-size:clamp(10px,.96vw,15px)!important;font-weight:800!important}
+.button-field .news-button:hover,
+.button-field .news-button:focus-visible{
+  transform:translateY(-6px) scale(1.15)!important;
+  z-index:40!important;
+  color:#fff3bd!important;
+  text-shadow:0 2px 4px #000,0 0 7px #000,0 0 16px rgba(240,179,53,.98)!important;
+}
+
+.editorial-collage{top:21%!important;bottom:1%!important}
+.editorial-collage>.editorial-shot:nth-child(1),
+.editorial-collage>.editorial-shot:nth-child(2),
+.editorial-collage>.editorial-shot:nth-child(3){height:25%!important}
+.collage-left>.editorial-shot:nth-child(1),
+.collage-right>.editorial-shot:nth-child(1){top:2%!important}
+.collage-left>.editorial-shot:nth-child(2),
+.collage-right>.editorial-shot:nth-child(2){top:36%!important}
+.collage-left>.editorial-shot:nth-child(3),
+body.earth-ready .collage-right>.editorial-shot:nth-child(3){top:70%!important}
+
+.collage-right>.editorial-shot:nth-child(1) img{
+  object-fit:contain!important;
+  object-position:center top!important;
+  transform:scale(.88)!important;
+  transform-origin:50% 0!important;
+  background:transparent!important;
+  -webkit-mask-image:radial-gradient(ellipse 86% 96% at 50% 44%,#000 0 55%,rgba(0,0,0,.9) 68%,rgba(0,0,0,.4) 83%,transparent 98%)!important;
+  mask-image:radial-gradient(ellipse 86% 96% at 50% 44%,#000 0 55%,rgba(0,0,0,.9) 68%,rgba(0,0,0,.4) 83%,transparent 98%)!important;
+}
+.collage-left>.editorial-shot:nth-child(2) img{
+  object-fit:contain!important;
+  object-position:center top!important;
+  transform:scale(.94)!important;
+  transform-origin:50% 0!important;
+  background:transparent!important;
+  -webkit-mask-image:radial-gradient(ellipse 88% 96% at 50% 47%,#000 0 58%,rgba(0,0,0,.86) 72%,rgba(0,0,0,.3) 87%,transparent 100%)!important;
+  mask-image:radial-gradient(ellipse 88% 96% at 50% 47%,#000 0 58%,rgba(0,0,0,.86) 72%,rgba(0,0,0,.3) 87%,transparent 100%)!important;
+}
+.collage-right>.editorial-shot:nth-child(2){width:78%!important;height:27%!important;right:-2%!important}
+.collage-right>.editorial-shot:nth-child(2) img{
+  object-fit:contain!important;
+  object-position:56% center!important;
+  transform:translateX(2%) scale(1.28)!important;
+  transform-origin:50% 50%!important;
+  background:transparent!important;
+  -webkit-mask-image:radial-gradient(ellipse 70% 64% at 56% 50%,#000 20%,rgba(0,0,0,.88) 42%,rgba(0,0,0,.52) 60%,rgba(0,0,0,.18) 76%,transparent 93%)!important;
+  mask-image:radial-gradient(ellipse 70% 64% at 56% 50%,#000 20%,rgba(0,0,0,.88) 42%,rgba(0,0,0,.52) 60%,rgba(0,0,0,.18) 76%,transparent 93%)!important;
+}
+
+@media(max-width:900px){
+  .earth{--earth-diameter:min(69vh,90vw)!important}
+  .button-field{width:min(69vh,90vw)!important;height:min(69vh,90vw)!important}
+  .editorial-collage{top:20%!important}
+}
+
+
+/* CSS SOURCE 15: CodexTalk1045a0829-015-legacy-style.css */
+
+/* CODEX 1130A: fully embedded Earth and visibly softened aircraft boundaries. */
+.collage-right>.editorial-shot:nth-child(2){background:transparent!important;overflow:visible!important}
+.collage-right>.editorial-shot:nth-child(2) img{
+  -webkit-mask-image:radial-gradient(ellipse 62% 58% at 56% 50%,#000 16%,rgba(0,0,0,.9) 34%,rgba(0,0,0,.56) 50%,rgba(0,0,0,.2) 64%,transparent 82%)!important;
+  mask-image:radial-gradient(ellipse 62% 58% at 56% 50%,#000 16%,rgba(0,0,0,.9) 34%,rgba(0,0,0,.56) 50%,rgba(0,0,0,.2) 64%,transparent 82%)!important;
+}
+
+
+/* CSS SOURCE 16: CodexTalk1045a0829-016-legacy-style.css */
+
+/* CODEX 1130A: non-bold main topics, inset outer sports labels, full cockpit, and smooth staged arrival. */
+.button-field .button-row .news-button{
+  font-size:clamp(10px,.95vw,14px)!important;
+  font-weight:500!important;
+  letter-spacing:0!important;
+}
+.button-field .sports-row .news-button{
+  font-size:clamp(10px,.96vw,15px)!important;
+  font-weight:700!important;
+}
+.button-field .sports-row .news-button:nth-child(1){left:12%!important}
+.button-field .sports-row .news-button:nth-child(2){left:31%!important}
+.button-field .sports-row .news-button:nth-child(3){left:51%!important}
+.button-field .sports-row .news-button:nth-child(4){left:70%!important}
+
+.collage-right>.editorial-shot:nth-child(2) img{
+  object-position:50% center!important;
+  transform:translateX(8%) scale(1.24)!important;
+  transform-origin:50% 50%!important;
+  -webkit-mask-image:radial-gradient(ellipse 78% 66% at 48% 50%,#000 20%,rgba(0,0,0,.94) 42%,rgba(0,0,0,.64) 60%,rgba(0,0,0,.24) 76%,transparent 94%)!important;
+  mask-image:radial-gradient(ellipse 78% 66% at 48% 50%,#000 20%,rgba(0,0,0,.94) 42%,rgba(0,0,0,.64) 60%,rgba(0,0,0,.24) 76%,transparent 94%)!important;
+}
+
+.cinema-intro.finishing+.site-shell .world-zone{
+  animation:worldArrival1047 8.5s linear both!important;
+  transform-origin:50% 50%!important;
+}
+@keyframes worldArrival1047{
+  0%{opacity:.02;transform:translate3d(0,-8vh,0) scale(.02);filter:none}
+  10%{opacity:.12;transform:translate3d(0,-7.2vh,0) scale(.118);filter:none}
+  25%{opacity:.3;transform:translate3d(0,-6vh,0) scale(.265);filter:none}
+  50%{opacity:.58;transform:translate3d(0,-4vh,0) scale(.51);filter:none}
+  75%{opacity:.8;transform:translate3d(0,-2vh,0) scale(.755);filter:none}
+  100%{opacity:1;transform:translate3d(0,0,0) scale(1);filter:none}
+}
+.cinema-intro.finishing+.site-shell .editorial-shot{
+  animation:arrivalEditorial1047 1.5s ease-out 8.5s both!important;
+}
+@keyframes arrivalEditorial1047{
+  0%{opacity:0;transform:scale(.985);filter:grayscale(.25) blur(2px) brightness(.72)}
+  45%{opacity:.38;transform:scale(.992);filter:grayscale(.12) blur(1px) brightness(.88)}
+  100%{opacity:1;transform:scale(1);filter:grayscale(0) saturate(1.08) contrast(1.12) brightness(1.1)}
+}
+
+
+/* CSS SOURCE 17: CodexTalk1045a0829-017-legacy-style.css */
+
+/* CODEX 1130A: hide both picture groups until the Earth reaches full size, then fade them together. */
+.cinema-intro.finishing+.site-shell .editorial-shot{animation:none!important}
+.cinema-intro.finishing+.site-shell .editorial-collage{
+  animation:arrivalEditorialGroups1050 1.5s ease-out 8.5s both!important;
+}
+@keyframes arrivalEditorialGroups1050{
+  0%{opacity:0;filter:grayscale(.25) blur(2px) brightness(.72)}
+  45%{opacity:.38;filter:grayscale(.12) blur(1px) brightness(.88)}
+  100%{opacity:1;filter:grayscale(0) saturate(1.08) contrast(1.12) brightness(1.1)}
+}
+
+
+/* CSS SOURCE 18: CodexTalk1045a0829-018-legacy-style.css */
+
+/* CODEX 1130A: use filter opacity so older picture-opacity rules cannot defeat the staged fade. */
+.cinema-intro.finishing+.site-shell .editorial-collage{
+  animation:arrivalEditorialGroups1052 1.5s ease-out 8.5s both!important;
+}
+@keyframes arrivalEditorialGroups1052{
+  0%{filter:opacity(0) grayscale(.25) blur(2px) brightness(.72)}
+  45%{filter:opacity(.38) grayscale(.12) blur(1px) brightness(.88)}
+  100%{filter:opacity(1) grayscale(0) saturate(1.08) contrast(1.12) brightness(1.1)}
+}
+
+
+/* CSS SOURCE 19: CodexTalk1045a0829-019-legacy-style.css */
+
+/* CODEX 1130A: align the emerging Earth with the explosion's white center and make the picture fade unmistakable. */
+.cinema-intro.finishing+.site-shell .world-zone{
+  animation:worldArrival1058 8.5s linear both!important;
+}
+@keyframes worldArrival1058{
+  0%{opacity:.02;transform:translate3d(.3vw,-9.3vh,0) scale(.02);filter:none}
+  10%{opacity:.12;transform:translate3d(.27vw,-8.37vh,0) scale(.118);filter:none}
+  25%{opacity:.3;transform:translate3d(.225vw,-6.975vh,0) scale(.265);filter:none}
+  50%{opacity:.58;transform:translate3d(.15vw,-4.65vh,0) scale(.51);filter:none}
+  75%{opacity:.8;transform:translate3d(.075vw,-2.325vh,0) scale(.755);filter:none}
+  100%{opacity:1;transform:translate3d(0,0,0) scale(1);filter:none}
+}
+.cinema-intro.finishing+.site-shell .editorial-collage{
+  animation:arrivalEditorialGroups1058 2s ease-out 8.5s both!important;
+}
+@keyframes arrivalEditorialGroups1058{
+  0%{filter:opacity(0) grayscale(.2) blur(1.8px) brightness(.75)}
+  35%{filter:opacity(.24) grayscale(.12) blur(1px) brightness(.86)}
+  70%{filter:opacity(.68) grayscale(.04) blur(.35px) brightness(1)}
+  100%{filter:opacity(1) grayscale(0) saturate(1.08) contrast(1.12) brightness(1.1)}
+}
+
+
+/* CSS SOURCE 20: CodexTalk1045a0829-020-legacy-style.css */
+
+/* CODEX 1130A: higher explosion alignment, uninterrupted picture fade, clean shipping image, and softer aircraft left edge. */
+.cinema-intro.finishing+.site-shell .world-zone{
+  animation:worldArrival1105 8.5s linear both!important;
+}
+@keyframes worldArrival1105{
+  0%{opacity:.02;transform:translate3d(.3vw,-10vh,0) scale(.02);filter:none}
+  10%{opacity:.12;transform:translate3d(.27vw,-9vh,0) scale(.118);filter:none}
+  25%{opacity:.3;transform:translate3d(.225vw,-7.5vh,0) scale(.265);filter:none}
+  50%{opacity:.58;transform:translate3d(.15vw,-5vh,0) scale(.51);filter:none}
+  75%{opacity:.8;transform:translate3d(.075vw,-2.5vh,0) scale(.755);filter:none}
+  100%{opacity:1;transform:translate3d(0,0,0) scale(1);filter:none}
+}
+
+.cinema-intro.finishing+.site-shell .editorial-shot,
+body.earth-ready .editorial-collage>.editorial-shot:nth-child(-n+3){
+  opacity:1!important;
+  filter:grayscale(0) saturate(1.08) contrast(1.12) brightness(1.1)!important;
+}
+.cinema-intro.finishing+.site-shell .editorial-collage{
+  animation:arrivalEditorialGroups1105 3s linear 8.5s both!important;
+}
+@keyframes arrivalEditorialGroups1105{
+  0%{filter:opacity(0)}
+  20%{filter:opacity(.12)}
+  40%{filter:opacity(.3)}
+  60%{filter:opacity(.52)}
+  80%{filter:opacity(.76)}
+  100%{filter:opacity(1)}
+}
+
+.collage-left>.editorial-shot:nth-child(3){
+  background:radial-gradient(ellipse 84% 78% at 50% 55%,#000 0 56%,rgba(0,0,0,.96) 69%,rgba(0,0,0,.7) 80%,rgba(0,0,0,.24) 91%,transparent 100%)!important;
+}
+
+.collage-right>.editorial-shot:nth-child(2) img{
+  -webkit-mask-image:linear-gradient(to right,transparent 0%,rgba(0,0,0,.12) 7%,rgba(0,0,0,.48) 14%,rgba(0,0,0,.84) 21%,#000 29%,#000 100%),radial-gradient(ellipse 80% 68% at 49% 50%,#000 20%,rgba(0,0,0,.94) 44%,rgba(0,0,0,.64) 62%,rgba(0,0,0,.24) 78%,transparent 95%)!important;
+  -webkit-mask-composite:source-in!important;
+  mask-image:linear-gradient(to right,transparent 0%,rgba(0,0,0,.12) 7%,rgba(0,0,0,.48) 14%,rgba(0,0,0,.84) 21%,#000 29%,#000 100%),radial-gradient(ellipse 80% 68% at 49% 50%,#000 20%,rgba(0,0,0,.94) 44%,rgba(0,0,0,.64) 62%,rgba(0,0,0,.24) 78%,transparent 95%)!important;
+  mask-composite:intersect!important;
+}
+
+
+/* CSS SOURCE 21: CodexTalk1045a0829-021-legacy-style.css */
+
+/* CODEX 1130A: a slightly higher-right Earth origin and a direct hardware-friendly picture opacity fade. */
+.cinema-intro.finishing+.site-shell .world-zone{
+  animation:worldArrival1114 8.5s linear both!important;
+}
+@keyframes worldArrival1114{
+  0%{opacity:.02;transform:translate3d(.45vw,-10.3vh,0) scale(.02);filter:none}
+  10%{opacity:.12;transform:translate3d(.405vw,-9.27vh,0) scale(.118);filter:none}
+  25%{opacity:.3;transform:translate3d(.3375vw,-7.725vh,0) scale(.265);filter:none}
+  50%{opacity:.58;transform:translate3d(.225vw,-5.15vh,0) scale(.51);filter:none}
+  75%{opacity:.8;transform:translate3d(.1125vw,-2.575vh,0) scale(.755);filter:none}
+  100%{opacity:1;transform:translate3d(0,0,0) scale(1);filter:none}
+}
+.cinema-intro.finishing+.site-shell .editorial-collage{
+  animation:none!important;
+  filter:none!important;
+  will-change:opacity!important;
+}
+
+
+/* CSS SOURCE 22: CodexTalk1045a0829-022-legacy-style.css */
+
+/* CODEX 1130A: Earth detail and all six pictures gain opacity continuously with the Earth growth. */
+.cinema-intro.finishing+.site-shell .earth,
+body.earth-ready .earth{
+  filter:brightness(.99) contrast(1.10) saturate(1.08)!important;
+  box-shadow:0 0 0 1px rgba(150,205,232,.72),0 0 22px rgba(77,163,211,.34)!important;
+}
+.cinema-intro.finishing+.site-shell .earth::before,
+body.earth-ready .earth::before{
+  opacity:.82!important;
+  background:radial-gradient(circle at 55% 43%,transparent 0 48%,rgba(0,8,18,.2) 70%,rgba(0,5,12,.58) 100%)!important;
+}
+.cinema-intro.finishing+.site-shell .earth::after,
+body.earth-ready .earth::after{
+  background:radial-gradient(ellipse at 42% 30%,rgba(0,8,18,.30) 0 19%,rgba(0,8,18,.16) 34%,transparent 51%),radial-gradient(ellipse at 72% 18%,rgba(0,8,18,.34) 0 18%,rgba(0,8,18,.15) 32%,transparent 52%),rgba(2,14,27,.05)!important;
+  box-shadow:inset 0 0 42px rgba(0,4,13,.34)!important;
+}
+.cinema-intro.finishing+.site-shell .editorial-shot,
+body.earth-ready .editorial-collage>.editorial-shot:nth-child(-n+3){
+  opacity:1!important;
+  filter:grayscale(0) saturate(1.08) contrast(1.12) brightness(1.1)!important;
+}
+.cinema-intro.finishing+.site-shell .editorial-collage{
+  animation:none!important;
+  filter:none!important;
+  will-change:opacity!important;
+}
+.random-stars{z-index:1!important}
+.editorial-collage{z-index:30!important}
+.collage-left>.editorial-shot:nth-child(3){z-index:80!important;isolation:isolate!important}
+.collage-left>.editorial-shot:nth-child(3) img{position:relative!important;z-index:2!important}
+.collage-right>.editorial-shot:nth-child(2) img{
+  -webkit-mask-image:radial-gradient(ellipse 96% 82% at 48% 45%,#000 0 68%,rgba(0,0,0,.88) 79%,rgba(0,0,0,.46) 89%,rgba(0,0,0,.14) 96%,transparent 100%)!important;
+  mask-image:radial-gradient(ellipse 96% 82% at 48% 45%,#000 0 68%,rgba(0,0,0,.88) 79%,rgba(0,0,0,.46) 89%,rgba(0,0,0,.14) 96%,transparent 100%)!important;
+  -webkit-mask-composite:initial!important;
+  mask-composite:initial!important;
+}
+

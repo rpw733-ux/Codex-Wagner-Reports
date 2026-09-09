@@ -1,0 +1,34 @@
+CODEX-WAGNER-REPORTS RESPONSIVE MOBILE HANDOFF TEST MANIFEST
+Created: September 7, 2026, 11:10 AM ET
+Preserved checkpoint source: CodexTalk1052a0829-WagnerReports.html
+Preserved checkpoint SHA-256: 994818FAB1AE277EDD40D703D0D16FF79BE7DF64F0702E93EEFBC358319B83FE
+Immediate controller source: 20260905_1653_CodexTalk-WagnerReports.html
+Recording reviewed: Screen Recording 2026-08-30 082430.mp4 (25.941313 seconds; 1816 x 874; 21,585,158 bytes)
+Prototype: 20260907_1110_CodexTalk-WagnerReports.html
+Verified binary-asset source: 20260905_0713_CodexTalk-WagnerReports.html
+Reviewed recording: C:\Users\Robert HP Wagner\Videos\Screen Recordings\Screen Recording 2026-08-30 122605.mp4
+Additional recordings reviewed: Screen Recording 2026-08-30 124345.mp4, Screen Recording 2026-08-30 124720.mp4, Screen Recording 2026-08-30 125851.mp4, and Screen Recording 2026-08-30 133059.mp4.
+Current correction recording reviewed: Screen Recording 2026-08-31 124542.mp4 (13.418646 seconds; 1872 x 880; 11,231,865 bytes).
+Current correction evidence: Robert's 20260905_0833 screenshots at 00:53.88 and 00:58.77, his corrected full-presentation screenshot at 01:16.25, and local runtime verification of the full presentation route and three-second timing controls.
+Correction scope: preserve 20260905_2003_CodexTalk-WagnerReports.html and every earlier timestamped version unchanged; make WEB BUILD bypass the entire presentation and open the completed interactive report screen immediately; leave TOTAL as the full video, text, and audio presentation; retain the five-second USS Wagner-Houston communications hold and slow continuous Earth rotation; keep one continuously visible destination star with a stronger fuzzy circumference and no intermediate opacity dip; and retain the enlarged phone-friendly STOP control without obstructing the presentation. USS Wagner-Houston voice clips remain deferred because they were not supplied.
+Prototype bytes: 21030
+Prototype SHA-256: C9FA77D06DFD3C2238D64A99DD36829FDC99B4E3BBC368D11F7C08C3563A3A64
+Cockpit ambience bytes: 2220199
+Cockpit ambience SHA-256: 5EEFDDA18F6183E71C1BA1C67B358A71389705D7B27340D8F82A2A97E593E44D
+Modules: 9 CSS + 10 JavaScript
+Timestamped images: 27 (25 direct references + 2 runtime-verified dynamic dependencies)
+
+01 foundation: CSS 1-2, JavaScript 1-1
+02 introduction: CSS 3-22, JavaScript 2-7
+03 layout-evolution: CSS 23-40, JavaScript 8-10
+04 entry-sequence: CSS 41-45, JavaScript 11-14
+05 earth-explosion-evolution: CSS 46-58, JavaScript 15-27
+06 final-refinements: CSS 59-62, JavaScript 28-31
+07 cockpit-star-earth: matching two-seal opening and final branding; restrained independent star scintillation; shared video-only/total route; five-second USS Wagner-Houston communications hold; slow continuous Earth rotation through the hold and departure; every later text/star/handoff cue shifted five seconds; binary-safe opening and final Earth/cockpit imagery; original-natural-star continuity; Earth arrival beginning 4.80 seconds into the shifted handoff; picture and control arrival beginning 6.40 seconds into the shifted handoff; cockpit retained until the last 1.80 seconds; guarded completion; and a complete three-row final layout.
+08 timing-controls: persistent CODEX 20260907_1110 identity; elapsed timeline display in minutes, seconds, and hundredths; automatic start from either presentation entrance; substantially enlarged STOP control with a 58-pixel minimum touch height for reliable phone use; STOP freeze with the exact elapsed value retained; START resume from the frozen value; BACK 3 SEC and FORWARD 3 SEC adjustments synchronized across scheduled transitions, CSS animations, active audio/video, Web Audio, and elapsed presentation time.
+09 mobile-handoff: one uninterrupted original-element white-to-red destination-star transition constrained to a fuzzy, irregular, gently moving orb with a transparent perimeter and no full-screen color field; protected left/center/right layout zones; exact directional picture masks; lighter default and bold hover/focus category labels; disabled crawl-text selection; portrait phone rotation message; automatic landscape opening; short-height Samsung/iPhone detection; removal of the duplicate opening-screen version button; responsive phone and desktop bounds; and guarded mobile fullscreen request after user entry.
+10 cockpit-ambience: local 2,220,199-byte MP3; immediate no-fade playback at volume 0.10 on the TOTAL presentation entry; preserved SOUND ON/OFF control; video-only route remains silent; timing-controller STOP/START and media seeking can address the DOM audio element.
+
+No explosion, fireball, Veo, black jump, or second-fire branch is used by Module 07.
+All earlier timestamped files remain preserved.
+This is a local experiment only; it has not been moved to beta, test, or production.

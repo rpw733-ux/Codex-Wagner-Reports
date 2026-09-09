@@ -1,0 +1,111 @@
+/* 20260907_1110_CodexTalk-WagnerReports - persistent version identity and synchronized presentation timing controls. */
+.codex-748a-version-stack{
+  position:fixed;
+  z-index:12000;
+  top:8px;
+  left:50%;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:5px;
+  transform:translateX(-50%);
+  pointer-events:none;
+  font-family:"Segoe UI",Arial,sans-serif;
+}
+.codex-748a-version-banner{
+  max-width:calc(100vw - 24px);
+  box-sizing:border-box;
+  padding:6px 13px;
+  border:1px solid rgba(222,178,72,.9);
+  border-radius:999px;
+  background:rgba(3,9,16,.94);
+  color:#ffe3a0;
+  box-shadow:0 0 15px rgba(255,183,45,.23),inset 0 1px rgba(255,255,255,.12);
+  font-size:11px;
+  font-weight:800;
+  line-height:1.1;
+  letter-spacing:.06em;
+  text-align:center;
+  white-space:nowrap;
+}
+.codex-748a-timing-panel{
+  display:flex;
+  align-items:stretch;
+  justify-content:center;
+  gap:7px;
+  pointer-events:auto;
+}
+.codex-748a-timer{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  min-width:150px;
+  box-sizing:border-box;
+  padding:7px 11px;
+  border:1px solid rgba(92,204,255,.9);
+  border-radius:9px;
+  background:rgba(2,11,19,.95);
+  color:#dff6ff;
+  box-shadow:0 0 14px rgba(57,187,241,.24),inset 0 1px rgba(255,255,255,.1);
+}
+.codex-748a-timer-label{
+  color:#8edcff;
+  font-size:10px;
+  font-weight:800;
+  letter-spacing:.12em;
+}
+.codex-748a-timer output{
+  margin-left:auto;
+  color:#fff4c4;
+  font:800 17px/1.05 Consolas,"Courier New",monospace;
+  letter-spacing:.025em;
+  font-variant-numeric:tabular-nums;
+}
+.codex-748a-toggle{
+  min-width:118px;
+  min-height:58px;
+  border:1px solid #f0be55;
+  border-radius:9px;
+  padding:12px 20px;
+  background:linear-gradient(#552014,#220806);
+  color:#fff1c0;
+  box-shadow:0 0 13px rgba(255,93,51,.28),inset 0 1px rgba(255,255,255,.13);
+  font:900 17px/1 "Segoe UI",Arial,sans-serif;
+  letter-spacing:.08em;
+  cursor:pointer;
+}
+.codex-748a-seek{
+  min-width:94px;
+  border:1px solid #72c9ee;
+  border-radius:9px;
+  padding:7px 10px;
+  background:linear-gradient(#123b50,#061821);
+  color:#e3f8ff;
+  box-shadow:0 0 12px rgba(72,185,232,.23),inset 0 1px rgba(255,255,255,.12);
+  font:800 10px/1 "Segoe UI",Arial,sans-serif;
+  letter-spacing:.055em;
+  cursor:pointer;
+}
+.codex-748a-seek:hover,.codex-748a-seek:focus-visible{filter:brightness(1.22);outline:2px solid #9ee5ff;outline-offset:2px}
+.codex-748a-seek[disabled]{opacity:.42;cursor:not-allowed;filter:saturate(.4)}
+.codex-748a-toggle[disabled]{opacity:.48;cursor:not-allowed;filter:saturate(.45)}
+.codex-748a-toggle[data-mode="start"]{
+  border-color:#69d99b;
+  background:linear-gradient(#155535,#062416);
+  color:#d9ffe8;
+  box-shadow:0 0 13px rgba(62,218,130,.25),inset 0 1px rgba(255,255,255,.13);
+}
+body.codex-748a-paused .codex-748a-timer{
+  border-color:#f0be55;
+  box-shadow:0 0 17px rgba(240,190,85,.34),inset 0 1px rgba(255,255,255,.1);
+}
+@media(max-width:600px){
+  .codex-748a-version-stack{top:5px;gap:3px;width:calc(100vw - 12px)}
+  .codex-748a-version-banner{padding:5px 8px;font-size:8px;letter-spacing:.035em}
+  .codex-748a-timing-panel{gap:4px}
+  .codex-748a-timer{min-width:129px;padding:5px 7px;gap:5px}
+  .codex-748a-timer-label{font-size:8px}
+  .codex-748a-timer output{font-size:14px}
+  .codex-748a-toggle{min-width:108px;min-height:58px;padding:11px 16px;font-size:16px}
+  .codex-748a-seek{min-width:70px;padding:5px 6px;font-size:8px;letter-spacing:.025em}
+}

@@ -1,0 +1,254 @@
+/* 20260905_0856: one visual timeline, protected three-zone composition, and
+   a transparent red-star-to-Earth handoff. */
+html,body{margin:0;width:100%;min-height:100%;background:#000}
+
+/* Video-only is the shared TOTAL route with only text and sound suppressed. */
+body.codex-route-video-only .crawl-window,
+body.codex-route-video-only .crawl-copy{visibility:hidden!important}
+
+/* Prevent a pointer stop/start from painting a blue browser selection across
+   a word in one of the moving capsules. */
+.cinema-intro .crawl-copy,
+.cinema-intro .crawl-copy *{-webkit-user-select:none!important;user-select:none!important}
+
+/* Retire the inherited photographic explosion that produced a white-out after
+   the destination had already begun its controlled red expansion. */
+.cinema-intro.running .space-explosion{display:none!important}
+
+/* Final desktop frame: reserve a clean center for the globe and three distinct
+   picture levels at each side, all bounded by the live viewport. */
+body.codex-1033a-active .codex-1249p-composition{position:fixed!important;inset:0!important;width:100vw!important;height:100dvh!important;overflow:hidden!important}
+body.codex-1033a-active .masthead{height:17%!important;padding-top:4px!important;overflow:hidden!important}
+body.codex-1033a-active .title-group h1{font-size:clamp(40px,6.2vw,78px)!important;line-height:.9!important}
+body.codex-1033a-active .title-group p{font-size:clamp(8px,.72vw,11px)!important}
+body.codex-1033a-active .seal{flex-basis:clamp(66px,8vw,102px)!important}
+body.codex-1033a-active .codex-1249p-earth{left:50%!important;top:60%!important;width:min(44vw,70vh,560px)!important;height:min(44vw,70vh,560px)!important}
+body.codex-1033a-active .codex-1249p-categories{left:50%!important;top:60%!important;width:min(39vw,59vh,470px)!important;gap:clamp(4px,.7vh,7px)!important}
+body.codex-1033a-active .codex-1249p-shot{width:clamp(150px,17vw,270px)!important;height:clamp(82px,13vh,118px)!important;overflow:visible!important}
+body.codex-1033a-active .codex-1249p-shot-1{left:2vw!important;right:auto!important;top:23%!important;width:clamp(175px,19vw,300px)!important;height:clamp(96px,15vh,136px)!important}
+body.codex-1033a-active .codex-1249p-shot-2{right:2vw!important;left:auto!important;top:23%!important;width:clamp(175px,19vw,300px)!important;height:clamp(96px,15vh,136px)!important}
+body.codex-1033a-active .codex-1249p-shot-3{left:6vw!important;right:auto!important;top:49%!important}
+body.codex-1033a-active .codex-1249p-shot-4{right:6vw!important;left:auto!important;top:49%!important}
+body.codex-1033a-active .codex-1249p-shot-5{left:2.5vw!important;right:auto!important;top:auto!important;bottom:3%!important}
+body.codex-1033a-active .codex-1249p-shot-6{right:2.5vw!important;left:auto!important;top:auto!important;bottom:3%!important}
+
+.codex-1826-transition-star{
+  position:fixed;z-index:2147483000;left:50%;top:50%;width:6px;height:6px;
+  border-radius:48% 52% 46% 54%/52% 47% 53% 48%;opacity:0;visibility:hidden;pointer-events:none;
+  transform:translate(-50%,-50%) scale(.85);transform-origin:50% 50%;
+  background:radial-gradient(circle at 46% 43%,#fff 0 20%,#edf7ff 44%,rgba(214,237,255,.72) 68%,transparent 100%);
+  box-shadow:0 0 3px #fff,0 0 8px rgba(214,237,255,.86);
+  filter:blur(.12px);will-change:transform,opacity,background,box-shadow,border-radius,filter;
+}
+body.codex-829a-sequence.codex-527p-continuation .codex-1826-transition-star{
+  display:block!important;visibility:visible!important;
+  animation:codex20260905UnifiedHandoff 15s linear both!important;
+}
+body.codex-829a-sequence.codex-527p-continuation .codex-829a-star-system,
+body.codex-829a-sequence.codex-527p-continuation .codex-829a-stage>.red-star-cluster{
+  display:none!important;
+}
+@keyframes codex20260905UnifiedHandoff{
+  0%{opacity:1;transform:translate(-50%,-50%) scale(.85) rotate(0deg);border-radius:48% 52% 46% 54%/52% 47% 53% 48%;background:radial-gradient(circle at 46% 43%,#fff 0 20%,#edf7ff 44%,rgba(214,237,255,.72) 68%,transparent 100%);box-shadow:0 0 3px #fff,0 0 8px rgba(214,237,255,.86);filter:blur(.12px)}
+  8%{opacity:1;transform:translate(-50%,-50%) scale(1.05) rotate(3deg);border-radius:53% 47% 51% 49%/46% 55% 45% 54%;background:radial-gradient(circle at 47% 42%,#fff 0 16%,#f5fbff 38%,rgba(214,237,255,.66) 68%,transparent 100%);box-shadow:0 0 4px #fff,0 0 10px rgba(214,237,255,.9);filter:blur(.18px)}
+  12%{opacity:1;transform:translate(-50%,-50%) scale(1.2) rotate(-2deg);border-radius:46% 54% 49% 51%/55% 45% 54% 46%;background:radial-gradient(circle at 45% 42%,#ff8b78 0 14%,#ff3529 42%,rgba(229,27,20,.78) 72%,transparent 100%);box-shadow:0 0 6px rgba(255,170,161,.9),0 0 16px rgba(255,48,34,.62);filter:blur(.22px)}
+  22%{opacity:1;transform:translate(-50%,-50%) scale(10) rotate(4deg);border-radius:54% 46% 55% 45%/48% 53% 47% 52%;background:radial-gradient(circle at 47% 43%,#ff6d59 0 13%,#ff3025 43%,rgba(223,24,18,.82) 72%,transparent 100%);box-shadow:0 0 2px rgba(255,138,128,.82),0 0 6px rgba(255,48,34,.58);filter:blur(.28px)}
+  44%{opacity:.96;transform:translate(-50%,-50%) scale(68) rotate(-3deg);border-radius:47% 53% 45% 55%/54% 46% 56% 44%;background:radial-gradient(circle at 45% 44%,#ff705c 0 12%,#ef2a20 42%,rgba(205,25,18,.78) 69%,rgba(255,45,28,.35) 84%,transparent 100%);box-shadow:0 0 1px rgba(255,130,118,.62),0 0 4px rgba(255,48,34,.42);filter:blur(.38px)}
+  55%{opacity:.88;transform:translate(-50%,-50%) scale(72) rotate(3deg);border-radius:55% 45% 52% 48%/46% 56% 44% 54%;background:radial-gradient(circle at 48% 42%,#ff6653 0 11%,#e62920 41%,rgba(196,23,18,.72) 69%,rgba(244,42,26,.30) 84%,transparent 100%);box-shadow:0 0 1px rgba(255,117,105,.55),0 0 4px rgba(245,43,32,.36);filter:blur(.44px)}
+  72%{opacity:.58;transform:translate(-50%,-50%) scale(76) rotate(-2deg);border-radius:45% 55% 48% 52%/56% 44% 53% 47%;background:radial-gradient(circle at 46% 45%,#ef5142 0 10%,#d9231b 40%,rgba(181,22,17,.62) 68%,rgba(226,34,25,.23) 84%,transparent 100%);box-shadow:0 0 3px rgba(233,39,30,.28);filter:blur(.52px)}
+  88%{opacity:.22;transform:translate(-50%,-50%) scale(78) rotate(2deg);border-radius:53% 47% 56% 44%/44% 54% 46% 56%;background:radial-gradient(circle at 47% 43%,#d83b31 0 10%,#bd1d18 40%,rgba(157,20,16,.48) 68%,transparent 100%);box-shadow:0 0 2px rgba(213,32,25,.18);filter:blur(.62px)}
+  100%{opacity:0;transform:translate(-50%,-50%) scale(80) rotate(0deg);border-radius:48% 52% 46% 54%/52% 47% 53% 48%;background:radial-gradient(circle,rgba(159,20,18,.34),transparent 74%);box-shadow:none;filter:blur(.72px)}
+}
+
+.codex-1826-rotate{
+  display:none;position:fixed;z-index:2147483647;inset:0;padding:28px;
+  box-sizing:border-box;place-items:center;text-align:center;color:#ffe7a4;
+  background:radial-gradient(circle at 50% 42%,#142333 0,#060b12 48%,#000 100%);
+  font-family:"Segoe UI",Arial,sans-serif;
+}
+.codex-1826-rotate-card{width:min(88vw,430px);padding:30px 22px;border:1px solid #d7ac48;border-radius:24px;background:rgba(2,9,16,.92);box-shadow:0 0 34px rgba(244,183,55,.2),inset 0 1px rgba(255,255,255,.12)}
+.codex-1826-rotate-mark{display:block;margin:0 auto 18px;font-size:54px;line-height:1;transform:rotate(90deg)}
+.codex-1826-rotate strong{display:block;font-size:22px;letter-spacing:.055em}
+.codex-1826-rotate span:last-child{display:block;margin-top:10px;color:#cfeeff;font-size:14px;line-height:1.45}
+@media(max-width:900px) and (orientation:portrait){
+  .codex-1826-rotate{display:grid}
+  html,body{overflow:hidden!important;height:100dvh!important}
+}
+
+@media (orientation:landscape) and (max-height:540px), (max-width:960px) and (orientation:landscape){
+  html,body{width:100%!important;height:100dvh!important;min-height:0!important;overflow:hidden!important}
+  .cinema-intro,.site-shell,.report-stage,.codex-829a-stage{width:100vw!important;height:100dvh!important;min-height:0!important;max-height:100dvh!important}
+  .cinema-intro,.report-stage,.codex-829a-stage{overflow:hidden!important}
+  .codex-748a-version-stack{top:4px!important;gap:2px!important;width:auto!important;transform:translateX(-50%) scale(.78)!important;transform-origin:top center!important}
+  .codex-748a-version-banner{padding:4px 10px!important;font-size:8px!important}
+  .codex-748a-timer{min-width:132px!important;padding:5px 8px!important}
+  .codex-748a-timer output{font-size:14px!important}
+  .codex-748a-toggle{min-width:108px!important;min-height:58px!important;padding:11px 16px!important;font-size:16px!important}
+  .codex-829a-test-button{display:none!important}
+  .codex-829a-entry-brand{width:88vw!important;gap:12px!important}
+  .codex-829a-entry-brand .seal{flex-basis:54px!important}
+  .codex-829a-entry-brand h2{font-size:clamp(27px,6vw,46px)!important}
+  .entry-gate{padding:58px 18px 18px!important}
+  .entry-gate>p{margin:8px 0 10px!important;font-size:9px!important}
+  .codex-244p-entry-choices .codex-829a-enter{width:min(70vw,520px)!important;min-height:34px!important;padding:6px 14px!important;font-size:9px!important}
+  .intro-controls{bottom:4px!important;gap:4px!important}
+  .codex-0906-overflight-earth{width:112vmin!important;height:112vmin!important}
+
+  body.codex-1033a-active .codex-1249p-earth{left:50%!important;top:59%!important;width:min(43vw,68vh)!important;height:min(43vw,68vh)!important}
+  body.codex-1033a-active .codex-1249p-categories{left:50%!important;top:59.5%!important;width:min(39vw,60vh)!important;gap:3px!important}
+  body.codex-1033a-active .codex-1249p-categories>.button-row{width:96%!important;gap:3px!important}
+  body.codex-1033a-active .codex-1249p-categories>.sports-row{width:87%!important;gap:3px!important}
+  body.codex-1033a-active .codex-1249p-categories .news-button{height:clamp(19px,5.25vh,23px)!important;min-height:19px!important;padding:1px 2px!important;gap:1px!important;font-size:clamp(5.7px,.63vw,7.2px)!important;line-height:1!important}
+  body.codex-1033a-active .codex-1249p-access{min-width:21px!important;width:21px!important;gap:0!important}
+  body.codex-1033a-active .codex-1249p-categories .codex-1249p-access img{width:12px!important;height:9px!important}
+  body.codex-1033a-active .codex-1249p-speaker{font-size:8px!important;margin-left:-1px!important}
+  body.codex-1033a-active .codex-1249p-shot{width:23vw!important;height:18vh!important;min-width:0!important;min-height:0!important}
+  body.codex-1033a-active .codex-1249p-shot-1{left:1.5vw!important;top:22%!important;width:25vw!important;height:22vh!important}
+  body.codex-1033a-active .codex-1249p-shot-2{right:1.5vw!important;top:22%!important;width:25vw!important;height:22vh!important}
+  body.codex-1033a-active .codex-1249p-shot-3{left:5vw!important;top:46%!important;width:21vw!important;height:18vh!important}
+  body.codex-1033a-active .codex-1249p-shot-4{right:5vw!important;top:46%!important;width:21vw!important;height:18vh!important}
+  body.codex-1033a-active .codex-1249p-shot-5{left:2vw!important;top:auto!important;bottom:3.5%!important;width:23vw!important;height:19vh!important}
+  body.codex-1033a-active .codex-1249p-shot-6{right:2vw!important;top:auto!important;bottom:3.5%!important;width:23vw!important;height:19vh!important}
+  body.codex-1033a-active .codex-1249p-shot img{-webkit-mask-image:radial-gradient(ellipse at center,#000 24%,rgba(0,0,0,.88) 46%,rgba(0,0,0,.42) 66%,rgba(0,0,0,.12) 82%,transparent 97%)!important;mask-image:radial-gradient(ellipse at center,#000 24%,rgba(0,0,0,.88) 46%,rgba(0,0,0,.42) 66%,rgba(0,0,0,.12) 82%,transparent 97%)!important}
+  body.codex-1033a-active .masthead{height:16%!important;padding-top:2px!important}
+  body.codex-1033a-active .title-group h1{font-size:clamp(27px,5.4vw,48px)!important}
+  body.codex-1033a-active .title-group p{font-size:clamp(7px,.82vw,9px)!important}
+  body.codex-1033a-active .seal{flex-basis:52px!important}
+}
+
+@media(min-width:961px){
+  .site-shell,.report-stage,.cinema-intro,.codex-829a-stage{height:100dvh!important;min-height:min(540px,100dvh)!important}
+}
+
+@media(prefers-reduced-motion:reduce){
+  body.codex-829a-sequence.codex-527p-continuation .codex-1826-transition-star{animation-timing-function:linear!important}
+}
+
+/* 08:56 transition correction.  A pixel-identical clone of the introduction's
+   natural stars remains in the stage, so the handoff never swaps to a sparse
+   fabricated field.  The cockpit stays above every arriving subject. */
+body.codex-829a-sequence.codex-527p-continuation .codex-829a-stage{
+  z-index:999!important;background:#000!important
+}
+body.codex-829a-sequence.codex-527p-continuation .codex-829a-space{display:none!important}
+.codex-829a-natural-stars{
+  position:absolute!important;z-index:1!important;inset:0!important;
+  display:block!important;visibility:visible!important;opacity:1!important;pointer-events:none!important
+}
+body.codex-829a-sequence.codex-527p-continuation .codex-829a-cockpit-rig{
+  display:block!important;visibility:visible!important
+}
+body.codex-829a-sequence.codex-527p-continuation .space-explosion,
+body.codex-829a-sequence.codex-527p-continuation .codex-1217p-video-stage,
+body.codex-829a-sequence.codex-527p-continuation .codex-829a-stage>.red-star-cluster,
+body.codex-829a-sequence.codex-527p-continuation .codex-829a-star-system{
+  display:none!important;visibility:hidden!important;opacity:0!important;animation:none!important
+}
+
+/* This is the only handoff orb.  Every color stop outside its red body is
+   transparent, so expansion can never paint a white or pink page-sized plate. */
+body.codex-829a-sequence.codex-527p-continuation .codex-1826-transition-star{
+  display:none!important;visibility:hidden!important;opacity:0!important;animation:none!important
+}
+.codex-1826-transition-star::before,.codex-1826-transition-star::after{content:none!important;display:none!important}
+@keyframes codex20260905TransparentHandoff{
+  0%{opacity:1;transform:translate(-50%,-50%) scale(.8) rotate(0deg);border-radius:48% 52% 46% 54%/52% 47% 53% 48%;background:radial-gradient(circle at 46% 43%,#fff 0 27%,rgba(226,243,255,.8) 51%,transparent 79%);box-shadow:0 0 4px #fff,0 0 10px rgba(213,238,255,.72);filter:none}
+  10%{opacity:1;transform:translate(-50%,-50%) scale(1.1) rotate(2deg);border-radius:53% 47% 51% 49%/46% 55% 45% 54%;background:radial-gradient(circle at 47% 42%,#fff9f5 0 25%,rgba(255,224,216,.76) 51%,rgba(255,165,150,.18) 67%,transparent 80%);box-shadow:0 0 5px rgba(255,245,241,.9),0 0 12px rgba(255,176,162,.45);filter:none}
+  20%{opacity:1;transform:translate(-50%,-50%) scale(1.7) rotate(-2deg);border-radius:46% 54% 49% 51%/55% 45% 54% 46%;background:radial-gradient(circle at 45% 42%,#ffd4ca 0 20%,#ff8978 43%,rgba(239,64,48,.54) 67%,transparent 81%);box-shadow:0 0 7px rgba(255,163,147,.62),0 0 15px rgba(255,80,62,.34);filter:none}
+  32%{opacity:1;transform:translate(-50%,-50%) scale(8) rotate(3deg);border-radius:54% 46% 55% 45%/48% 53% 47% 52%;background:radial-gradient(circle at 47% 43%,#ff8b78 0 17%,#ef3c2e 44%,rgba(202,31,23,.6) 68%,transparent 82%);box-shadow:0 0 6px rgba(255,89,70,.38);filter:none}
+  48%{opacity:.93;transform:translate(-50%,-50%) scale(30) rotate(-3deg);border-radius:47% 53% 45% 55%/54% 46% 56% 44%;background:radial-gradient(circle at 45% 44%,#f46653 0 15%,#dc3025 43%,rgba(174,25,19,.54) 67%,rgba(211,39,28,.16) 76%,transparent 84%);box-shadow:0 0 5px rgba(238,48,36,.28);filter:none}
+  64%{opacity:.74;transform:translate(-50%,-50%) scale(55) rotate(2deg);border-radius:55% 45% 52% 48%/46% 56% 44% 54%;background:radial-gradient(circle at 48% 42%,#e65344 0 14%,#c72a21 42%,rgba(154,21,17,.48) 66%,rgba(198,31,24,.12) 76%,transparent 84%);box-shadow:0 0 4px rgba(220,40,31,.22);filter:none}
+  80%{opacity:.42;transform:translate(-50%,-50%) scale(68) rotate(-2deg);border-radius:45% 55% 48% 52%/56% 44% 53% 47%;background:radial-gradient(circle at 46% 45%,rgba(205,60,49,.86) 0 14%,rgba(151,25,20,.44) 61%,transparent 82%);box-shadow:0 0 3px rgba(199,35,28,.15);filter:none}
+  92%{opacity:.14;transform:translate(-50%,-50%) scale(74) rotate(1deg);border-radius:52% 48% 55% 45%/45% 54% 46% 55%;background:radial-gradient(circle at 47% 44%,rgba(171,43,35,.7) 0 14%,rgba(112,18,15,.26) 61%,transparent 81%);box-shadow:none;filter:none}
+  100%{opacity:0;transform:translate(-50%,-50%) scale(76) rotate(0deg);border-radius:48% 52% 46% 54%/52% 47% 53% 48%;background:radial-gradient(circle,rgba(112,18,15,.14),transparent 79%);box-shadow:none;filter:none}
+}
+
+/* 08:56 uses the original destination-star element for the full flight and
+   handoff.  No replacement element appears at 00:53.50 or during the red
+   expansion, so neither photographed blink can occur. */
+body.codex-1826-flight .cinema-intro .red-star-cluster{
+  display:block!important;visibility:visible!important;pointer-events:none!important;
+  z-index:7!important;width:12px!important;height:11px!important;opacity:0;
+  transform-origin:50% 50%!important;filter:blur(1.6px)!important;
+  animation:codex0856DestinationStar 68.5s linear 5s both!important
+}
+body.codex-1826-flight .cinema-intro .red-star-cluster::before{
+  content:""!important;display:block!important;position:absolute!important;inset:-34%!important;
+  border-radius:45% 55% 48% 52%/54% 46% 57% 43%!important;
+  background:radial-gradient(ellipse at 47% 44%,color-mix(in srgb,currentColor 46%,transparent) 0 22%,color-mix(in srgb,currentColor 22%,transparent) 46%,transparent 78%)!important;
+  filter:blur(5px)!important;opacity:.72!important;pointer-events:none!important
+}
+body.codex-1826-flight .cinema-intro .red-star-cluster::after{
+  content:""!important;display:block!important;position:absolute!important;inset:-18%!important;
+  border-radius:56% 44% 53% 47%/44% 58% 42% 56%!important;
+  background:radial-gradient(circle at 38% 35%,rgba(255,255,255,.24) 0 7%,transparent 27%),radial-gradient(circle at 63% 58%,color-mix(in srgb,currentColor 34%,transparent) 0 13%,transparent 38%)!important;
+  filter:blur(2.5px)!important;opacity:.68!important;pointer-events:none!important
+}
+@keyframes codex0856DestinationStar{
+  0%,22%{color:#fff;opacity:0;transform:translate(-50%,-50%) scale(.08) rotate(17deg);border-radius:48% 52% 46% 54%/52% 47% 53% 48%;background:radial-gradient(circle at 46% 43%,#fff 0 24%,rgba(226,243,255,.78) 50%,transparent 82%);box-shadow:0 0 2px #fff,0 0 6px rgba(214,237,255,.72)}
+  23.2%,78.4%{color:#fff;opacity:1;transform:translate(-50%,-50%) scale(1) rotate(17deg);border-radius:48% 52% 46% 54%/52% 47% 53% 48%;background:radial-gradient(circle at 46% 43%,#fff 0 24%,rgba(226,243,255,.78) 50%,transparent 82%);box-shadow:0 0 2px #fff,0 0 7px rgba(214,237,255,.84)}
+  80%{color:#ffd9d1;opacity:1;transform:translate(-50%,-50%) scale(1.18) rotate(18deg);border-radius:53% 47% 51% 49%/46% 55% 45% 54%;background:radial-gradient(circle at 47% 42%,#fff9f5 0 22%,rgba(255,210,201,.74) 50%,rgba(255,144,128,.16) 68%,transparent 84%);box-shadow:0 0 4px rgba(255,240,235,.88),0 0 10px rgba(255,171,156,.42)}
+  82%{color:#ff8d7c;opacity:1;transform:translate(-50%,-50%) scale(2.1) rotate(16deg);border-radius:46% 54% 49% 51%/55% 45% 54% 46%;background:radial-gradient(circle at 45% 42%,#ffd3c8 0 19%,#ff8978 43%,rgba(232,58,44,.52) 67%,transparent 85%);box-shadow:0 0 6px rgba(255,157,141,.58),0 0 14px rgba(255,76,58,.3)}
+  84%{color:#ff5745;opacity:1;transform:translate(-50%,-50%) scale(6) rotate(19deg);border-radius:54% 46% 55% 45%/48% 53% 47% 52%;background:radial-gradient(circle at 47% 43%,#ff9583 0 17%,#ee4334 44%,rgba(198,30,23,.57) 68%,transparent 86%);box-shadow:0 0 7px rgba(255,92,72,.34)}
+  86%{color:#ef3e31;opacity:1;transform:translate(-50%,-50%) scale(19) rotate(15deg);border-radius:47% 53% 45% 55%/54% 46% 56% 44%;background:radial-gradient(circle at 45% 44%,#f66b58 0 15%,#dc3428 43%,rgba(171,24,19,.5) 67%,rgba(207,37,27,.14) 76%,transparent 87%);box-shadow:0 0 8px rgba(238,48,36,.24)}
+  88%{color:#df3328;opacity:.96;transform:translate(-50%,-50%) scale(19) rotate(18deg);border-radius:55% 45% 52% 48%/46% 56% 44% 54%;background:radial-gradient(circle at 48% 42%,#e85b4a 0 14%,#c92f25 42%,rgba(151,21,17,.46) 66%,rgba(192,29,23,.11) 77%,transparent 88%);box-shadow:0 0 7px rgba(216,39,30,.2)}
+  90%{color:#c72a22;opacity:.82;transform:translate(-50%,-50%) scale(31) rotate(14deg);border-radius:45% 55% 48% 52%/56% 44% 53% 47%;background:radial-gradient(circle at 46% 45%,rgba(211,67,55,.88) 0 14%,rgba(151,25,20,.42) 61%,transparent 88%);box-shadow:0 0 6px rgba(199,35,28,.15)}
+  93%{color:#a8231d;opacity:.54;transform:translate(-50%,-50%) scale(40) rotate(17deg);border-radius:52% 48% 55% 45%/45% 54% 46% 55%;background:radial-gradient(circle at 47% 44%,rgba(179,49,40,.72) 0 14%,rgba(112,18,15,.25) 61%,transparent 88%);box-shadow:none}
+  97%{color:#831b17;opacity:.18;transform:translate(-50%,-50%) scale(45) rotate(15deg);border-radius:46% 54% 48% 52%/55% 45% 52% 48%;background:radial-gradient(circle,rgba(128,25,21,.38),rgba(91,14,12,.15) 60%,transparent 88%);box-shadow:none}
+  100%{color:#681511;opacity:0;transform:translate(-50%,-50%) scale(47) rotate(17deg);border-radius:49% 51% 45% 55%/53% 47% 56% 44%;background:radial-gradient(circle,rgba(105,20,17,.16),transparent 88%);box-shadow:none}
+}
+
+/* Protected desktop layout: a 54% center lane belongs exclusively to Earth
+   and its controls; each picture remains inside its own 23% side lane. */
+body.codex-1033a-active .codex-1249p-earth{
+  left:50%!important;top:59.5%!important;width:min(50vw,74vh,640px)!important;height:min(50vw,74vh,640px)!important
+}
+body.codex-1033a-active .codex-1249p-categories{
+  left:50%!important;top:59.5%!important;width:min(44vw,64vh,545px)!important
+}
+body.codex-1033a-active .codex-1249p-shot{
+  width:clamp(170px,18.5vw,310px)!important;height:clamp(90px,14.5vh,132px)!important
+}
+body.codex-1033a-active .codex-1249p-shot-1{left:2vw!important;right:auto!important;top:22%!important;width:clamp(190px,20vw,325px)!important;height:clamp(102px,16vh,145px)!important}
+body.codex-1033a-active .codex-1249p-shot-2{right:2vw!important;left:auto!important;top:22%!important;width:clamp(190px,20vw,325px)!important;height:clamp(102px,16vh,145px)!important}
+body.codex-1033a-active .codex-1249p-shot-3{left:4vw!important;right:auto!important;top:48%!important}
+body.codex-1033a-active .codex-1249p-shot-4{right:4vw!important;left:auto!important;top:48%!important}
+body.codex-1033a-active .codex-1249p-shot-5{left:2vw!important;right:auto!important;top:auto!important;bottom:2.5%!important}
+body.codex-1033a-active .codex-1249p-shot-6{right:2vw!important;left:auto!important;top:auto!important;bottom:2.5%!important}
+
+/* Robert's exact directional feathering: baseball left only; airplane and
+   boats left/right only.  No top or bottom feathering is applied here. */
+body.codex-1033a-active .codex-1249p-shot-2 img{
+  -webkit-mask-image:linear-gradient(to right,transparent 0,rgba(0,0,0,.18) 5%,rgba(0,0,0,.7) 12%,#000 20%,#000 100%)!important;
+  mask-image:linear-gradient(to right,transparent 0,rgba(0,0,0,.18) 5%,rgba(0,0,0,.7) 12%,#000 20%,#000 100%)!important
+}
+body.codex-1033a-active .codex-1249p-shot-4 img,
+body.codex-1033a-active .codex-1249p-shot-5 img{
+  -webkit-mask-image:linear-gradient(to right,transparent 0,rgba(0,0,0,.22) 5%,rgba(0,0,0,.78) 12%,#000 20%,#000 80%,rgba(0,0,0,.78) 88%,rgba(0,0,0,.22) 95%,transparent 100%)!important;
+  mask-image:linear-gradient(to right,transparent 0,rgba(0,0,0,.22) 5%,rgba(0,0,0,.78) 12%,#000 20%,#000 80%,rgba(0,0,0,.78) 88%,rgba(0,0,0,.22) 95%,transparent 100%)!important
+}
+
+body.codex-1033a-active .codex-1249p-categories .news-button,
+body.codex-1033a-active .codex-1249p-categories .news-button *{font-weight:500!important}
+body.codex-1033a-active .codex-1249p-categories .news-button .codex-1249p-access,
+body.codex-1033a-active .codex-1249p-categories .news-button .codex-1249p-speaker{opacity:.74!important;filter:brightness(.86)!important}
+body.codex-1033a-active .codex-1249p-categories .news-button::after{
+  content:none!important;display:none!important;border:0!important
+}
+body.codex-1033a-active .codex-1249p-categories .news-button:hover,
+body.codex-1033a-active .codex-1249p-categories .news-button:hover *,
+body.codex-1033a-active .codex-1249p-categories .news-button:focus-visible,
+body.codex-1033a-active .codex-1249p-categories .news-button:focus-visible *{font-weight:800!important}
+body.codex-1033a-active .codex-1249p-categories .news-button:hover .codex-1249p-access,
+body.codex-1033a-active .codex-1249p-categories .news-button:hover .codex-1249p-speaker,
+body.codex-1033a-active .codex-1249p-categories .news-button:focus-visible .codex-1249p-access,
+body.codex-1033a-active .codex-1249p-categories .news-button:focus-visible .codex-1249p-speaker{opacity:1!important;filter:brightness(1.15)!important}
+
+@media (orientation:landscape) and (max-height:540px), (max-width:960px) and (orientation:landscape){
+  body.codex-1033a-active .codex-1249p-earth{top:59%!important;width:min(46vw,72vh)!important;height:min(46vw,72vh)!important}
+  body.codex-1033a-active .codex-1249p-categories{top:59%!important;width:min(40vw,62vh)!important}
+  body.codex-1033a-active .codex-1249p-shot{width:21vw!important;height:18vh!important}
+  body.codex-1033a-active .codex-1249p-shot-1,body.codex-1033a-active .codex-1249p-shot-2{width:22vw!important;height:20vh!important}
+  body.codex-1033a-active .codex-1249p-shot-3{left:2vw!important}
+  body.codex-1033a-active .codex-1249p-shot-4{right:2vw!important}
+}

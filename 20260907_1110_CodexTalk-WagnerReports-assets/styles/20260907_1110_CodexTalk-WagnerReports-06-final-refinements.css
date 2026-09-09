@@ -1,0 +1,168 @@
+
+/* CSS SOURCE 59: CodexTalk1045a0829-059-codex-1047a-feathered-picture-refinement.css */
+
+body.codex-1033a-active .codex-1249p-shot img{-webkit-mask-image:radial-gradient(ellipse 84% 76% at 50% 50%,#000 0 34%,rgba(0,0,0,.94) 46%,rgba(0,0,0,.7) 58%,rgba(0,0,0,.4) 69%,rgba(0,0,0,.16) 80%,rgba(0,0,0,.05) 88%,transparent 96%)!important;mask-image:radial-gradient(ellipse 84% 76% at 50% 50%,#000 0 34%,rgba(0,0,0,.94) 46%,rgba(0,0,0,.7) 58%,rgba(0,0,0,.4) 69%,rgba(0,0,0,.16) 80%,rgba(0,0,0,.05) 88%,transparent 96%)!important;-webkit-mask-size:100% 100%!important;mask-size:100% 100%!important;-webkit-mask-position:center!important;mask-position:center!important;-webkit-mask-repeat:no-repeat!important;mask-repeat:no-repeat!important;transform:scale(1.04)!important}
+body.codex-1033a-active .codex-1249p-shot-1,body.codex-1033a-active .codex-1249p-shot-2{top:24%!important}
+body.codex-1033a-active .codex-1249p-shot-3,body.codex-1033a-active .codex-1249p-shot-4{top:48%!important}
+@media(max-width:900px){body.codex-1033a-active .codex-1249p-shot-1,body.codex-1033a-active .codex-1249p-shot-2{top:24%!important}body.codex-1033a-active .codex-1249p-shot-3,body.codex-1033a-active .codex-1249p-shot-4{top:48%!important}}
+
+
+/* CSS SOURCE 60: CodexTalk1045a0829-060-codex-1107a-approved-photo-earth-refinement.css */
+
+body.codex-1033a-active .codex-1249p-shot-1 img{-webkit-mask-image:radial-gradient(ellipse 82% 70% at 46% 42%,#000 0 31%,rgba(0,0,0,.93) 44%,rgba(0,0,0,.67) 56%,rgba(0,0,0,.35) 68%,rgba(0,0,0,.12) 79%,rgba(0,0,0,.04) 87%,transparent 96%)!important;mask-image:radial-gradient(ellipse 82% 70% at 46% 42%,#000 0 31%,rgba(0,0,0,.93) 44%,rgba(0,0,0,.67) 56%,rgba(0,0,0,.35) 68%,rgba(0,0,0,.12) 79%,rgba(0,0,0,.04) 87%,transparent 96%)!important}
+body.codex-1033a-active .codex-1249p-shot-4 img{-webkit-mask-image:radial-gradient(ellipse 74% 82% at 50% 40%,#000 0 30%,rgba(0,0,0,.92) 43%,rgba(0,0,0,.65) 55%,rgba(0,0,0,.33) 67%,rgba(0,0,0,.11) 78%,rgba(0,0,0,.03) 86%,transparent 95%)!important;mask-image:radial-gradient(ellipse 74% 82% at 50% 40%,#000 0 30%,rgba(0,0,0,.92) 43%,rgba(0,0,0,.65) 55%,rgba(0,0,0,.33) 67%,rgba(0,0,0,.11) 78%,rgba(0,0,0,.03) 86%,transparent 95%)!important}
+body.codex-1033a-active .codex-1249p-shot-5 img{-webkit-mask-image:radial-gradient(ellipse 72% 84% at 50% 50%,#000 0 31%,rgba(0,0,0,.93) 44%,rgba(0,0,0,.68) 57%,rgba(0,0,0,.38) 69%,rgba(0,0,0,.15) 80%,rgba(0,0,0,.05) 88%,transparent 96%)!important;mask-image:radial-gradient(ellipse 72% 84% at 50% 50%,#000 0 31%,rgba(0,0,0,.93) 44%,rgba(0,0,0,.68) 57%,rgba(0,0,0,.38) 69%,rgba(0,0,0,.15) 80%,rgba(0,0,0,.05) 88%,transparent 96%)!important}
+body.codex-1033a-active .codex-1249p-earth{top:56%!important;width:min(495px,39vw,62vh)!important;height:min(495px,39vw,62vh)!important;background-size:118%!important;background-position:50% 56%!important;border:1px solid rgba(255,214,117,.66)!important;box-shadow:0 0 0 1px rgba(255,211,103,.42),0 0 12px rgba(75,178,226,.08),0 0 20px rgba(255,181,48,.08)!important}
+body.codex-1033a-active .codex-1249p-categories{top:56%!important;width:min(445px,36vw)!important;gap:clamp(4px,.58vh,7px)!important}
+body.codex-1033a-active .codex-1249p-categories .button-row,body.codex-1033a-active .codex-1249p-categories .sports-row{gap:clamp(4px,.45vw,7px)!important}
+body.codex-1033a-active .codex-1249p-categories .news-button{height:clamp(31px,3.9vh,39px)!important;font-size:clamp(8px,.63vw,11px)!important}
+@media(max-width:900px){body.codex-1033a-active .codex-1249p-earth{top:56%!important;width:min(470px,47vw,60vh)!important;height:min(470px,47vw,60vh)!important}body.codex-1033a-active .codex-1249p-categories{top:56%!important;width:min(425px,43vw)!important}}
+
+
+/* CSS SOURCE 61: CodexTalk1045a0829-061-codex-1126a-approved-earth-control-photo-refinement.css */
+
+/* Boats: stronger but subject-safe feathering on the left, right, top, and bottom. */
+body.codex-1033a-active .codex-1249p-shot-5 img{
+  -webkit-mask-image:radial-gradient(ellipse 68% 78% at 50% 50%,#000 0 27%,rgba(0,0,0,.90) 39%,rgba(0,0,0,.62) 51%,rgba(0,0,0,.32) 63%,rgba(0,0,0,.11) 74%,rgba(0,0,0,.03) 82%,transparent 92%)!important;
+  mask-image:radial-gradient(ellipse 68% 78% at 50% 50%,#000 0 27%,rgba(0,0,0,.90) 39%,rgba(0,0,0,.62) 51%,rgba(0,0,0,.32) 63%,rgba(0,0,0,.11) 74%,rgba(0,0,0,.03) 82%,transparent 92%)!important;
+}
+/* Airplane: retain the approved side and bottom blend, adding only a softer top edge. */
+body.codex-1033a-active .codex-1249p-shot-4 img{
+  -webkit-mask-image:linear-gradient(to bottom,transparent 0%,rgba(0,0,0,.16) 7%,rgba(0,0,0,.55) 15%,rgba(0,0,0,.88) 22%,#000 29% 100%),radial-gradient(ellipse 74% 82% at 50% 40%,#000 0 30%,rgba(0,0,0,.92) 43%,rgba(0,0,0,.65) 55%,rgba(0,0,0,.33) 67%,rgba(0,0,0,.11) 78%,rgba(0,0,0,.03) 86%,transparent 95%)!important;
+  -webkit-mask-composite:source-in!important;
+  mask-image:linear-gradient(to bottom,transparent 0%,rgba(0,0,0,.16) 7%,rgba(0,0,0,.55) 15%,rgba(0,0,0,.88) 22%,#000 29% 100%),radial-gradient(ellipse 74% 82% at 50% 40%,#000 0 30%,rgba(0,0,0,.92) 43%,rgba(0,0,0,.65) 55%,rgba(0,0,0,.33) 67%,rgba(0,0,0,.11) 78%,rgba(0,0,0,.03) 86%,transparent 95%)!important;
+  mask-composite:intersect!important;
+}
+/* Enlarge the Earth and its gold rim without changing the approved center position. */
+body.codex-1033a-active .codex-1249p-earth{
+  top:56%!important;
+  width:min(570px,44vw,71vh)!important;
+  height:min(570px,44vw,71vh)!important;
+  background-size:118%!important;
+  background-position:50% 56%!important;
+}
+/* Keep the complete five-row control group inside the enlarged Earth. */
+body.codex-1033a-active .codex-1249p-categories{
+  top:56%!important;
+  width:min(470px,37vw)!important;
+  gap:clamp(5px,.62vh,8px)!important;
+  overflow:visible!important;
+}
+body.codex-1033a-active .codex-1249p-categories .button-row,
+body.codex-1033a-active .codex-1249p-categories .sports-row{gap:clamp(4px,.42vw,7px)!important;overflow:visible!important}
+body.codex-1033a-active .codex-1249p-categories .news-button{
+  height:clamp(36px,4.15vh,42px)!important;
+  gap:2px!important;
+  padding:2px!important;
+  overflow:visible!important;
+  font-size:clamp(9px,.66vw,11px)!important;
+  line-height:1.06!important;
+}
+/* Make the glasses obvious and place a flipped speaker immediately beside them, aimed inward. */
+body.codex-1033a-active .codex-1249p-access{
+  min-width:47px!important;
+  gap:0!important;
+  flex-direction:row-reverse!important;
+  overflow:visible!important;
+}
+body.codex-1033a-active .codex-1249p-access img{
+  width:34px!important;
+  height:23px!important;
+  transform:none!important;
+  filter:saturate(1.85) contrast(1.25) brightness(1.22) drop-shadow(0 0 2px rgba(255,91,31,.95)) drop-shadow(0 0 4px rgba(232,153,41,.82))!important;
+}
+body.codex-1033a-active .codex-1249p-speaker{
+  display:inline-block!important;
+  margin-left:-3px!important;
+  font-size:18px!important;
+  line-height:1!important;
+  transform:scaleX(-1)!important;
+  transform-origin:center!important;
+  filter:brightness(1.28) drop-shadow(0 0 2px rgba(255,255,255,.55))!important;
+}
+@media(max-width:900px){
+  body.codex-1033a-active .codex-1249p-earth{top:56%!important;width:min(535px,53vw,69vh)!important;height:min(535px,53vw,69vh)!important}
+  body.codex-1033a-active .codex-1249p-categories{top:56%!important;width:min(445px,44vw)!important}
+  body.codex-1033a-active .codex-1249p-access img{width:30px!important;height:20px!important}
+  body.codex-1033a-active .codex-1249p-speaker{font-size:16px!important}
+}
+
+
+/* CSS SOURCE 62: CodexTalk1045a0829-062-codex-1143a-final-approved-circular-layout.css */
+
+/* Preserve the gold-backed Earth but reduce it enough to clear the masthead and lower controls. */
+body.codex-1033a-active .codex-1249p-earth{
+  top:56%!important;
+  width:min(535px,42vw,67vh)!important;
+  height:min(535px,42vw,67vh)!important;
+  background-size:118%!important;
+  background-position:50% 56%!important;
+}
+/* Raise the controls inside the Earth and shape every row to the circle's usable chord. */
+body.codex-1033a-active .codex-1249p-categories{
+  top:52%!important;
+  width:min(500px,39vw,63vh)!important;
+  gap:clamp(3px,.48vh,6px)!important;
+  overflow:visible!important;
+}
+body.codex-1033a-active .codex-1249p-categories>.button-row,
+body.codex-1033a-active .codex-1249p-categories>.sports-row{
+  align-self:center!important;
+  flex:0 0 auto!important;
+  gap:clamp(3px,.34vw,6px)!important;
+  overflow:visible!important;
+}
+body.codex-1033a-active .codex-1249p-categories>.button-row:nth-child(1){width:78%!important}
+body.codex-1033a-active .codex-1249p-categories>.button-row:nth-child(2){width:88%!important}
+body.codex-1033a-active .codex-1249p-categories>.button-row:nth-child(3){width:94%!important}
+body.codex-1033a-active .codex-1249p-categories>.button-row:nth-child(4){width:88%!important}
+body.codex-1033a-active .codex-1249p-categories>.sports-row{width:84%!important}
+body.codex-1033a-active .codex-1249p-categories .news-button{
+  height:clamp(33px,3.8vh,39px)!important;
+  gap:1px!important;
+  padding:1px 2px!important;
+  overflow:visible!important;
+  font-size:clamp(8px,.60vw,10px)!important;
+  line-height:1.04!important;
+}
+/* Keep the approved inward-facing speaker/glasses pair but make it proportionate. */
+body.codex-1033a-active .codex-1249p-access{min-width:41px!important;gap:0!important;flex-direction:row-reverse!important;overflow:visible!important}
+body.codex-1033a-active .codex-1249p-access img{
+  width:30px!important;
+  height:20px!important;
+  transform:none!important;
+  filter:saturate(1.72) contrast(1.20) brightness(1.18) drop-shadow(0 0 2px rgba(255,91,31,.88)) drop-shadow(0 0 3px rgba(232,153,41,.72))!important;
+}
+body.codex-1033a-active .codex-1249p-speaker{
+  display:inline-block!important;
+  margin-left:-3px!important;
+  font-size:16px!important;
+  line-height:1!important;
+  transform:scaleX(-1)!important;
+  transform-origin:center!important;
+}
+body.codex-1033a-active .codex-1249p-categories>.sports-row .news-button{flex-direction:column!important;gap:0!important;padding:0 1px!important}
+/* Boats: one final increase in all-edge feathering while retaining the subjects. */
+body.codex-1033a-active .codex-1249p-shot-5 img{
+  -webkit-mask-image:radial-gradient(ellipse 64% 74% at 50% 50%,#000 0 24%,rgba(0,0,0,.88) 36%,rgba(0,0,0,.58) 48%,rgba(0,0,0,.28) 60%,rgba(0,0,0,.09) 71%,rgba(0,0,0,.025) 80%,transparent 91%)!important;
+  mask-image:radial-gradient(ellipse 64% 74% at 50% 50%,#000 0 24%,rgba(0,0,0,.88) 36%,rgba(0,0,0,.58) 48%,rgba(0,0,0,.28) 60%,rgba(0,0,0,.09) 71%,rgba(0,0,0,.025) 80%,transparent 91%)!important;
+}
+/* Airplane: preserve the approved side/bottom blend and soften the top further. */
+body.codex-1033a-active .codex-1249p-shot-4 img{
+  -webkit-mask-image:linear-gradient(to bottom,transparent 0%,rgba(0,0,0,.10) 8%,rgba(0,0,0,.42) 17%,rgba(0,0,0,.76) 26%,#000 36% 100%),radial-gradient(ellipse 74% 82% at 50% 40%,#000 0 30%,rgba(0,0,0,.92) 43%,rgba(0,0,0,.65) 55%,rgba(0,0,0,.33) 67%,rgba(0,0,0,.11) 78%,rgba(0,0,0,.03) 86%,transparent 95%)!important;
+  -webkit-mask-composite:source-in!important;
+  mask-image:linear-gradient(to bottom,transparent 0%,rgba(0,0,0,.10) 8%,rgba(0,0,0,.42) 17%,rgba(0,0,0,.76) 26%,#000 36% 100%),radial-gradient(ellipse 74% 82% at 50% 40%,#000 0 30%,rgba(0,0,0,.92) 43%,rgba(0,0,0,.65) 55%,rgba(0,0,0,.33) 67%,rgba(0,0,0,.11) 78%,rgba(0,0,0,.03) 86%,transparent 95%)!important;
+  mask-composite:intersect!important;
+}
+/* The in-app browser's narrow effective viewport needs compact controls despite a large physical display. */
+@media(max-width:900px){
+  body.codex-1033a-active .codex-1249p-earth{top:56%!important;width:min(510px,53vw,66vh)!important;height:min(510px,53vw,66vh)!important}
+  body.codex-1033a-active .codex-1249p-categories{top:51.5%!important;width:min(455px,48vw,60vh)!important;gap:2px!important}
+  body.codex-1033a-active .codex-1249p-categories>.button-row,body.codex-1033a-active .codex-1249p-categories>.sports-row{gap:2px!important}
+  body.codex-1033a-active .codex-1249p-categories .news-button{height:28px!important;font-size:7.5px!important;gap:0!important;padding:0 1px!important}
+  body.codex-1033a-active .codex-1249p-access{min-width:24px!important}
+  body.codex-1033a-active .codex-1249p-access img{width:17px!important;height:12px!important}
+  body.codex-1033a-active .codex-1249p-speaker{font-size:11px!important;margin-left:-2px!important}
+  body.codex-1033a-active .codex-1249p-categories>.sports-row .news-button{height:28px!important;font-size:7px!important}
+}
+

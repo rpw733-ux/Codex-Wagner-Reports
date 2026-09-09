@@ -1,0 +1,584 @@
+/* 20260907_1110_CodexTalk-WagnerReports — continuous red-star handoff, restrained scintillation, image-registered cockpit indicators, and an unobstructed complete final presentation. */
+.codex-829a-test-button{min-height:34px;padding:6px 12px;border:1px solid rgba(255,201,89,.8);border-radius:999px;color:#ffe5a2;background:rgba(18,12,5,.82);font:700 11px/1.15 Arial,sans-serif;letter-spacing:.08em;white-space:nowrap;pointer-events:none;box-shadow:0 0 14px rgba(255,174,45,.18)}
+.entry-gate{align-content:center;justify-items:center;padding:clamp(18px,4vh,52px) clamp(16px,4vw,70px)!important}
+.codex-829a-entry-brand{width:min(96vw,1740px);display:flex;align-items:center;justify-content:center;gap:clamp(14px,2.2vw,42px)}
+.codex-829a-entry-brand .seal{flex:0 0 clamp(76px,7vw,130px);display:grid!important}
+.codex-829a-entry-brand h2{margin:0!important;font-size:clamp(40px,4.4vw,84px)!important;line-height:.92!important;letter-spacing:.055em!important;white-space:nowrap}
+.entry-gate>p{margin:clamp(18px,3vh,34px) 0 clamp(22px,3.6vh,40px)!important}
+.codex-244p-entry-choices .codex-829a-enter{display:block!important;width:min(620px,86vw);min-height:48px;padding:11px 24px;white-space:normal;border:1px solid #d5aa42;border-radius:999px;color:#fff3c5;background:linear-gradient(#1a2838,#050b12);box-shadow:0 0 20px rgba(73,171,225,.2),inset 0 1px rgba(255,255,255,.18);cursor:pointer;font:700 clamp(12px,1.22vw,17px)/1.25 Arial,sans-serif;letter-spacing:.055em}
+.space-explosion,.codex-412p-intro,.codex-533p-intro,.handoff-explosion818{display:none!important}
+
+/* This direct-body stage never swaps elements. The final composition remains in it throughout. */
+.codex-829a-stage{position:fixed;z-index:999;inset:0;display:block;visibility:hidden;opacity:0;overflow:hidden;pointer-events:none;background:transparent;isolation:isolate}
+body.codex-829a-sequence .codex-829a-stage,body.codex-829a-final .codex-829a-stage{z-index:1001;visibility:visible;opacity:1}
+/* During the text route, the new Earth is revealed beneath the original cockpit.
+   Nothing is reparented and no replacement frame can cover the live intro. */
+body.codex-829a-sequence.codex-527p-continuation .codex-829a-stage{z-index:999}
+body.codex-829a-sequence.codex-527p-continuation .codex-829a-space,
+body.codex-829a-sequence.codex-527p-continuation .codex-829a-cockpit-rig,
+body.codex-829a-sequence.codex-527p-continuation .codex-829a-star-system{display:none!important}
+body.codex-829a-sequence{overflow:hidden!important;background:#000!important}
+body.codex-829a-sequence .entry-gate,body.codex-829a-sequence .crawl-window,body.codex-829a-sequence .intro-controls{opacity:0!important;visibility:hidden!important;pointer-events:none!important}
+body.codex-829a-sequence:not(.codex-527p-continuation) .red-star-cluster{opacity:0!important;visibility:hidden!important;pointer-events:none!important}
+.codex-829a-space{position:absolute;z-index:1;inset:0;opacity:1;transition:opacity 6.8s linear;background:radial-gradient(circle at 18% 22%,rgba(255,255,255,.62) 0 1px,transparent 1.7px),radial-gradient(circle at 72% 31%,rgba(176,220,255,.65) 0 1px,transparent 1.8px),radial-gradient(circle at 54% 68%,rgba(255,255,255,.5) 0 1px,transparent 1.6px),radial-gradient(circle at 38% 43%,rgba(255,255,255,.38) 0 1px,transparent 1.5px),#010205;background-size:280px 230px,360px 310px,410px 370px,520px 460px,auto}
+.codex-829a-stage .codex-1249p-composition{position:absolute!important;z-index:20!important;inset:0!important;width:100%!important;height:100%!important;display:block!important;overflow:hidden!important;pointer-events:none!important}
+.codex-829a-cockpit-rig{position:absolute;z-index:100;inset:-2.6%;opacity:1;transform:scale(1.035);transform-origin:50% 50%;transition:opacity 6.8s linear}
+.codex-829a-cockpit{position:absolute;inset:0;width:100%;height:100%;object-fit:fill;opacity:1;filter:brightness(.94) contrast(1.06);user-select:none}
+.codex-829a-lamp{position:absolute;z-index:8;right:4.05%;top:44.7%;width:12px;height:12px;border-radius:50%;background:#39d5ff;box-shadow:0 0 4px #fff,0 0 11px #25c9ff,0 0 22px rgba(26,165,255,.8);animation:codex829Lamp 2.65s ease-in-out infinite}
+.codex-642p-light-rack{position:absolute;z-index:9;inset:0;pointer-events:none}
+.codex-642p-light-rack i{--lamp-color:#40d9ff;--blink-time:1.12s;--blink-delay:0s;--lamp-size:clamp(3px,.48vw,9px);position:absolute;width:var(--lamp-size);aspect-ratio:1;border-radius:50%;background:var(--lamp-color);box-shadow:0 0 2px #fff,0 0 7px var(--lamp-color),0 0 15px var(--lamp-color);transform:translate(-50%,-50%);animation:codex642PanelBlink var(--blink-time) steps(2,end) var(--blink-delay) infinite}
+/* Percentages are normalized from the 1672×940 cockpit artwork, so each light stays on its instrument while scaling. */
+.codex-642p-light-rack i:nth-child(1){left:6.64%;top:10.11%;--lamp-color:#47cfff;--blink-time:1.37s;--blink-delay:-.21s;--lamp-size:clamp(4px,.58vw,10px)}
+.codex-642p-light-rack i:nth-child(2){left:2.87%;top:15.43%;--lamp-color:#ff7b38;--blink-time:2.16s;--blink-delay:-1.18s;--lamp-size:clamp(3px,.38vw,7px)}
+.codex-642p-light-rack i:nth-child(3){left:6.70%;top:17.45%;--lamp-color:#32cfff;--blink-time:1.03s;--blink-delay:-.43s;--lamp-size:clamp(3px,.4vw,8px)}
+.codex-642p-light-rack i:nth-child(4){left:6.82%;top:44.04%;--lamp-color:#2faeff;--blink-time:1.74s;--blink-delay:-.88s;--lamp-size:clamp(3px,.36vw,7px)}
+.codex-642p-light-rack i:nth-child(5){left:6.88%;top:63.30%;--lamp-color:#39c5ff;--blink-time:2.42s;--blink-delay:-1.37s;--lamp-size:clamp(3px,.34vw,6px)}
+.codex-642p-light-rack i:nth-child(6){left:1.85%;top:77.77%;--lamp-color:#ffb52f;--blink-time:1.88s;--blink-delay:-.61s;--lamp-size:clamp(3px,.38vw,7px)}
+.codex-642p-light-rack i:nth-child(7){left:96.17%;top:12.02%;--lamp-color:#ff3d2e;--blink-time:1.46s;--blink-delay:-.72s;--lamp-size:clamp(3px,.42vw,8px)}
+.codex-642p-light-rack i:nth-child(8){left:92.64%;top:8.19%;--lamp-color:#ff5b42;--blink-time:2.31s;--blink-delay:-1.44s;--lamp-size:clamp(3px,.32vw,6px)}
+.codex-642p-light-rack i:nth-child(9){left:94.98%;top:38.09%;--lamp-color:#ffb52f;--blink-time:1.21s;--blink-delay:-.34s;--lamp-size:clamp(3px,.38vw,7px)}
+.codex-642p-light-rack i:nth-child(10){left:92.82%;top:44.04%;--lamp-color:#39cfff;--blink-time:1.69s;--blink-delay:-.96s;--lamp-size:clamp(3px,.36vw,7px)}
+.codex-642p-light-rack i:nth-child(11){left:92.94%;top:63.19%;--lamp-color:#2d9dff;--blink-time:2.54s;--blink-delay:-1.63s;--lamp-size:clamp(3px,.34vw,6px)}
+.codex-642p-light-rack i:nth-child(12){left:97.79%;top:72.77%;--lamp-color:#ff9f24;--blink-time:1.57s;--blink-delay:-.49s;--lamp-size:clamp(3px,.4vw,8px)}
+body.codex-829a-tremor .codex-829a-cockpit-rig{animation:codex642CockpitTremor .48s linear infinite}
+body.codex-642p-tremor-strong .codex-829a-cockpit-rig{animation:codex642CockpitTremorStrong .32s linear infinite}
+
+/* The complete text-flight film is viewed through the same cockpit. */
+.codex-0906-overflight-earth{
+  position:absolute;z-index:4;left:35%;top:75%;width:112vmin;height:112vmin;
+  border-radius:50%;overflow:hidden;opacity:0;pointer-events:none;
+  transform:translate(-50%,-50%) scale(2.35) rotate(0deg);transform-origin:50% 50%;
+  will-change:transform,opacity;filter:brightness(.94) saturate(1.08)
+}
+.codex-0906-overflight-earth img{display:block;width:100%;height:100%;object-fit:cover;object-position:center}
+.codex-0906-overflight-earth.codex-0906-departing{animation:codex0906FloridaDeparture 10.2s cubic-bezier(.34,.04,.18,1) both}
+@keyframes codex0906FloridaDeparture{
+  0%{opacity:1;transform:translate(-50%,-50%) scale(2.35) rotate(0deg)}
+  18%{opacity:1;transform:translate(-52%,-47%) scale(2.12) rotate(-1deg)}
+  72%{opacity:1;transform:translate(-74%,-27%) scale(.78) rotate(-6deg)}
+  90%{opacity:.48;transform:translate(-96%,-10%) scale(.39) rotate(-9deg)}
+  100%{opacity:0;transform:translate(-108%,2%) scale(.25) rotate(-11deg)}
+}
+.codex-642p-intro-cockpit{position:absolute;z-index:8;inset:-2.6%;width:105.2%;height:105.2%;object-fit:fill;opacity:0;visibility:hidden;pointer-events:none;user-select:none;filter:brightness(.94) contrast(1.06);transition:opacity .45s ease}
+.cinema-intro.codex-642p-cockpit-flight .codex-642p-intro-cockpit{opacity:1;visibility:visible}
+.cinema-intro>.codex-642p-light-rack{inset:-2.6%;width:105.2%;height:105.2%;opacity:0;visibility:hidden}
+.cinema-intro.codex-642p-cockpit-flight>.codex-642p-light-rack{opacity:1;visibility:visible}
+.intro-stars i.codex-527p-scintillation{will-change:opacity,filter;background:var(--scint-a);animation:codex527Scintillation var(--scint-duration) ease-in-out var(--scint-delay) infinite alternate!important}
+.intro-stars i.codex-527p-scintillation-bright{box-shadow:0 0 3px color-mix(in srgb,var(--scint-b) 72%,transparent)!important}
+@keyframes codex527Scintillation{0%{opacity:calc(var(--star-opacity,.72)*.7);background:var(--scint-a);filter:brightness(.82) saturate(.92)}38%{opacity:var(--star-opacity,.72);background:var(--scint-b);filter:brightness(1.12) saturate(1.04)}67%{opacity:calc(var(--star-opacity,.72)*.82);background:var(--scint-c);filter:brightness(.94) saturate(1.12)}100%{opacity:calc(var(--star-opacity,.72)*1.06);background:var(--scint-b);filter:brightness(1.24) saturate(1.02)}}
+.cinema-intro.codex-642p-intro-tremor .codex-642p-intro-cockpit,.cinema-intro.codex-642p-intro-tremor>.codex-642p-light-rack{animation:codex642IntroTremor .46s linear infinite;transform-origin:50% 50%}
+.cinema-intro.codex-642p-intro-tremor-strong .codex-642p-intro-cockpit,.cinema-intro.codex-642p-intro-tremor-strong>.codex-642p-light-rack{animation:codex642IntroTremorStrong .3s linear infinite;transform-origin:50% 50%}
+
+/* The star is behind the transparent cockpit window, so the opaque frame is a hard visual mask. */
+.codex-829a-star-system{position:absolute;z-index:2;left:50%;top:55%;width:clamp(96px,11vmin,150px);height:clamp(96px,11vmin,150px);transform:translate(-50%,-50%) scale(.18);transform-origin:50% 50%;will-change:transform,opacity;backface-visibility:hidden;contain:none;overflow:visible;background:transparent;border:0;border-radius:50%;clip-path:none}
+.codex-829a-corona,.codex-829a-white,.codex-829a-red,.codex-642p-plasma,.codex-642p-core{position:absolute;inset:0;border-radius:50%;clip-path:circle(50% at 50% 50%)}
+.codex-829a-corona{inset:-62%;background:radial-gradient(ellipse at center,rgba(255,109,71,.42) 0 17%,rgba(219,35,19,.31) 38%,rgba(122,8,5,.13) 61%,transparent 82%);filter:blur(14px);opacity:.18}
+.codex-829a-white{inset:-12%;opacity:1;clip-path:none;background:radial-gradient(circle at 38% 34%,rgba(255,202,138,.7) 0 3%,transparent 15%),radial-gradient(circle at 63% 43%,rgba(255,66,38,.82) 0 8%,transparent 25%),radial-gradient(circle at 44% 68%,rgba(88,0,8,.92) 0 13%,transparent 33%),conic-gradient(from 18deg,rgba(221,48,26,.92),rgba(88,0,8,.96),rgba(238,65,29,.88),rgba(64,0,7,.98),rgba(211,39,24,.94));box-shadow:0 0 22px rgba(255,58,27,.84),0 0 58px rgba(157,5,10,.74),0 0 96px rgba(97,0,8,.48)}
+.codex-829a-red{inset:-18%;opacity:0;background:radial-gradient(circle at 48% 47%,rgba(255,226,157,.46) 0 3%,rgba(239,82,38,.72) 8%,rgba(181,24,17,.96) 20%,rgba(111,5,7,.98) 47%,rgba(54,0,3,.9) 70%,rgba(24,0,2,.4) 84%,transparent 91%);filter:blur(3.5px) drop-shadow(0 0 24px rgba(255,44,24,.84)) drop-shadow(0 0 58px rgba(132,3,5,.76))}
+.codex-642p-plasma{inset:-9%;opacity:0;background:radial-gradient(circle at 35% 31%,rgba(255,202,119,.48) 0 4%,transparent 14%),radial-gradient(circle at 67% 40%,rgba(255,63,32,.64) 0 7%,transparent 18%),radial-gradient(circle at 45% 71%,rgba(75,0,5,.78) 0 10%,transparent 25%),conic-gradient(from 22deg,rgba(210,55,28,.35),rgba(67,0,5,.64),rgba(222,35,22,.46),rgba(49,0,4,.68),rgba(210,55,28,.35));background-size:34% 31%,29% 34%,37% 29%,100% 100%;background-repeat:repeat;mix-blend-mode:normal;filter:blur(4px)}
+.codex-642p-core{inset:41%;opacity:.95;background:radial-gradient(circle,#fff 0 18%,#fff8d7 30%,rgba(255,207,92,.96) 48%,rgba(255,94,35,.56) 72%,transparent 100%);filter:blur(1.5px) drop-shadow(0 0 14px #fff5bc) drop-shadow(0 0 36px rgba(255,154,54,.96))}
+.codex-829a-corona,.codex-829a-red,.codex-642p-plasma,.codex-642p-core{display:none!important}
+.codex-829a-white{filter:blur(4.5px) saturate(1.2) brightness(.94)!important;will-change:transform,filter;animation:codex316StarSurface 1.35s ease-in-out infinite alternate}
+body.codex-829a-sequence .codex-829a-star-system,body.codex-829a-sequence.codex-642p-from-text .codex-829a-star-system{animation:codex316ApexCrossfade 10.5s linear both}
+body.codex-829a-page-reveal .codex-829a-space,body.codex-829a-page-reveal .codex-829a-cockpit-rig{opacity:0}
+/* The transition scenery is removed from layout at completion, not merely faded, so it can never cover the final photographs. */
+body.codex-829a-final .codex-829a-space,body.codex-829a-final .codex-829a-cockpit-rig,body.codex-829a-final .codex-829a-star-system,body.codex-829a-final .codex-829a-stage>.red-star-cluster{display:none!important;opacity:0!important;visibility:hidden!important;animation:none!important}
+body.codex-829a-final .codex-829a-stage .codex-1249p-composition{z-index:200!important;visibility:visible!important;opacity:1!important}
+/* The intro stars leave with the original cockpit; no second star layer remains
+   over or behind the completed report page. */
+body.codex-829a-sequence.codex-527p-continuation .random-stars,
+body.codex-829a-final .random-stars{display:none!important;opacity:0!important;visibility:hidden!important}
+body.codex-1033a-active .report-stage>.masthead{transition:opacity 6.8s linear!important}
+
+/* Keep the final Earth and every category row below the masthead. */
+body.codex-1033a-active .codex-1249p-earth{left:50%!important;top:56%!important;width:min(535px,42vw,67vh)!important;height:min(535px,42vw,67vh)!important;background-image:url("../images/20260907_1110_CodexTalk-WagnerReports-earth-wagner-photographic.jpg")!important;background-size:118%!important;background-position:50% 56%!important;border:0!important;box-shadow:none!important}
+body.codex-1033a-active .codex-1249p-categories{left:50%!important;top:52%!important;width:min(500px,39vw,63vh)!important;gap:clamp(3px,.48vh,6px)!important;overflow:visible!important}
+body.codex-1033a-active .codex-1249p-categories>.button-row,body.codex-1033a-active .codex-1249p-categories>.sports-row{align-self:center!important;flex:0 0 auto!important;gap:clamp(6px,.5vw,10px)!important;overflow:visible!important}
+body.codex-1033a-active .codex-1249p-categories>.button-row:nth-child(1){width:78%!important}
+body.codex-1033a-active .codex-1249p-categories>.button-row:nth-child(2){width:88%!important}
+body.codex-1033a-active .codex-1249p-categories>.button-row:nth-child(3){width:94%!important}
+body.codex-1033a-active .codex-1249p-categories>.button-row:nth-child(4){width:88%!important}
+body.codex-1033a-active .codex-1249p-categories>.sports-row{width:84%!important}
+body.codex-1033a-active .codex-1249p-categories .button-row .news-button,body.codex-1033a-active .codex-1249p-categories .sports-row .news-button{position:static!important;inset:auto!important;left:auto!important;right:auto!important;top:auto!important;bottom:auto!important;width:auto!important;height:clamp(33px,4.1vh,42px)!important;gap:2px!important;padding:2px 3px!important;overflow:visible!important;font-size:clamp(8px,.62vw,10px)!important;line-height:1.05!important}
+body.codex-1033a-active .codex-1249p-access{min-width:42px!important;gap:0!important;flex-direction:row-reverse!important;overflow:visible!important}
+body.codex-1033a-active .codex-1249p-categories .codex-1249p-access img{display:block!important;width:30px!important;height:20px!important;object-fit:contain!important;transform:none!important;filter:saturate(1.72) contrast(1.2) brightness(1.18) drop-shadow(0 0 2px rgba(255,91,31,.88))!important;transition:transform .2s ease,filter .2s ease!important}
+body.codex-1033a-active .codex-1249p-speaker{display:inline-block!important;margin-left:-2px!important;font-size:15px!important;line-height:1!important;transform:none!important;filter:brightness(1.25) drop-shadow(0 0 2px rgba(255,255,255,.48))!important;transition:transform .2s ease,filter .2s ease!important}
+body.codex-1033a-active .codex-1249p-categories>.sports-row .news-button{flex-direction:column!important;gap:0!important;padding:0 2px!important}
+
+/* Restore the complete three-row picture presentation below the masthead instead of beginning halfway down the screen. */
+body.codex-1033a-active .codex-1249p-shot{z-index:40!important;height:clamp(105px,16.8vh,154px)!important;width:clamp(175px,21.5vw,400px)!important;visibility:visible!important;overflow:visible!important;clip-path:none!important}
+body.codex-1033a-active .codex-1249p-shot-1,body.codex-1033a-active .codex-1249p-shot-2{top:24%!important}
+body.codex-1033a-active .codex-1249p-shot-3,body.codex-1033a-active .codex-1249p-shot-4{top:48%!important}
+body.codex-1033a-active .codex-1249p-shot-5,body.codex-1033a-active .codex-1249p-shot-6{top:auto!important;bottom:6%!important}
+body.codex-1033a-active .codex-1249p-shot-3 img{object-fit:contain!important;object-position:center top!important;transform:scale(.9)!important}
+
+body.codex-1033a-active .codex-1249p-categories .news-button{transition:transform .2s ease,filter .2s ease,background-color .2s ease!important;transform-origin:center!important}
+body.codex-1033a-active .codex-1249p-categories .news-button:hover,body.codex-1033a-active .codex-1249p-categories .news-button:focus-visible{transform:translateY(-4px) scale(1.1)!important;filter:brightness(1.32)!important;z-index:30!important}
+body.codex-1033a-active .codex-1249p-categories .news-button:hover .codex-1249p-access img,body.codex-1033a-active .codex-1249p-categories .news-button:focus-visible .codex-1249p-access img{transform:scaleX(-1) scale(1.16)!important}
+body.codex-1033a-active .codex-1249p-categories .news-button:hover .codex-1249p-speaker,body.codex-1033a-active .codex-1249p-categories .news-button:focus-visible .codex-1249p-speaker{transform:scale(1.16)!important;filter:brightness(1.35)!important}
+
+@keyframes codex829Lamp{0%,16%,56%,100%{opacity:.28;filter:brightness(.7)}25%,43%,70%,88%{opacity:1;filter:brightness(1.35)}}
+@keyframes codex642PanelBlink{0%,38%{opacity:.18;filter:brightness(.65)}39%,72%{opacity:1;filter:brightness(1.45)}73%,100%{opacity:.3;filter:brightness(.78)}}
+@keyframes codex316ApexCrossfade{0%{opacity:1;transform:translate(-50%,-50%) scale(.18);animation-timing-function:cubic-bezier(.3,0,.7,.4)}35.24%{opacity:1;transform:translate(-50%,-50%) scale(3.95);animation-timing-function:cubic-bezier(.3,.3,.7,.72)}100%{opacity:0;transform:translate(-50%,-50%) scale(5.85)}}
+@keyframes codex316StarSurface{0%{transform:rotate(-1.2deg) scale(.985);filter:blur(4.2px) saturate(1.16) brightness(.9)}50%{transform:rotate(.7deg) scale(1.02);filter:blur(5.2px) saturate(1.3) brightness(.98)}100%{transform:rotate(1.4deg) scale(.995);filter:blur(4.6px) saturate(1.22) brightness(.92)}}
+/* Preserve the actual crawl star through the 44.5-second handoff instead of swapping in a second round element. */
+body.codex-829a-sequence.codex-527p-continuation .codex-829a-star-system{display:none!important}
+body.codex-829a-sequence.codex-527p-continuation .codex-829a-stage>.red-star-cluster{
+  display:block!important;visibility:visible!important;pointer-events:none!important;
+  z-index:7!important;left:50%!important;top:50%!important;width:3px!important;height:2.6px!important;
+  opacity:1;filter:blur(.18px) saturate(1.08);transform-origin:50% 50%!important;
+  animation:codex527ContinuousStar 11.91s linear both!important;
+}
+body.codex-829a-sequence.codex-527p-continuation .codex-829a-stage>.red-star-cluster::before{
+  content:"";position:absolute;inset:-10%;border-radius:46% 54% 43% 57%;pointer-events:none;
+  background:radial-gradient(circle at 38% 34%,rgba(255,202,138,.42) 0 4%,transparent 18%),radial-gradient(circle at 63% 43%,rgba(255,66,38,.58) 0 9%,transparent 27%),radial-gradient(circle at 44% 68%,rgba(88,0,8,.74) 0 14%,transparent 35%),conic-gradient(from 18deg,rgba(221,48,26,.72),rgba(88,0,8,.8),rgba(238,65,29,.7),rgba(64,0,7,.84),rgba(211,39,24,.74));
+  animation:codex527SurfaceFade 1.2s linear both,codex527Surface 1.35s ease-in-out .6s infinite alternate;
+}
+@keyframes codex527ContinuousStar{
+  0%{opacity:var(--codex527-start-opacity,1);transform:translate(-50%,-50%) scale(var(--codex527-start-scale,8.7)) rotate(17deg);border-radius:var(--codex527-start-radius,41% 59% 46% 54%);background:var(--codex527-start-background,#ff241c);box-shadow:var(--codex527-start-shadow,0 0 25px #ff8276,0 0 72px #ff3022,0 0 134px rgba(255,45,25,.86));animation-timing-function:cubic-bezier(.3,0,.7,.4)}
+  18%{opacity:1;transform:translate(-50%,-50%) scale(42) rotate(17.3deg);border-radius:47% 53% 43% 57%;background:#ff241c;box-shadow:0 0 25px #ff8276,0 0 72px #ff3022,0 0 134px rgba(255,45,25,.86);animation-timing-function:cubic-bezier(.3,.21,.7,.94)}
+  35.24%{opacity:1;transform:translate(-50%,-50%) scale(132) rotate(16.7deg);border-radius:54% 46% 57% 43%;background:#ff241c;box-shadow:0 0 25px #ff8276,0 0 72px #ff3022,0 0 134px rgba(255,45,25,.86);animation-timing-function:cubic-bezier(.3,.312,.7,.721)}
+  68%{opacity:.62;transform:translate(-50%,-50%) scale(165) rotate(17.4deg);border-radius:45% 55% 48% 52%;background:#ff241c;box-shadow:0 0 25px #ff8276,0 0 72px #ff3022,0 0 134px rgba(255,45,25,.86);animation-timing-function:linear}
+  100%{opacity:0;transform:translate(-50%,-50%) scale(195) rotate(16.8deg);border-radius:52% 48% 55% 45%;background:#ff241c;box-shadow:0 0 18px #ff6d60,0 0 58px #ff3022,0 0 112px rgba(255,45,25,.7)}
+}
+@keyframes codex527SurfaceFade{0%{opacity:0}100%{opacity:.72}}
+@keyframes codex527Surface{0%{transform:rotate(-1.2deg) scale(.985);filter:blur(.7px) saturate(1.14) brightness(.9)}50%{transform:rotate(.7deg) scale(1.02);filter:blur(1px) saturate(1.28) brightness(.98)}100%{transform:rotate(1.4deg) scale(.995);filter:blur(.8px) saturate(1.2) brightness(.92)}}
+@keyframes codex1247Corona{0%{opacity:.12}55%{opacity:.52}100%{opacity:.76}}
+@keyframes codex1247White{0%,24%{opacity:1}68%{opacity:.55}100%{opacity:.16}}
+@keyframes codex1247Red{0%,22%{opacity:0}62%{opacity:.62}100%{opacity:.96}}
+@keyframes codex202Plasma{0%,38%{opacity:0}72%{opacity:.38}100%{opacity:.64}}
+@keyframes codex1247Core{0%{opacity:1}70%{opacity:.96}100%{opacity:.88}}
+@keyframes codex642WhiteToRed{0%,22%{opacity:1}48%{opacity:.68}78%,100%{opacity:.2}}
+@keyframes codex642RedBloom{0%,15%{opacity:0}34%{opacity:.38}62%{opacity:.8}100%{opacity:.96}}
+@keyframes codex642Corona{0%,16%{opacity:.16}50%{opacity:.56}100%{opacity:.88}}
+@keyframes codex642CoreGrow{0%{opacity:1;transform:scale(.72)}50%{opacity:.98;transform:scale(.9)}100%{opacity:.9;transform:scale(1.04)}}
+@keyframes codex642Plasma{0%,20%{opacity:0}45%{opacity:.34}75%,100%{opacity:.74}}
+@keyframes codex642Undulate{0%{border-radius:46% 54% 43% 57%;transform:translate(-1.2%,.8%) scale(.98)}100%{border-radius:55% 45% 58% 42%;transform:translate(1.1%,-.9%) scale(1.04)}}
+@keyframes codex642PlasmaTurn{0%{transform:rotate(0) scale(.98);background-position:0 0,12% 8%,4% 16%,center}50%{transform:rotate(5deg) scale(1.035);background-position:9% 6%,3% 14%,13% 4%,center}100%{transform:rotate(10deg) scale(.98);background-position:17% 11%,9% 2%,5% 13%,center}}
+@keyframes codex642CorePulse{0%{transform:scale(.9);filter:blur(1.2px) drop-shadow(0 0 12px #fff5bc) drop-shadow(0 0 30px rgba(255,154,54,.9))}100%{transform:scale(1.08);filter:blur(1.8px) drop-shadow(0 0 20px #fff8dc) drop-shadow(0 0 48px rgba(255,126,36,1))}}
+@keyframes codex1247StarYield{0%{opacity:1;transform:translate(-50%,-50%) scale(6)}45%{opacity:.5;transform:translate(-50%,-50%) scale(6.2)}100%{opacity:0;transform:translate(-50%,-50%) scale(6.45)}}
+body.codex-829a-tremor .codex-829a-cockpit-rig,body.codex-642p-tremor-strong .codex-829a-cockpit-rig{animation:none!important}
+@keyframes codex642CockpitTremor{0%{transform:translate3d(0,0,0) rotate(0) scale(1.035)}20%{transform:translate3d(-2px,1px,0) rotate(-.06deg) scale(1.036)}40%{transform:translate3d(2px,-2px,0) rotate(.07deg) scale(1.037)}60%{transform:translate3d(-1px,-1px,0) rotate(-.04deg) scale(1.036)}80%{transform:translate3d(2px,2px,0) rotate(.05deg) scale(1.037)}100%{transform:translate3d(0,0,0) rotate(0) scale(1.035)}}
+@keyframes codex642CockpitTremorStrong{0%{transform:translate3d(-3px,2px,0) rotate(-.1deg) scale(1.04)}18%{transform:translate3d(5px,-4px,0) rotate(.14deg) scale(1.043)}36%{transform:translate3d(-6px,3px,0) rotate(-.17deg) scale(1.045)}54%{transform:translate3d(4px,5px,0) rotate(.13deg) scale(1.043)}72%{transform:translate3d(-5px,-4px,0) rotate(-.15deg) scale(1.044)}88%{transform:translate3d(6px,2px,0) rotate(.16deg) scale(1.045)}100%{transform:translate3d(-3px,2px,0) rotate(-.1deg) scale(1.04)}}
+@keyframes codex642IntroTremor{0%{transform:translate3d(0,0,0) rotate(0) scale(1)}25%{transform:translate3d(-2px,1px,0) rotate(-.05deg) scale(1.002)}50%{transform:translate3d(2px,-2px,0) rotate(.06deg) scale(1.003)}75%{transform:translate3d(-1px,2px,0) rotate(-.04deg) scale(1.002)}100%{transform:translate3d(0,0,0) rotate(0) scale(1)}}
+@keyframes codex642IntroTremorStrong{0%{transform:translate3d(-4px,2px,0) rotate(-.11deg) scale(1.004)}20%{transform:translate3d(6px,-4px,0) rotate(.16deg) scale(1.007)}40%{transform:translate3d(-7px,4px,0) rotate(-.18deg) scale(1.008)}60%{transform:translate3d(5px,5px,0) rotate(.15deg) scale(1.006)}80%{transform:translate3d(-6px,-4px,0) rotate(-.16deg) scale(1.007)}100%{transform:translate3d(-4px,2px,0) rotate(-.11deg) scale(1.004)}}
+@media(max-width:900px){.codex-829a-entry-brand{gap:clamp(8px,2vw,18px)}.codex-829a-entry-brand .seal{flex-basis:clamp(64px,9vw,86px)}.codex-829a-entry-brand h2{font-size:clamp(30px,6.1vw,54px)!important}.intro-controls{gap:5px!important;flex-wrap:wrap!important;justify-content:center!important}.codex-829a-test-button{font-size:8px;padding:5px 8px}body.codex-1033a-active .codex-1249p-earth{top:64%!important;width:min(360px,58vw,48vh)!important;height:min(360px,58vw,48vh)!important}body.codex-1033a-active .codex-1249p-categories{top:64%!important;width:min(330px,52vw,44vh)!important;gap:3px!important}body.codex-1033a-active .codex-1249p-categories>.button-row,body.codex-1033a-active .codex-1249p-categories>.sports-row{gap:4px!important}body.codex-1033a-active .codex-1249p-categories .button-row .news-button,body.codex-1033a-active .codex-1249p-categories .sports-row .news-button{height:31px!important;font-size:8px!important;padding:1px 2px!important}body.codex-1033a-active .codex-1249p-access{min-width:31px!important}body.codex-1033a-active .codex-1249p-categories .codex-1249p-access img{width:23px!important;height:16px!important}body.codex-1033a-active .codex-1249p-speaker{font-size:12px!important}body.codex-1033a-active .codex-1249p-shot{height:15vh!important;width:22vw!important}body.codex-1033a-active .codex-1249p-shot-1,body.codex-1033a-active .codex-1249p-shot-2{top:34%!important}body.codex-1033a-active .codex-1249p-shot-3,body.codex-1033a-active .codex-1249p-shot-4{top:56%!important}}
+@media(max-width:900px) and (max-height:400px){body.codex-1033a-active .codex-1249p-earth{top:72%!important;width:min(260px,52vw,54vh)!important;height:min(260px,52vw,54vh)!important}body.codex-1033a-active .codex-1249p-categories{top:77%!important;width:min(195px,44vw,48vh)!important;gap:1px!important}body.codex-1033a-active .codex-1249p-categories>.button-row,body.codex-1033a-active .codex-1249p-categories>.sports-row{gap:2px!important}body.codex-1033a-active .codex-1249p-categories .button-row .news-button,body.codex-1033a-active .codex-1249p-categories .sports-row .news-button{height:15.5px!important;min-height:15.5px!important;font-size:5px!important;line-height:1!important;gap:1px!important;padding:0 1px!important}body.codex-1033a-active .codex-1249p-access{min-width:22px!important}body.codex-1033a-active .codex-1249p-categories .codex-1249p-access img{width:14px!important;height:10px!important}body.codex-1033a-active .codex-1249p-speaker{font-size:8px!important;margin-left:-1px!important}body.codex-1033a-active .codex-1249p-shot{height:15vh!important;width:22vw!important}body.codex-1033a-active .codex-1249p-shot-1,body.codex-1033a-active .codex-1249p-shot-2{top:56%!important}body.codex-1033a-active .codex-1249p-shot-3,body.codex-1033a-active .codex-1249p-shot-4{top:73%!important}}
+@media(max-width:600px){.codex-829a-entry-brand .right-seal{display:grid!important}.codex-829a-entry-brand .seal{flex-basis:48px}.codex-829a-entry-brand h2{font-size:clamp(21px,5.8vw,34px)!important}.entry-gate>p{font-size:10px!important}.codex-244p-entry-choices .codex-829a-enter{width:88vw;min-height:44px;padding:9px 16px;font-size:11px}.codex-829a-lamp{width:8px;height:8px}}
+@media(prefers-reduced-motion:reduce){body.codex-829a-tremor .codex-829a-cockpit-rig,body.codex-642p-tremor-strong .codex-829a-cockpit-rig,.cinema-intro.codex-642p-intro-tremor .codex-642p-intro-cockpit,.cinema-intro.codex-642p-intro-tremor>.codex-642p-light-rack,.cinema-intro.codex-642p-intro-tremor-strong .codex-642p-intro-cockpit,.cinema-intro.codex-642p-intro-tremor-strong>.codex-642p-light-rack,.codex-642p-light-rack i{animation:none!important}}
+
+/* Keep open space clear after Earth departs, then let every line finish before
+   the red star begins its expansion. */
+.cinema-intro.running .crawl-copy p:nth-child(1){animation-delay:14.50s!important}
+.cinema-intro.running .crawl-copy p:nth-child(2){animation-delay:17.52s!important}
+.cinema-intro.running .crawl-copy p:nth-child(3){animation-delay:20.24s!important}
+.cinema-intro.running .crawl-copy p:nth-child(4){animation-delay:23.24s!important}
+.cinema-intro.running .crawl-copy p:nth-child(5){animation-delay:25.95s!important}
+.cinema-intro.running .crawl-copy p:nth-child(6){animation-delay:28.96s!important}
+.cinema-intro.running .crawl-copy p:nth-child(7){animation-delay:31.98s!important}
+.cinema-intro.running .crawl-copy p:nth-child(8){animation-delay:34.98s!important}
+.cinema-intro.running .crawl-copy p:nth-child(9){animation-delay:38.00s!important}
+.cinema-intro.running .crawl-copy p:nth-child(10){animation-delay:41.02s!important}
+.cinema-intro.running .red-star-cluster{animation:codex0929HoldStar 52.2s linear both!important}
+@keyframes codex0929HoldStar{
+  0%{opacity:0;transform:translate(-50%,-50%) scale(8.7) rotate(17deg);background:#ff241c;box-shadow:0 0 8px #ff8276,0 0 22px #ff3022,0 0 44px rgba(255,45,25,.72)}
+  27%{opacity:0;transform:translate(-50%,-50%) scale(8.7) rotate(17deg);background:#ff241c;box-shadow:0 0 8px #ff8276,0 0 22px #ff3022,0 0 44px rgba(255,45,25,.72)}
+  28%,100%{opacity:1;transform:translate(-50%,-50%) scale(8.7) rotate(17deg);background:#ff241c;box-shadow:0 0 8px #ff8276,0 0 22px #ff3022,0 0 44px rgba(255,45,25,.72)}
+}
+
+/* Keep the same corrected final composition in the in-app browser's narrow viewport. */
+@media(max-width:900px){
+  body.codex-1033a-active .codex-1249p-earth{top:56%!important;width:min(510px,53vw,66vh)!important;height:min(510px,53vw,66vh)!important;border:0!important;box-shadow:none!important}
+  body.codex-1033a-active .codex-1249p-categories{top:51.5%!important;width:min(455px,48vw,60vh)!important;gap:2px!important}
+  body.codex-1033a-active .codex-1249p-shot-1,body.codex-1033a-active .codex-1249p-shot-2{top:24%!important}
+  body.codex-1033a-active .codex-1249p-shot-3,body.codex-1033a-active .codex-1249p-shot-4{top:48%!important}
+  body.codex-1033a-active .codex-1249p-shot-5,body.codex-1033a-active .codex-1249p-shot-6{top:auto!important;bottom:6%!important}
+}
+
+/* 20260905_0856 final-scene correction: crop to the globe instead of the
+   star-filled square around it, while keeping the borderless approved edge. */
+body.codex-1033a-active .codex-1249p-earth{
+  background-size:145%!important;
+  background-position:50% 53%!important;
+  border:0!important;
+  box-shadow:none!important;
+  z-index:10!important;
+}
+body.codex-1033a-active .codex-1249p-categories{z-index:20!important}
+
+/* Restore a restrained star field behind the completed presentation. */
+body.codex-829a-final .report-stage{
+  background-color:#000!important;
+  background-image:
+    radial-gradient(circle,rgba(255,255,255,.82) 0 1px,transparent 1.35px),
+    radial-gradient(circle,rgba(137,196,235,.62) 0 .8px,transparent 1.2px),
+    radial-gradient(circle,rgba(255,220,145,.48) 0 .7px,transparent 1.1px)!important;
+  background-size:73px 79px,109px 97px,137px 131px!important;
+  background-position:11px 17px,43px 61px,89px 31px!important;
+}
+
+/* A mirrored diagonal fan replaces the two rigid picture columns. */
+body.codex-1033a-active .codex-1249p-shot-1{left:1.2vw!important;right:auto!important;top:28%!important}
+body.codex-1033a-active .codex-1249p-shot-2{right:1.2vw!important;left:auto!important;top:28%!important}
+body.codex-1033a-active .codex-1249p-shot-3{left:8vw!important;right:auto!important;top:49%!important}
+body.codex-1033a-active .codex-1249p-shot-4{right:8vw!important;left:auto!important;top:49%!important}
+body.codex-1033a-active .codex-1249p-shot-5{left:10vw!important;right:auto!important;top:auto!important;bottom:5%!important}
+body.codex-1033a-active .codex-1249p-shot-6{right:10vw!important;left:auto!important;top:auto!important;bottom:5%!important}
+
+/* Preserve the complete Trump and baseball subjects inside the upper row. */
+body.codex-1033a-active .codex-1249p-shot-1 img,
+body.codex-1033a-active .codex-1249p-shot-2 img{
+  object-fit:cover!important;
+  object-position:center 18%!important;
+  transform:none!important;
+}
+
+/* Enlarge and spread the complete icon field across the globe. */
+body.codex-1033a-active .codex-1249p-categories{top:56%!important;width:min(515px,40.5vw,65vh)!important;gap:clamp(7px,.9vh,10px)!important}
+body.codex-1033a-active .codex-1249p-categories>.button-row:nth-child(1){width:84%!important}
+body.codex-1033a-active .codex-1249p-categories>.button-row:nth-child(2){width:94%!important}
+body.codex-1033a-active .codex-1249p-categories>.button-row:nth-child(3){width:100%!important}
+body.codex-1033a-active .codex-1249p-categories>.button-row:nth-child(4){width:94%!important}
+body.codex-1033a-active .codex-1249p-categories>.sports-row{width:86%!important}
+body.codex-1033a-active .codex-1249p-categories .button-row .news-button,
+body.codex-1033a-active .codex-1249p-categories .sports-row .news-button{height:clamp(42px,5vh,50px)!important;font-size:clamp(10px,.76vw,12px)!important}
+
+/* Keep every speaker/glasses pair compact, consistently aligned, and aimed inward. */
+body.codex-1033a-active .codex-1249p-categories .news-button{
+  justify-content:flex-start!important;
+  column-gap:3px!important;
+}
+body.codex-1033a-active .codex-1249p-access{
+  min-width:50px!important;
+  justify-content:flex-end!important;
+  flex-direction:row-reverse!important;
+  gap:1px!important;
+}
+body.codex-1033a-active .codex-1249p-categories .codex-1249p-access img{
+  width:34px!important;
+  height:24px!important;
+  transform:scaleX(-1)!important;
+}
+body.codex-1033a-active .codex-1249p-speaker{
+  margin:0!important;
+  font-size:18px!important;
+  transform:none!important;
+}
+
+@media(max-width:900px){
+  body.codex-1033a-active .codex-1249p-shot-1,body.codex-1033a-active .codex-1249p-shot-2{top:28%!important}
+  body.codex-1033a-active .codex-1249p-shot-3{left:5vw!important;top:49%!important}
+  body.codex-1033a-active .codex-1249p-shot-4{right:5vw!important;top:49%!important}
+  body.codex-1033a-active .codex-1249p-shot-5{left:9vw!important;bottom:5%!important}
+  body.codex-1033a-active .codex-1249p-shot-6{right:9vw!important;bottom:5%!important}
+  body.codex-1033a-active .codex-1249p-access{min-width:31px!important}
+  body.codex-1033a-active .codex-1249p-categories .codex-1249p-access img{width:21px!important;height:14px!important}
+}
+@media(prefers-reduced-motion:reduce){.intro-stars i.codex-527p-scintillation{animation:none!important}}
+
+/* 20260905_0856: one even camera withdrawal from the approved Texas/Florida
+   close-up.  Cropping the source inside the circular mask removes its baked-in
+   star margin as the complete globe comes into view. */
+.codex-0906-overflight-earth{left:35%!important;top:75%!important}
+.codex-0906-overflight-earth img{transform:scale(1.13);transform-origin:center}
+.codex-0906-overflight-earth.codex-0906-departing{animation:codex1159FloridaDeparture 12.5s linear both!important}
+@keyframes codex1159FloridaDeparture{
+  0%{opacity:1;transform:translate(-50%,-50%) scale(2.35) rotate(0)}
+  84%{opacity:1;transform:translate(-91%,-11%) scale(.42) rotate(-8deg)}
+  100%{opacity:0;transform:translate(-108%,2%) scale(.25) rotate(-11deg)}
+}
+
+/* The same live star holds for the complete text flight and then expands;
+   there is no cloned-star swap at 52.20 seconds. */
+.cinema-intro.running .red-star-cluster{
+  animation:codex0929HoldStar 52.2s linear both,codex527ContinuousStar 11.91s linear 52.2s forwards!important
+}
+body.codex-829a-sequence.codex-527p-continuation .codex-829a-stage>.red-star-cluster{display:none!important}
+
+/* Natural final stars: individually placed, varied in size and color, and
+   always behind the Earth, controls, and photographs. */
+body.codex-829a-final .report-stage{background:#000!important}
+.codex-1159-final-stars{position:absolute;z-index:0;inset:0;overflow:hidden;opacity:0;visibility:hidden;pointer-events:none}
+body.codex-829a-final .codex-1159-final-stars{opacity:1;visibility:visible}
+.codex-1159-final-stars i{position:absolute;left:var(--sx);top:var(--sy);width:var(--ss);height:var(--ss);border-radius:50%;background:var(--sc);opacity:var(--so);box-shadow:0 0 calc(var(--ss)*2.2) color-mix(in srgb,var(--sc) 62%,transparent)}
+
+/* Borderless globe and a compact five-row field fully contained inside it. */
+body.codex-1033a-active .codex-1249p-earth{background-size:153%!important;background-position:50% 52.5%!important;border:0!important;box-shadow:none!important}
+body.codex-1033a-active .codex-1249p-categories{top:56%!important;width:min(470px,37vw,59vh)!important;gap:clamp(6px,.72vh,8px)!important;overflow:visible!important}
+body.codex-1033a-active .codex-1249p-categories>.button-row:nth-child(1){width:72%!important}
+body.codex-1033a-active .codex-1249p-categories>.button-row:nth-child(2){width:84%!important}
+body.codex-1033a-active .codex-1249p-categories>.button-row:nth-child(3){width:90%!important}
+body.codex-1033a-active .codex-1249p-categories>.button-row:nth-child(4){width:84%!important}
+body.codex-1033a-active .codex-1249p-categories>.sports-row{width:74%!important}
+body.codex-1033a-active .codex-1249p-categories .button-row .news-button,
+body.codex-1033a-active .codex-1249p-categories .sports-row .news-button{min-width:0!important;height:clamp(31px,3.8vh,36px)!important;padding:1px 2px!important;column-gap:2px!important;font-size:clamp(8px,.62vw,10px)!important;line-height:1!important}
+body.codex-1033a-active .codex-1249p-access{min-width:32px!important;width:32px!important;gap:0!important}
+body.codex-1033a-active .codex-1249p-categories .codex-1249p-access img{width:19px!important;height:13px!important}
+body.codex-1033a-active .codex-1249p-speaker{font-size:14px!important}
+
+/* Pull the middle photographs inward, preserve the full Trump image, and
+   feather the airplane on every edge. */
+body.codex-1033a-active .codex-1249p-shot{width:clamp(190px,22vw,420px)!important;height:clamp(110px,17.5vh,160px)!important}
+body.codex-1033a-active .codex-1249p-shot-1{left:1vw!important;top:26%!important;width:clamp(230px,25vw,470px)!important;height:clamp(135px,21vh,190px)!important}
+body.codex-1033a-active .codex-1249p-shot-2{right:1vw!important;top:26%!important;width:clamp(230px,25vw,470px)!important;height:clamp(135px,21vh,190px)!important}
+body.codex-1033a-active .codex-1249p-shot-3{left:9vw!important;top:52%!important}
+body.codex-1033a-active .codex-1249p-shot-4{right:9vw!important;top:52%!important}
+body.codex-1033a-active .codex-1249p-shot-1 img,body.codex-1033a-active .codex-1249p-shot-2 img{object-fit:contain!important;object-position:center!important;transform:none!important;-webkit-mask-image:radial-gradient(ellipse at center,#000 44%,rgba(0,0,0,.9) 70%,transparent 100%)!important;mask-image:radial-gradient(ellipse at center,#000 44%,rgba(0,0,0,.9) 70%,transparent 100%)!important}
+body.codex-1033a-active .codex-1249p-shot-4 img{
+  object-fit:contain!important;object-position:center!important;transform:scale(.98)!important;
+  -webkit-mask-image:linear-gradient(to right,transparent 0%,rgba(0,0,0,.35) 7%,#000 17%,#000 86%,rgba(0,0,0,.4) 94%,transparent 100%),linear-gradient(to bottom,transparent 0%,#000 14%,#000 86%,transparent 100%)!important;
+  -webkit-mask-composite:source-in!important;
+  mask-image:linear-gradient(to right,transparent 0%,rgba(0,0,0,.35) 7%,#000 17%,#000 86%,rgba(0,0,0,.4) 94%,transparent 100%),linear-gradient(to bottom,transparent 0%,#000 14%,#000 86%,transparent 100%)!important;
+  mask-composite:intersect!important
+}
+
+/* 20260905_0856 measured sequence: a tiny white destination appears gently
+   after the Earth clears, remains white for the complete text flight, changes
+   to red only after the final line arrives, and expands without a scale swap. */
+.cinema-intro.running .red-star-cluster{
+  animation:codex1241DestinationStar 65.7s linear both!important;
+}
+@keyframes codex1241DestinationStar{
+  0%,22.5%{opacity:0;transform:translate(-50%,-50%) scale(.35) rotate(17deg);border-radius:50%;background:#fff;box-shadow:0 0 2px #fff,0 0 6px rgba(214,237,255,.78)}
+  23.5%,80.8%{opacity:1;transform:translate(-50%,-50%) scale(1) rotate(17deg);border-radius:50%;background:#fff;box-shadow:0 0 2px #fff,0 0 7px rgba(214,237,255,.82)}
+  81.6%{opacity:1;transform:translate(-50%,-50%) scale(1.08) rotate(17deg);border-radius:50%;background:#ff2b22;box-shadow:0 0 7px #ff8a80,0 0 18px rgba(255,48,34,.72)}
+  91%{opacity:1;transform:translate(-50%,-50%) scale(720) rotate(17deg);border-radius:50%;background:#ff241c;box-shadow:0 0 24px #ff8276,0 0 72px #ff3022,0 0 134px rgba(255,45,25,.86)}
+  100%{opacity:1;transform:translate(-50%,-50%) scale(720) rotate(17deg);border-radius:50%;background:#ff241c;box-shadow:0 0 24px #ff8276,0 0 72px #ff3022,0 0 134px rgba(255,45,25,.86)}
+}
+
+/* The completed scene uses many restrained stars and only occasional bright
+   ones, with no tiled rows or columns. */
+.codex-1159-final-stars{display:none!important}
+.codex-1241-final-stars{position:absolute;z-index:0;inset:0;overflow:hidden;opacity:0;visibility:hidden;pointer-events:none}
+body.codex-829a-final .codex-1241-final-stars{opacity:1;visibility:visible}
+.codex-1241-final-stars i{position:absolute;left:var(--sx);top:var(--sy);width:var(--ss);height:var(--ss);border-radius:50%;background:var(--sc);opacity:var(--so);box-shadow:0 0 calc(var(--ss)*1.55) color-mix(in srgb,var(--sc) 42%,transparent)}
+
+/* Spread the choices across the usable globe, remove the inherited blue rule,
+   and keep the controls smaller than the previous crowded attempt. */
+body.codex-1033a-active .codex-1249p-categories{
+  top:56%!important;width:min(500px,39.5vw,62vh)!important;
+  gap:clamp(8px,1vh,11px)!important;border:0!important;outline:0!important;
+  box-shadow:none!important;background:none!important;
+}
+body.codex-1033a-active .codex-1249p-categories::before,
+body.codex-1033a-active .codex-1249p-categories::after{content:none!important;display:none!important}
+body.codex-1033a-active .codex-1249p-categories>.button-row:nth-child(1){width:80%!important}
+body.codex-1033a-active .codex-1249p-categories>.button-row:nth-child(2){width:91%!important}
+body.codex-1033a-active .codex-1249p-categories>.button-row:nth-child(3){width:96%!important}
+body.codex-1033a-active .codex-1249p-categories>.button-row:nth-child(4){width:91%!important}
+body.codex-1033a-active .codex-1249p-categories>.sports-row{width:80%!important}
+body.codex-1033a-active .codex-1249p-categories .button-row .news-button,
+body.codex-1033a-active .codex-1249p-categories .sports-row .news-button{height:clamp(32px,3.9vh,38px)!important;font-size:clamp(8px,.64vw,10px)!important}
+
+/* Soften the circumference without drawing a replacement ring. */
+body.codex-1033a-active .codex-1249p-earth{
+  border:0!important;box-shadow:none!important;clip-path:circle(49.5% at 50% 50%)!important;
+  -webkit-mask-image:radial-gradient(circle at center,#000 0 88%,rgba(0,0,0,.92) 92%,rgba(0,0,0,.38) 97%,transparent 100%)!important;
+  mask-image:radial-gradient(circle at center,#000 0 88%,rgba(0,0,0,.92) 92%,rgba(0,0,0,.38) 97%,transparent 100%)!important;
+}
+
+/* Six separated editorial islands: smaller pictures, full airplane visibility,
+   and broad four-edge feathering for Trump, baseball, plane, ships, and fire. */
+body.codex-1033a-active .codex-1249p-shot{width:clamp(170px,19vw,360px)!important;height:clamp(100px,15vh,142px)!important}
+body.codex-1033a-active .codex-1249p-shot-1{left:2.5vw!important;top:27%!important;width:clamp(205px,21vw,400px)!important;height:clamp(120px,18.5vh,172px)!important}
+body.codex-1033a-active .codex-1249p-shot-2{right:2.5vw!important;top:27%!important;width:clamp(205px,21vw,400px)!important;height:clamp(120px,18.5vh,172px)!important}
+body.codex-1033a-active .codex-1249p-shot-3{left:11vw!important;top:51%!important;width:clamp(160px,17.5vw,330px)!important}
+body.codex-1033a-active .codex-1249p-shot-4{right:9vw!important;top:51%!important;width:clamp(190px,20vw,380px)!important}
+body.codex-1033a-active .codex-1249p-shot-5{left:7vw!important;bottom:5.5%!important;width:clamp(175px,19vw,360px)!important}
+body.codex-1033a-active .codex-1249p-shot-6{right:7vw!important;bottom:5.5%!important;width:clamp(175px,19vw,360px)!important}
+body.codex-1033a-active .codex-1249p-shot img{
+  -webkit-mask-image:radial-gradient(ellipse at center,#000 38%,rgba(0,0,0,.92) 60%,rgba(0,0,0,.34) 82%,transparent 100%)!important;
+  mask-image:radial-gradient(ellipse at center,#000 38%,rgba(0,0,0,.92) 60%,rgba(0,0,0,.34) 82%,transparent 100%)!important;
+}
+body.codex-1033a-active .codex-1249p-shot-1 img,
+body.codex-1033a-active .codex-1249p-shot-2 img{object-fit:contain!important;object-position:center!important;transform:scale(.94)!important}
+body.codex-1033a-active .codex-1249p-shot-4 img{object-fit:contain!important;object-position:center!important;transform:scale(.92)!important}
+body.codex-1033a-active .codex-1249p-shot-6 img{
+  -webkit-mask-image:radial-gradient(ellipse at center,#000 30%,rgba(0,0,0,.86) 54%,rgba(0,0,0,.28) 77%,transparent 100%)!important;
+  mask-image:radial-gradient(ellipse at center,#000 30%,rgba(0,0,0,.86) 54%,rgba(0,0,0,.28) 77%,transparent 100%)!important;
+}
+
+/* 20260907_1110: reserve five quiet seconds for USS Wagner-Houston traffic.
+   The same Earth remains on screen and turns gently through the hold and the
+   existing departure, while every later presentation event moves five seconds. */
+.codex-0906-overflight-earth.codex-2003-communications-hold{
+  opacity:1!important;
+  transform:translate(-50%,-50%) scale(2.35) rotate(0deg)!important;
+}
+.codex-0906-overflight-earth.codex-2003-communications-hold img{
+  animation:codex2003EarthHoldTurn 5s linear both!important;
+}
+.codex-0906-overflight-earth.codex-0906-departing img{
+  animation:codex2003EarthDepartureTurn 12.5s linear both!important;
+}
+@keyframes codex2003EarthHoldTurn{
+  from{transform:scale(1.13) rotate(0deg)}
+  to{transform:scale(1.13) rotate(1.8deg)}
+}
+@keyframes codex2003EarthDepartureTurn{
+  from{transform:scale(1.13) rotate(1.8deg)}
+  to{transform:scale(1.13) rotate(7deg)}
+}
+.cinema-intro.running .crawl-copy p:nth-child(1){animation-delay:19.50s!important}
+.cinema-intro.running .crawl-copy p:nth-child(2){animation-delay:22.52s!important}
+.cinema-intro.running .crawl-copy p:nth-child(3){animation-delay:25.24s!important}
+.cinema-intro.running .crawl-copy p:nth-child(4){animation-delay:28.24s!important}
+.cinema-intro.running .crawl-copy p:nth-child(5){animation-delay:30.95s!important}
+.cinema-intro.running .crawl-copy p:nth-child(6){animation-delay:33.96s!important}
+.cinema-intro.running .crawl-copy p:nth-child(7){animation-delay:36.98s!important}
+.cinema-intro.running .crawl-copy p:nth-child(8){animation-delay:39.98s!important}
+.cinema-intro.running .crawl-copy p:nth-child(9){animation-delay:43.00s!important}
+.cinema-intro.running .crawl-copy p:nth-child(10){animation-delay:46.02s!important}
+/* 20260905_0856: keep one destination star alive across the legacy intro
+   handoff. It stays white until the final crawl line arrives, warms to red,
+   fills the cockpit, then dissolves over the complete composition. */
+body.codex-1826-flight .cinema-intro .red-star-cluster{
+  display:block!important;visibility:visible!important;pointer-events:none!important;
+  z-index:7!important;opacity:0;
+  animation:codex1528DestinationStar 68.5s linear 5s both!important;
+}
+@keyframes codex1528DestinationStar{
+  0%,22.0%{opacity:0;transform:translate(-50%,-50%) scale(.32) rotate(17deg);border-radius:50%;background:#fff;box-shadow:0 0 2px #fff,0 0 5px rgba(214,237,255,.72)}
+  23.2%,78.4%{opacity:1;transform:translate(-50%,-50%) scale(1) rotate(17deg);border-radius:50%;background:#fff;box-shadow:0 0 2px #fff,0 0 7px rgba(214,237,255,.84)}
+  81.8%{opacity:1;transform:translate(-50%,-50%) scale(1.08) rotate(17deg);border-radius:50%;background:#ff2b22;box-shadow:0 0 7px #ff8a80,0 0 18px rgba(255,48,34,.72)}
+  88.4%{opacity:1;transform:translate(-50%,-50%) scale(720) rotate(17deg);border-radius:50%;background:#ff241c;box-shadow:0 0 24px #ff8276,0 0 72px #ff3022,0 0 134px rgba(255,45,25,.86)}
+  90.5%{opacity:.88;transform:translate(-50%,-50%) scale(720) rotate(17deg);background:#f3231c}
+  100%{opacity:0;transform:translate(-50%,-50%) scale(720) rotate(17deg);background:#c91713}
+}
+
+/* A calmer, legible five-row control field: each row occupies the globe's
+   useful width while every icon and label remains inside the circumference. */
+body.codex-1033a-active .codex-1249p-categories{
+  top:57%!important;width:min(470px,37vw,59vh)!important;gap:clamp(6px,.72vh,8px)!important;
+}
+body.codex-1033a-active .codex-1249p-categories>.button-row:nth-child(1){width:78%!important}
+body.codex-1033a-active .codex-1249p-categories>.button-row:nth-child(2){width:88%!important}
+body.codex-1033a-active .codex-1249p-categories>.button-row:nth-child(3){width:94%!important}
+body.codex-1033a-active .codex-1249p-categories>.button-row:nth-child(4){width:88%!important}
+body.codex-1033a-active .codex-1249p-categories>.sports-row{width:78%!important}
+body.codex-1033a-active .codex-1249p-categories .button-row,
+body.codex-1033a-active .codex-1249p-categories .sports-row{gap:clamp(4px,.38vw,7px)!important}
+body.codex-1033a-active .codex-1249p-categories .news-button{
+  height:clamp(34px,4.15vh,40px)!important;padding:2px 3px!important;gap:3px!important;
+  font-size:clamp(8px,.65vw,10.5px)!important;line-height:1.04!important;
+}
+body.codex-1033a-active .codex-1249p-access{min-width:31px!important;width:31px!important;gap:1px!important}
+body.codex-1033a-active .codex-1249p-categories .codex-1249p-access img{width:18px!important;height:12px!important}
+body.codex-1033a-active .codex-1249p-speaker{font-size:11px!important;opacity:.74!important;filter:brightness(1.02) drop-shadow(0 0 1px rgba(255,255,255,.28))!important}
+
+/* Six independent, diagonally staggered picture islands. Their boxes no
+   longer touch, and every source uses the same broad four-edge feather. */
+body.codex-1033a-active .codex-1249p-shot{
+  width:clamp(165px,18vw,340px)!important;height:clamp(92px,14vh,132px)!important;
+  overflow:visible!important;
+}
+body.codex-1033a-active .codex-1249p-shot-1{left:3vw!important;right:auto!important;top:26%!important;width:clamp(185px,19.5vw,370px)!important;height:clamp(108px,16.5vh,156px)!important}
+body.codex-1033a-active .codex-1249p-shot-2{right:3vw!important;left:auto!important;top:26%!important;width:clamp(185px,19.5vw,370px)!important;height:clamp(108px,16.5vh,156px)!important}
+body.codex-1033a-active .codex-1249p-shot-3{left:8vw!important;right:auto!important;top:50%!important;width:clamp(155px,16.5vw,310px)!important}
+body.codex-1033a-active .codex-1249p-shot-4{right:8vw!important;left:auto!important;top:50%!important;width:clamp(170px,18vw,340px)!important}
+body.codex-1033a-active .codex-1249p-shot-5{left:3.5vw!important;right:auto!important;top:auto!important;bottom:3%!important;width:clamp(170px,18vw,340px)!important}
+body.codex-1033a-active .codex-1249p-shot-6{right:3.5vw!important;left:auto!important;top:auto!important;bottom:3%!important;width:clamp(170px,18vw,340px)!important}
+body.codex-1033a-active .codex-1249p-shot img,
+body.codex-1033a-active .codex-1249p-shot-1 img,
+body.codex-1033a-active .codex-1249p-shot-2 img,
+body.codex-1033a-active .codex-1249p-shot-4 img,
+body.codex-1033a-active .codex-1249p-shot-6 img{
+  width:100%!important;height:100%!important;object-fit:contain!important;object-position:center!important;transform:none!important;
+  -webkit-mask-image:radial-gradient(ellipse at center,#000 27%,rgba(0,0,0,.9) 48%,rgba(0,0,0,.46) 66%,rgba(0,0,0,.14) 80%,transparent 96%)!important;
+  mask-image:radial-gradient(ellipse at center,#000 27%,rgba(0,0,0,.9) 48%,rgba(0,0,0,.46) 66%,rgba(0,0,0,.14) 80%,transparent 96%)!important;
+}
+
+/* Let the complete Earth and all foreground groups rise together; the bright
+   speaker glyphs no longer lead the photographs or globe. */
+body.codex-829a-sequence .codex-1249p-categories,
+body.codex-829a-sequence .codex-1249p-categories *{transition-delay:inherit!important}
+
+/* 20260905_0856: the crawl's tiny white destination hands directly to a
+   dedicated stage star at 53.5 seconds. This element cannot be cancelled by
+   the legacy intro ending, which removes the observed 54.16-to-64.95 blackout. */
+body.codex-829a-sequence.codex-527p-continuation .codex-829a-star-system{
+  display:block!important;visibility:visible!important;opacity:1!important;
+  z-index:150!important;left:50%!important;top:50%!important;width:6px!important;height:6px!important;
+  border-radius:50%!important;background:#fff!important;box-shadow:0 0 3px #fff,0 0 8px rgba(214,237,255,.84)!important;
+  animation:codex1528StageStar 15s linear both!important;
+}
+body.codex-829a-sequence.codex-527p-continuation .codex-829a-star-system>*{display:none!important}
+@keyframes codex1528StageStar{
+  0%{opacity:1;transform:translate(-50%,-50%) scale(.7);background:#fff;box-shadow:0 0 3px #fff,0 0 8px rgba(214,237,255,.84)}
+  16%{opacity:1;transform:translate(-50%,-50%) scale(1);background:#ff2b22;box-shadow:0 0 8px #ff8a80,0 0 22px rgba(255,48,34,.74)}
+  48%{opacity:1;transform:translate(-50%,-50%) scale(400);background:#ff241c;box-shadow:0 0 28px #ff8276,0 0 84px #ff3022,0 0 150px rgba(255,45,25,.88)}
+  58%{opacity:.9;transform:translate(-50%,-50%) scale(400);background:#f3231c}
+  100%{opacity:0;transform:translate(-50%,-50%) scale(400);background:#b91411}
+}
+
+/* 20260907_1110: keep one continuously visible destination star while its
+   circumference feathers smoothly from white to red.  The animation has no
+   intermediate opacity dip, element replacement, or hard circular edge. */
+body.codex-829a-sequence.codex-527p-continuation .codex-829a-star-system{
+  border-radius:48% 52% 46% 54%!important;
+  background:radial-gradient(circle at 48% 46%,#fff 0 9%,#ffd9cb 18%,#ff6857 36%,rgba(255,36,28,.94) 55%,rgba(255,36,28,.58) 70%,rgba(255,36,28,.2) 84%,transparent 100%)!important;
+  box-shadow:0 0 10px rgba(255,138,128,.92),0 0 30px rgba(255,48,34,.72),0 0 68px rgba(255,45,25,.48)!important;
+  filter:blur(1.35px) saturate(1.08)!important;
+  animation:codex1110FuzzyStageStar 15s linear both!important;
+}
+@keyframes codex1110FuzzyStageStar{
+  0%{opacity:1;transform:translate(-50%,-50%) scale(.7);filter:blur(.65px) saturate(1)}
+  16%{opacity:1;transform:translate(-50%,-50%) scale(1);filter:blur(.9px) saturate(1.05)}
+  48%{opacity:1;transform:translate(-50%,-50%) scale(400);filter:blur(1.35px) saturate(1.08)}
+  76%{opacity:.72;transform:translate(-50%,-50%) scale(455);filter:blur(1.7px) saturate(1.1)}
+  100%{opacity:0;transform:translate(-50%,-50%) scale(500);filter:blur(2.1px) saturate(1.12)}
+}
+
+/* Four perfectly aligned three-column rows, followed by one centered sports
+   row, produce a deliberate grid instead of uneven individual clusters. */
+body.codex-1033a-active .codex-1249p-categories{
+  top:56.5%!important;width:min(470px,37vw,59vh)!important;gap:clamp(7px,.82vh,9px)!important;
+}
+body.codex-1033a-active .codex-1249p-categories>.button-row{
+  display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;
+  width:92%!important;gap:clamp(5px,.45vw,8px)!important;
+}
+body.codex-1033a-active .codex-1249p-categories>.sports-row{
+  display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;
+  width:82%!important;gap:clamp(4px,.36vw,7px)!important;
+}
+body.codex-1033a-active .codex-1249p-categories .news-button{
+  width:100%!important;height:clamp(34px,4.2vh,40px)!important;display:flex!important;
+  justify-content:flex-start!important;padding:2px 4px!important;gap:4px!important;
+  font-size:clamp(8.5px,.67vw,10.5px)!important;text-align:left!important;
+}
+body.codex-1033a-active .codex-1249p-categories .news-button>span:last-child{
+  display:block!important;flex:1 1 auto!important;min-width:0!important;text-align:left!important;
+}
+body.codex-1033a-active .codex-1249p-access{display:inline-flex!important;min-width:34px!important;width:34px!important;gap:2px!important}
+body.codex-1033a-active .codex-1249p-categories .codex-1249p-access img{width:19px!important;height:13px!important}
+body.codex-1033a-active .codex-1249p-speaker{font-size:11px!important;opacity:.68!important}
+
+/* Final desktop composition: three truly separated levels per side, with the
+   golfer and airplane shifted toward the Earth and broad masks on the figure
+   containers themselves so no rectangular source boundary can survive. */
+body.codex-1033a-active .codex-1249p-shot{
+  width:clamp(155px,17vw,320px)!important;height:clamp(82px,12vh,114px)!important;
+  bottom:auto!important;
+  -webkit-mask-image:radial-gradient(ellipse 82% 72% at 50% 50%,#000 0 28%,rgba(0,0,0,.9) 48%,rgba(0,0,0,.46) 66%,rgba(0,0,0,.12) 81%,transparent 100%)!important;
+  mask-image:radial-gradient(ellipse 82% 72% at 50% 50%,#000 0 28%,rgba(0,0,0,.9) 48%,rgba(0,0,0,.46) 66%,rgba(0,0,0,.12) 81%,transparent 100%)!important;
+}
+body.codex-1033a-active .codex-1249p-shot-1{left:3vw!important;right:auto!important;top:23%!important;width:clamp(180px,19vw,360px)!important;height:clamp(100px,15vh,142px)!important}
+body.codex-1033a-active .codex-1249p-shot-2{right:3vw!important;left:auto!important;top:23%!important;width:clamp(180px,19vw,360px)!important;height:clamp(100px,15vh,142px)!important}
+body.codex-1033a-active .codex-1249p-shot-3{left:12vw!important;right:auto!important;top:49%!important;width:clamp(145px,15.5vw,290px)!important}
+body.codex-1033a-active .codex-1249p-shot-4{right:11vw!important;left:auto!important;top:49%!important;width:clamp(170px,18vw,340px)!important;height:clamp(76px,10.5vh,100px)!important}
+body.codex-1033a-active .codex-1249p-shot-5{left:5vw!important;right:auto!important;top:73%!important;width:clamp(165px,18vw,340px)!important}
+body.codex-1033a-active .codex-1249p-shot-6{right:5vw!important;left:auto!important;top:73%!important;width:clamp(165px,18vw,340px)!important}
+body.codex-1033a-active .codex-1249p-shot img,
+body.codex-1033a-active .codex-1249p-shot-1 img,
+body.codex-1033a-active .codex-1249p-shot-2 img,
+body.codex-1033a-active .codex-1249p-shot-4 img,
+body.codex-1033a-active .codex-1249p-shot-6 img{
+  object-fit:contain!important;object-position:center!important;transform:none!important;
+  -webkit-mask-image:none!important;mask-image:none!important;
+}
+body.codex-1033a-active .codex-1249p-shot-4,
+body.codex-1033a-active .codex-1249p-shot-5{
+  -webkit-mask-image:radial-gradient(ellipse 91% 68% at 50% 50%,#000 0 24%,rgba(0,0,0,.88) 48%,rgba(0,0,0,.4) 67%,rgba(0,0,0,.1) 82%,transparent 100%)!important;
+  mask-image:radial-gradient(ellipse 91% 68% at 50% 50%,#000 0 24%,rgba(0,0,0,.88) 48%,rgba(0,0,0,.4) 67%,rgba(0,0,0,.1) 82%,transparent 100%)!important;
+}
