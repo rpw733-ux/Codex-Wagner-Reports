@@ -1,0 +1,122 @@
+CODEX-WAGNER-REPORTS — START NEW SESSION HANDOFF
+Created: 2026-09-09 08:18 ET (America/New_York)
+Project: Codex-Wagner-Reports
+Public brand: Wagner Reports
+
+MANDATORY NEXT-SESSION STARTUP ORDER — ROBERT'S EXPLICIT INSTRUCTION
+1. Do not read, search for, or act on this or any other handoff when the new task first opens.
+2. Wait for Robert to upload his new text file.
+3. Read Robert's uploaded text completely before reading or acting on any handoff.
+4. Treat Robert's uploaded text as authoritative for the order and direction of the next session.
+5. After the uploaded text has been read, use this handoff only as supporting project continuity.
+
+NEW SESSION OPENING MESSAGE
+Robert may say:
+New session. I am uploading the new text now. Read that text first and do not read the handoff until afterward.
+
+SESSION OUTCOME
+- Reconciled 20260907_1110_CodexTalk-WagnerReports.html as the newest complete local experiment.
+- Performed focused local validation without modifying the webpage.
+- Verified 30 local src/href references; zero were missing.
+- Verified WEB BUILD opens the completed Wagner Reports page directly.
+- Verified TOTAL starts the presentation timer; the automated check observed 00:00.28.
+- Verified STOP freezes the elapsed presentation time; the automated check froze at 00:03.42 and remained unchanged.
+- Created and verified 20260907_1110_CodexTalk-WagnerReports.zip with root index.html byte-identical to the timestamped HTML and the complete matching 48-file assets folder.
+- Uploaded the ZIP to Google Drive _CODEX/Codex Web/00 CURRENT/Beta Testing and verified its exact name, size, parent folder, and Drive file page.
+- Robert manually published the exact ZIP to the Beta and Test TinyHost sites.
+- Robert supplied screenshots showing the matching visible banner CODEX 20260907_1110 • LOCAL TEST on both sites.
+- Robert deliberately did not run the remote Beta or Test presentation because known corrections remain.
+- No production deployment was requested or performed.
+- ShareX and VoiceAttack maintenance from the preceding task remains complete and working as Robert wants.
+
+ACTIVE DEPLOYED TEST CHECKPOINT — NOT YET REMOTELY RUN OR APPROVED
+- HTML: 20260907_1110_CodexTalk-WagnerReports.html
+- HTML size: 21,111 bytes
+- HTML SHA256: A2F97F676CC1411F306743BE3C3EF4A635ACD40804CFF2C6D745EF21D451EACE
+- Assets folder: 20260907_1110_CodexTalk-WagnerReports-assets
+- Assets: 48 files; 17,035,234 bytes total
+- ZIP: 20260907_1110_CodexTalk-WagnerReports.zip
+- ZIP size: 15,042,129 bytes
+- ZIP SHA256: 0FACA75F8732CE0CAA58F15A896BFF164ADBE4B16C508AF0A885261DE7606800
+- ZIP contents: 49 files total; root index.html plus matching assets folder
+- Drive Beta Testing file ID: 1bQ6GcKhDRBKbPQTKL-EK0hJHERiMF4Qu
+- Drive destination: _CODEX/Codex Web/00 CURRENT/Beta Testing
+- Beta deployment: screenshot-confirmed at https://beta-wagnerreports.tiiny.site on 2026-09-09; not remotely run.
+- Test deployment: screenshot-confirmed at https://test.wagnerreports.com on 2026-09-09; not remotely run.
+- Approval stage: deployed correction checkpoint only; not functionally approved and not production-ready.
+
+PAUSED / PRESERVED HTML VERSIONS — NEWEST TO OLDEST
+- 20260907_1110_CodexTalk-WagnerReports.html — active deployed Beta/Test checkpoint; remote execution and approval pending.
+- 20260905_2003_CodexTalk-WagnerReports.html — intentional five-second USS Wagner–Houston communications-hold experiment; not confirmed user-approved.
+- 20260905_1653_CodexTalk-WagnerReports.html — earlier user-tested beta candidate; corrections remained.
+- 20260905_0856_CodexTalk-WagnerReports.html
+- 20260905_0833_CodexTalk-WagnerReports.html
+- 20260905_0740_CodexTalk-WagnerReports.html
+- 20260905_0713_CodexTalk-WagnerReports.html
+- 20260905_0635_CodexTalk-WagnerReports.html
+- 20260905_0632_CodexTalk-WagnerReports.html
+- 20260905_0627_CodexTalk-WagnerReports.html
+- 20260905_0547_CodexTalk-WagnerReports.html
+- Preserve every earlier timestamped version; do not overwrite or delete them.
+
+TINYHOST DEPLOYMENT STAGE
+- beta.wagnerreports.com / https://beta-wagnerreports.tiiny.site: 20260907_1110_CodexTalk-WagnerReports.zip published; screenshot verified; not run.
+- test.wagnerreports.com: 20260907_1110_CodexTalk-WagnerReports.zip published; screenshot verified; not run.
+- wagnerreports.com production: unchanged.
+- Known corrections and the next design direction are intentionally deferred to Robert's new-session text.
+
+GIT / GITHUB STATE
+- Branch: main
+- Focused local source checkpoint commit: 8d618f0b144e052b44e9f2a8d397d9623d7d0312
+- Commit message: Save 20260907_1110 Wagner Reports Beta and Test checkpoint
+- The focused commit contains AGENTS.md, 20260907_1110_CodexTalk-WagnerReports.html, the matching assets folder, and 20260907_1110_CodexTalk-WagnerReports.zip.
+- AGENTS.md records the durable exception requiring Robert's uploaded new-session text to be read before any handoff.
+- This handoff will be committed immediately after creation and both closeout commits will be pushed together to origin/main.
+- Numerous older project artifacts remain untracked and were deliberately excluded; none were deleted, moved, reset, or overwritten.
+
+STARTING USAGE FOR THIS SESSION
+- Source: inherited from 20260907_1941_StartNewSession.txt; Robert-reported / manually checked, not a fresh reading for 2026-09-09.
+- Weekly usage remaining: approximately 32%.
+- Weekly reset time: unavailable.
+- Credits remaining: unavailable.
+- Five-hour usage/reset: unavailable.
+- Because the starting values are incomplete and the reset window later changed, do not calculate credits or usage consumed from these figures.
+
+ENDING USAGE FOR THIS SESSION — CHROME-DASHBOARD VERIFIED 2026-09-09
+- Weekly usage remaining: 96%.
+- Weekly reset: September 15, 2026 at 7:39 AM ET.
+- Credits remaining: 372.
+- Five-hour usage/reset: unavailable because the dashboard did not display it.
+- Full reset pass: expires October 3, 2026 at 10:14 PM.
+- Full reset pass: expires October 5, 2026 at 12:20 AM.
+- The difference from the inherited approximate 32% starting value is not classified as session usage because the displayed reset window changed and the prior figures were incomplete.
+- No Google Sheets usage-tracker update was requested or performed.
+
+APPROVED WORKFLOW DECISIONS
+- The exact 20260907_1110_CodexTalk-WagnerReports.zip is the retained Beta/Test checkpoint.
+- The current Beta and Test deployments are records of the checkpoint, not functional approval.
+- Keep the timer, STOP control, synchronized visible timestamp banner/button, and all previously approved behavior in later versions unless Robert changes the requirement.
+- Continue using local browser testing before future TinyHost uploads.
+- Robert manually handles TinyHost publishing.
+- At the next task startup, Robert's uploaded text must be read first; automatic handoff reading is temporarily superseded for that startup.
+
+UNRESOLVED WAGNER REPORTS WORK
+1. Read Robert's new text first and determine the requested paradigm shift before planning any webpage change.
+2. Do not assume the currently deployed checkpoint should remain the implementation base until Robert's text is understood.
+3. Remotely run and evaluate Beta/Test only if the new text or Robert's direction calls for it.
+4. Known corrections remain intentionally unspecified in this closeout.
+5. Genuine BACK/FORWARD presentation seeking remains unresolved unless the new direction replaces it.
+6. USS Wagner–Houston voice clips remain deferred unless Robert resumes that work.
+
+LOCAL SERVER STATE
+- The temporary 127.0.0.1:8765 local test server was stopped after validation.
+- The temporary hidden local test browser tab was closed.
+- Start a fresh local server only when testing resumes.
+
+GOOGLE DRIVE HANDOFF ROTATION TARGETS
+- New current handoff: _CODEX/Codex Web/00 CURRENT/Session Handoff/20260909_0818_StartNewSession.txt
+- Immediately preceding handoff after rotation: _CODEX/Codex Web/10 PREVIOUS/Session Handoff/20260907_1941_StartNewSession.txt
+- Existing older previous handoff must be archived before rotation.
+
+FIRST SAFE NEXT ACTION
+- Wait for Robert's uploaded text file, read it completely, and acknowledge its direction before reading this handoff or starting any Wagner Reports work.
